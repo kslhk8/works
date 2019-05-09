@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="packageTripSQL">
+	
+	<select id="getImage" parameterType="String" resultType="packageTrip">
+		select * from package_image where arrive_city= #{arrive_city}
+	</select>
+		
+<!-- 	<select id="getPackage" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} order by seq asc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+	</select> -->
+		
+<!-- 	<select id="getPackageTotalA" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city=#{depart_city} and depart_date=#{depart_date}
+	</select> -->
+		
+	<select id="packageListAll" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%' order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packageListAll_low" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%' order by adult_price)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packagePgAll" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+	</select>
+ 	
+ 	<select id="packageListOneWeek_week" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select>
+ 	
+ 	<select id="packageListOneWeek_week_low" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%') order by adult_price)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select>
+ 	
+ 	<select id="packagePgOneWeek_week" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 		and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%')
+	</select>
+ 	
+ 	<select id="packageListOneWeek_weekend" parameterType="java.util.Map" resultType="trip">	
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%토%' or week like '%일%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packageListOneWeek_weekend_low" parameterType="java.util.Map" resultType="trip">	
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%토%' or week like '%일%') order by adult_price)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packagePgOneWeek_weekend" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 		and (week like '%토%' or week like '%일%')
+	</select>
+ 	
+ 	<select id="packageListOneGrade" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packageListOneGrade_low" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' order by adult_price)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packagePgOneGrade" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+	</select>
+ 	
+ 	<select id="packageListTwoGrade" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packageListTwoGrade_low" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' order by adult_price)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	
+ 	<select id="packagePgTwoGrade" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+	</select>
+ 	
+ 	
+ 	<select id="packageListOneWeekOneGrade_week" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%')order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select>
+ 	
+ 	<select id="packageListOneWeekOneGrade_week_low" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%') order by adult_price)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select>
+ 	
+ 	<select id="packagePgOneWeekOneGrade_week" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 		and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%')	
+ 	</select>
+ 	
+ 	<select id="packageListOneWeekOneGrade_weekend" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%토%' or week like '%일%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packageListOneWeekOneGrade_weekend_low" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%토%' or week like '%일%') order by adult_price)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="packagePgOneWeekOneGrade_weekend" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%'
+ 		and (week like '%토%' or week like '%일%')
+ 	</select>
+ 	
+ 	<select id="packageListOneWeekTwoGrade_week" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+				and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%') order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+	</select>
+	
+	<select id="packageListOneWeekTwoGrade_week_low" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+				and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%') order by adult_price)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+	</select>
+	
+	<select id="packagePgOneWeekTwoGrade_week" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+		and (week like '%월%' or week like '%화%' or week like '%수%' or week like '%목%' or week like '%금%')
+ 	</select>
+	
+	<select id="packageListOneWeekTwoGrade_weekend" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%토%' or week like '%일%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 		
+ 	</select> 
+ 	
+ 	<select id="packageListOneWeekTwoGrade_weekend_low" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+ 				and (week like '%토%' or week like '%일%') order by adult_price)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 		
+ 	</select> 
+ 	
+ 	<select id="packagePgOneWeekTwoGrade_weekend" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where arrive_city=#{arrive_city} and depart_city like '%'||#{depart_city}||'%' and (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%'
+ 		and (week like '%토%' or week like '%일%')
+ 	</select> 
+ 	
+ 	<select id="getParentPackage" parameterType="int" resultType="trip">
+ 		select * from tripinform where seq= #{seq}
+ 	</select>
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	<!-- 패키지2 -->
+ 	<select id="productListAll" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where depart_date like '%'||#{depart_date}||'%' and pseq=#{seq} order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	 <select id="productPgAll" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where depart_date like '%'||#{depart_date}||'%' and pseq=#{seq} 
+	</select>
+
+ 	<select id="productListOneWeek_week" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 				and (depart_aptime like '%월%' or depart_aptime like '%화%' or depart_aptime like '%수%' or depart_aptime like '%목%' or depart_aptime like '%금%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select>
+ 	
+ 	<select id="productPgOneWeek_week" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 		and (depart_aptime like '%월%' or depart_aptime like '%화%' or depart_aptime like '%수%' or depart_aptime like '%목%' or depart_aptime like '%금%')
+	</select>
+
+ 	<select id="productListOneWeek_weekend" parameterType="java.util.Map" resultType="trip">	
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 				and (depart_aptime like '%토%' or depart_aptime like '%일%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="productPgOneWeek_weekend" parameterType="java.util.Map" resultType="trip">	
+ 		select count(*) from tripinform where depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 		and (depart_aptime like '%토%' or depart_aptime like '%일%')
+ 	</select> 
+ 	
+ 	<select id="productListOneGrade" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq} order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	 <select id="productPgOneGrade" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+	</select>
+ 	
+ 	<select id="productListTwoGrade" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq} order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="productPgTwoGrade" parameterType="java.util.Map" resultType="int">
+ 		select count(*) from tripinform where (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 	</select> 
+ 	
+ 	<select id="productListOneWeekOneGrade_week" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 				and (depart_aptime like '%월%' or depart_aptime like '%화%' or depart_aptime like '%수%' or depart_aptime like '%목%' or depart_aptime like '%금%')order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select>
+ 	
+ 	<select id="productPgOneWeekOneGrade_week" parameterType="java.util.Map" resultType="int">
+ 		select count(*) from tripinform where grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 		and (depart_aptime like '%월%' or depart_aptime like '%화%' or depart_aptime like '%수%' or depart_aptime like '%목%' or depart_aptime like '%금%')
+ 	</select>
+ 	
+ 	<select id="productListOneWeekOneGrade_weekend" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 				and (depart_aptime like '%토%' or depart_aptime like '%일%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}
+ 	</select> 
+ 	
+ 	<select id="productPgOneWeekOneGrade_weekend" parameterType="java.util.Map" resultType="int">
+ 		select count(*) from tripinform where grade like '%'||#{grade}||'%' and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 		and (depart_aptime like '%토%' or depart_aptime like '%일%')
+ 	</select> 
+ 	
+ 	<select id="productListOneWeekTwoGrade_week" parameterType="java.util.Map" resultType="trip">
+ 		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+				and (depart_aptime like '%월%' or depart_aptime like '%화%' or depart_aptime like '%수%' or depart_aptime like '%목%' or depart_aptime like '%금%') order by adult_price desc)
+			tt) 
+		where rn between #{startNum} and #{endNum}
+	</select>
+	
+	<select id="productPgOneWeekTwoGrade_week" parameterType="java.util.Map" resultType="int">
+ 		select count(*) from tripinform where (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+		and (depart_aptime like '%월%' or depart_aptime like '%화%' or depart_aptime like '%수%' or depart_aptime like '%목%' or depart_aptime like '%금%')
+	</select>
+	
+	<select id="productListOneWeekTwoGrade_weekend" parameterType="java.util.Map" resultType="trip">
+		select * from
+			(select rownum rn, tt.* from
+				(select * from tripinform where (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 				and (depart_aptime like '%토%' or depart_aptime like '%일%') order by adult_price desc)
+ 			tt) 
+ 		where rn between #{startNum} and #{endNum}	
+ 	</select> 
+ 	
+ 	<select id="productPgOneWeekTwoGrade_weekend" parameterType="java.util.Map" resultType="int">
+		select count(*) from tripinform where (grade like '%'||#{grade}||'%' or grade like '%'||#{grade2}||'%') and depart_date like '%'||#{depart_date}||'%' and pseq=#{seq}
+ 		and (depart_aptime like '%토%' or depart_aptime like '%일%'
+ 	</select> 	
+ 	
+ 	<insert id="insertRecentProductViewed" parameterType="java.util.HashMap">
+ 		insert into 최근본상품 values(최근본상품_seq.nextval,#{package_name},#{hotel_name},#{adult_price},#{imageName},#{insertDate})
+ 	</insert>
+ 	
+ 	<select id="selectRecentProductViewed" resultType="trip">
+ 		select * from
+ 			(select rownum rn, tt.* from
+ 				(select * from 최근본상품 order by rownum desc)tt
+ 			)
+ 		where rn between 1 and 3
+ 	</select>
+ 	
+
+ 	
+ 	<update id="updateReservationNumber" parameterType="java.util.Map">
+ 		update tripinform set reservation_member=reservation_member+#{size} where seq=#{son_seq}
+ 	</update>
+	
+	
+		
+ 	<select id="getTripInformByCode" resultType="trip" parameterType="String">
+ 		select * from tripinform where package_code=#{package_code}
+ 	</select>
+ 	
+	<update id="reduceReservedMember" parameterType="java.util.Map">
+       update tripinform set reservation_member=reservation_member-#{reserved_total_member} 
+       where seq=#{son_seq}
+    </update>
+    <select id="getSon_seq" parameterType="String" resultType="Integer">
+    	select seq from tripinform where package_code=#{package_code}
+    </select>
+ </mapper>

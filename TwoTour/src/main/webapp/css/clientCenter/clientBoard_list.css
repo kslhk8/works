@@ -1,0 +1,140 @@
+@charset "UTF-8";
+#cbList_inform1{
+	/* border: 1px solid red;  */
+	height: 50px;
+	font: 15px Tahoma, Arial ;
+}
+#cbList_inform2{
+	position: relative;
+	border: 1px solid #d5d5d5;
+	height: 78px;
+}
+#cbList_inform2_box{
+	/* border: yellow dashed 1px; */
+	position: relative;
+	display: inline-block;
+	width: 60px;
+}
+
+#cbList_inform2_box>img{
+	display: inline-block;
+	height: 76px;
+}
+#cbList_inform2_ul{
+	border: 1px solid pink;
+	postioin: absolute;
+	display: inline-block;
+	left: 200px;
+	top: 0px;
+	margin-bottom: 10px;
+}
+#cbList_inform2_ul > li{
+	font: 13px Tahoma, Arial;
+	padding: 5px;
+	list-style: none;
+}
+
+#search_td{
+	align: right;
+}
+#cbList_inform3{
+	border: 1px solid blue;
+	position: relative;
+	/* display: inline-block; */
+	marging:5px;
+	float:left;
+	margin-right:0px;
+}
+
+#cbList_inform3>select{
+	
+	width: 100px;
+	height: 30px;
+	padding-left: 10px;
+	color: #000000;
+	/* border: 1px solid #f63d8b; */
+	border-radius: 2px;
+	margin-bottom: 5px;
+}
+#cbList_inform3>select>option{
+	font: 15px Tahoma, Arial;
+}
+#cbList_inform3>input[name="searchWord"]{
+	/* border: none; */
+	/* border-color: transparent; */
+	/* outline: none; */
+	height: 27px;
+	width: 200px;
+	font: 15px Tahoma, Arial;
+	margin-bottom: 5px;
+}
+#cbList_searchBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+#consult_listT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588;
+	width: 1064px;
+}
+
+
+#cbList_T{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588;
+	width: 1061px;
+	height: 525px;
+}
+tr.cbList_col td{
+	background-color: #f2f2f2;
+	font: bold 15px Tahoma, Arial ;
+	text-align: center;
+	height: 40px;
+}
+#cbList_T>tr>td{
+	font: 15px Tahoma, Arial ;
+}
+
+#cbList_bottomDiv{
+	border: 1px solid blue;
+	height: 36px;
+	padding-top: 20px;
+}
+
+#cbList_bottomT{
+	border: 1; 
+	cellspacing: 0px;
+	cellpadding: 0px;
+	height: 35px;
+	width: 100%;
+}
+#cbList_writeBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}

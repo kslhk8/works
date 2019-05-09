@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/* 
+2014.01.06 pk-11000 , pk-11001 , pk-12000 ¼Ó¼º css
+*/
+
+body {margin: 0; padding: 0;letter-spacing: -1px;}
+
+#pk_contents {position: relative; z-index: 1; width: 900px; margin: 0 auto 30px; padding-top: 15px}
+#pk_contents .h3 {height: 14px; background: url('http://image1.hanatour.com/2010/images/oversea/title_pk.png') no-repeat}
+#pk_contents .h3_search {width: 68px; margin-bottom: 13px; background-position: 0 0;}
+button {border: 0; cursor: pointer; vertical-align: middle; }
+#pk_contents a {cursor: pointer}
+#pk_contents .selectbox .display .arrow_btn {cursor: pointer}
+#pk_contents #quickPkgSearchForm {position: relative; z-index: 10}
+
+
+#pk_contents .pk_sbanner_list {overflow: hidden; margin-bottom: 10px}
+#pk_contents .pk_sbanner_list:after {content: ""; display: block; clear: both; visibility: hidden; width: 0; height: 0}
+#pk_contents .pk_sbanner_list li {float: left; margin-left: 9px}
+#pk_contents .pk_sbanner_list li:first-child {margin-left: 0}
+
+
+
+
+.has_sb{position:absolute; top:-1000000px; left:-999999em;text-indent:-999999em;}
+
+/* always visible styles */
+.sb {margin-right:1px;}
+.selectbox {position:relative; float:left; zoom:1; color:#646464;*margin-left:5px}
+
+.selectbox .display {background:url(http://image1.hanatour.com/2010/images/travel/bg_selBox.png) repeat-x 0 0; border:1px #bfbfbf solid; font-size: 11px; cursor:default; display:block; overflow:hidden; height:18px; padding:4px 0 0 0; text-indent:5px; position:relative; text-decoration:none; line-height: 16px}
+.selectbox.disabled .display {color:#999;}
+.selectbox.focused .display .text {zoom:1; font-size: 11px; cursor:default; display:block; overflow:hidden; height:18px;text-indent:5px;}
+.selectbox .display.active {border-color:#7b7d83;}
+
+.selectbox .display .arrow_btn {position: absolute; right: 0; top: 0; width:23px; height:23px; border-left:1px #bfbfbf solid;}
+.selectbox .display .arrow_btn * {padding:0;}
+
+.selectbox .display .arrow_btn .arrow {background:url(http://image1.hanatour.com/2010/images/travel/btn_botArrow.png) 50% 50% no-repeat; width:23px; height:24px; display: block; outline: none;}
+.selectbox .display.active .arrow_btn { border-left:1px #7b7d83 solid;}
+.selectbox .display.hover .arrow_btn {}
+.selectbox .value {display:none;}
+
+.selboxmust .display:hover {border-color: #ED6366}
+.selboxmust.items {border: 1px solid #ED6366 !important}
+/* dropdown styles */
+.selectbox.items{background:#fff; display:block; overflow-x:hidden; overflow-y:auto; z-index:9999999999; padding-bottom:3px; border:1px #bfbfbf solid;}
+.selectbox.items.above{}
+.selectbox.items li{display:block;margin:0;padding:0;}
+
+.selectbox.items li.first{margin-top:3px;}
+.selectbox.items li>.item{color:#000;cursor:default;display:block; padding:0; text-decoration:none; color:#646464; border:none !important;}
+.selectbox.items li>.item>.text{padding:6px 0; text-indent:5px; }
+.selectbox.items li.selected>.item{border-bottom:1px dotted #999;border-top:1px dotted #999;}
+
+.selectbox.items li.disabled>.item{color:#999;}
+.selectbox.items li.hover>.item{background-color:#3399ff; color:#fcfcfc;}
+.selectbox.items .value{display:none;}
+
+.selbox {width:117px;}
+.selbox1 {width:50px; margin:1px 1px 1px 0;}
+.selbox2 {width:356px;}
+.selbox3 {width:220px;}
+.selbox4 {width:100px;}
+.selbox5 {width:70px;}
+.selbox6 {width:130px;}
+.selbox7 {width:60px;}
+.selbox8 {width:90px;}
+.selbox9 {width:100px;}
+/*e:selectbox - Á¦ÀÌÄõ¸®³»¿ëÀ¸·Î ³ªÁß¿¡ query.css ·Î ¿Å°Ü°¥ ¿¹Á¤ÀÓ*/
+
+/*s:common*/
+.hide {display:none; visibility:hidden;}
+.displayB {display:block !important;}
+.borderN {border:none !important;}
+.ir { display: block; position:absolute; top:-9999px; left:-9999px; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left;}
+
+
+
+.last-child {background: 0 none !important;}
+.marR10 {margin-right:10px !important;}
+
+
+.pk_search form {height: 170px; padding: 15px 15px 20px 25px; border-left: 1px solid #BFBFBF}
+.quick_search .quick_list:after {content:""; display: block; clear: both; visibility: hidden; width: 0; height: 0}
+.quick_search .quick_list li {float: left; padding: 10px 0 2px 0; min-height: 27px;}
+.quick_search .quick_list li strong {display: block; float: left; height: 26px; width: 60px; margin-right: 10px; text-indent: -9999px;}
+.quick_search .quick_list li input[type="radio"] ,
+.quick_search .quick_list li input[type="checkbox"] ,
+.quick_search .quick_list li label {float: left; margin: 7px 5px 0 0; *margin: 2px 1px 0 0; line-height: 22px; vertical-align: top;} /* 2016-07-18 ¼öÁ¤ */
+.quick_search .quick_list li label {margin: 3px 5px 0 0 !important; *margin: 2px 1px 0 0 !important;} /* 2016-07-18 ¼öÁ¤ */
+
+
+
+.quick_search .quick_list li label.ico_classic,
+.quick_search .quick_list li label.ico_casual,
+.quick_search .quick_list li label.ico_esavepack {margin: 6px 15px 0 0 !important ; *margin: 5px 15px 0 0 !important}
+.quick_search .quick_list li label.ico_classic {display: inline-block; width: 35px; height: 14px; background: url('http://image1.hanatour.com/2010/images/icon/productPackage/icon_grade_classic.gif') no-repeat 0 0}
+.quick_search .quick_list li label.ico_casual {display: inline-block; width: 35px; height: 14px; background: url('http://image1.hanatour.com/2010/images/icon/productPackage/icon_grade_casual.gif') no-repeat 0 0}
+.quick_search .quick_list li label.ico_esavepack {display: inline-block; width: 55px; height: 14px; background: url('http://image1.hanatour.com/2010/images/icon/productPackage/icon_grade_23.gif') no-repeat 0 0}
+
+
+.div_classic {position: relative;}
+
+.div_classic .layer_classic {display: none; position: absolute; left: -98px; top: -110px; z-index: 1000; width: 202px; height: 82px; padding: 15px 20px 15px 15px; font-size: 11px; background: url('http://image1.hanatour.com/_images/pk/bg_sns_01.png') no-repeat 0 -188px}
+.div_classic:hover .layer_classic {display: block;}
+.div_classic .layer_classic .title {font-weight: bold; color: #737987; padding-bottom: 9px; margin-bottom: 9px; border-bottom: 1px dashed #D5D5D5}
+.div_classic .layer_classic .cont {line-height: 16px}
+
+.div_classic .layer_casual{display: none; position: absolute; left: -98px; top: -110px; z-index: 1000; width: 202px; height: 82px; padding: 15px 20px 15px 15px; font-size: 11px; background: url('http://image1.hanatour.com/_images/pk/bg_sns_01.png') no-repeat 0 -188px}
+.div_classic:hover .layer_casual {display: block;}
+.div_classic .layer_casual .title {font-weight: bold; color: #737987; padding-bottom: 9px; margin-bottom: 9px; border-bottom: 1px dashed #D5D5D5}
+.div_classic .layer_casual .cont {line-height: 16px}
+
+.div_classic .layer_esavepack{display: none; position: absolute; left: -88px; top: -110px; z-index: 1000; width: 202px; height: 82px; padding: 15px 20px 15px 15px; font-size: 11px; background: url('http://image1.hanatour.com/_images/pk/bg_sns_01.png') no-repeat 0 -188px}
+.div_classic:hover .layer_esavepack {display: block;}
+.div_classic .layer_esavepack .title {font-weight: bold; color: #737987; padding-bottom: 9px; margin-bottom: 9px; border-bottom: 1px dashed #D5D5D5}
+.div_classic .layer_esavepack .cont {line-height: 16px}
+
+
+
+.quick_search .quick_list li.b_dashed {border-top: 1px dashed #E0E1E1}
+.quick_search .quick_list li.check_room_date {background-image: none}
+.quick_search .quick_list li.check_room_date .room_date {margin-left: 62px}
+
+.make_quick_search .btn_quick_search {display: block; width: 142px; height: 41px; margin: 0 auto 40px; background: url('http://image1.hanatour.com/_images/freestyle/img_make_main.png') no-repeat -300px -200px; text-indent: -9999px; cursor: pointer}
+.quick_list li.qu_subtitle_100 {width: 100%}
+.quick_list li.tit_price {margin-top: 15px}
+.quick_list li.qu_subtitle_40 {width: 40%}
+.quick_list li.qu_subtitle_50 {width: 49%;}
+.quick_list li.qu_subtitle_60 {width: 60%}
+.in_box2:hover {height: 21px;padding-top: 1px;margin: 1px 0;border: 1px #ED6366 solid;text-indent: 5px;background: url('http://image1.hanatour.com/2010/images/travel/bg_selBox.png') repeat-x 0 0;font-size: 11px;font-weight: normal;color: #646464;}
+.in_box2 {height: 21px;padding-top: 1px;margin: 1px 0;border: 1px #bfbfbf solid;text-indent: 5px;background: url('http://image1.hanatour.com/2010/images/travel/bg_selBox.png') repeat-x 0 0; font-size: 11px;font-weight: normal;color: #646464; line-height: 22px}
+.in_box {height: 22px;padding-top: 1px;margin: 1px 0;border: 1px #bfbfbf solid;text-indent: 5px;background: url('http://image1.hanatour.com/2010/images/travel/bg_selBox.png') repeat-x 0 0; font-size: 11px;font-weight: normal;color: #646464; line-height: 22px}
+.in_boxarea {position: relative; float: left; margin: 0 1px; padding: 0;}
+.in_boxarea input {*float: left; padding:0; margin: 0;}
+.in_boxarea .btn_all {height: 24px; width: 43px; margin-right: 10px; padding: 1px 0 0 0; border: 1px solid #bfbfbf; font-size: 11px; font-family: Dotum, 'µ¸À½';  background: url('http://image1.hanatour.com/2010/images/travel/bg_selBox.png') repeat-x 0 0 ; cursor: pointer; color: #646464; line-height: 20px}
+.in_boxarea .btn_search {position: absolute;right: 0;top: 1px;width: 24px;height: 23px;border-left: 1px solid #BFBFBF;}
+.in_boxarea .btn_search .calendar {display: block;width: 24px;height: 22px;background: url('http://image1.hanatour.com/freestyle/btn_calendar.png') no-repeat 4px 4px;outline: none;cursor: pointer;}
+.in_boxarea .btn_search .magnifier {display: block;width: 24px;height: 22px;background: url('http://image1.hanatour.com/freestyle/btn_magnifier.png') no-repeat 4px 4px;outline: none;cursor: pointer;}
+
+
+
+.txt_start_day {background:url(http://image1.hanatour.com/_images/freestyle/txt_start_day.png) no-repeat 8px 50%;}/*Ãâ¹ßÀÏ*/
+.txt_start_week {background:url(http://image1.hanatour.com/_images/freestyle/txt_start_week.png) no-repeat 8px 40%;}/*Ãâ¹ß¿äÀÏ*/
+.txt_start_day01 {background:url(http://image1.hanatour.com/_images/freestyle/txt_start_day01.png) no-repeat 8px 40%;}/*Ãâ¹ßÀÏ_È¸»ö*/
+.txt_start_city {background:url(http://image1.hanatour.com/_images/freestyle/txt_start_city.png) no-repeat 8px 50%;}/*Ãâ¹ßµµ½Ã*/
+.txt_start_city01 {background:url(http://image1.hanatour.com/_images/freestyle/txt_start_city01.png) no-repeat 8px 40%;}/*Ãâ¹ßµµ½Ã_È¸»ö*/
+
+
+
+
+.txt_product_name {background:url(http://image1.hanatour.com/_images/freestyle/txt_product_name.png) no-repeat 8px 50%;}/*»óÇ°¸í*/
+.txt_product_label {background:url(http://image1.hanatour.com/_images/freestyle/txt_product_label.png) no-repeat 8px 50%;}/*»óÇ°µî±Þ*/
+.txt_product_name01 {background:url(http://image1.hanatour.com/_images/freestyle/txt_product_name01.png) no-repeat 8px 50%;}/*»óÇ°¸í_È¸»ö*/
+
+
+.txt_start_time {background:url(http://image1.hanatour.com/_images/freestyle/txt_start_time.png) no-repeat 8px 50%;margin-right:8px !important}/*Ãâ¹ß½Ã°£*/
+
+
+#search_area {height: 240px; margin-bottom: 15px; border-bottom: 1px solid #41444D}
+#search_area:after {content:""; display: block; clear:both; visibility: hidden; width: 0; height: 0}
+.pk_search {float: left; width: 610px; height: 237px; border-top: 3px solid #F63D8B}
+.pk_ad_banner {float: left; position: relative; width: 290px; border-top: 3px solid #41444D}
+.pk_ad_banner .btn_ad {z-index:10; position: absolute; right: 16px; top: 17px}
+.pk_ad_banner .btn_ad button {float: left ; width: 12px; height: 12px; border: 0; margin: 0 2px; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -102px 0}
+.pk_ad_banner .btn_ad button.on {background-position: -87px 0;}
+.pk_ad_banner .banner_img {z-index: 1; position: absolute; left: 0; top: 0; border-right: 1px solid #BFBFBF; border-left: 1px solid #BFBFBF}
+
+.result_view {position: relative; height: 22px; padding: 9px 0 0 24px; border-top: 1px solid #41444D; background-color: #575B66;}
+.result_view ul {overflow: hidden;}
+.result_view ul li {float: left; margin-right: 15px; font-size: 11px; color: #CDCED1; line-height: 16px}
+.result_view ul li .btn_del {height: 13px; width: 11px; margin-left:2px; border: 0; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -37px 0;}
+.result_view .btn_refresh {position: absolute; top: 5px; right: 25px; height: 21px; width: 21px; border: 0; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -56px 0;}
+
+/* °¡°Ý ½½¶óÀÌµå¹Ù */
+.slide_bar {display: block; position: relative; float: left; background-color: #FFF}
+#spices-search {width: 339px}
+.list-wrap {display: inline-block; float: left;}
+#spices-search .search-list {text-align: left;}
+.search-list {display: inline-block; float: left; width: 100%;}
+#spices-search .search-list .list-cont1 {height: 40px;}
+.search-list .list-cont1 {display: inline-block; float: left; height: 30px;}
+#spices-search .search-list .list-cont1 .cont1-cont, 
+#spices-search .search-list .list-cont2 .cont2-cont {width: 339px;}
+#spices-search .search-list .list-cont1 .cont1-cont {height: 29px;}
+.search-list .list-cont1 .cont1-cont {display: inline-block; float: left; width: 830px; height: 30px; }
+#spices-search .search-list .list-cont1 .cont1-cont .cont-num {width: 54px}
+#spices-search .search-list .list-cont1 .cont1-cont li {float: left;}
+:root #spices-search .search-list .list-cont1 .cont1-cont li input {width: 50px; height: 15px;}
+#spices-search .search-list .list-cont1 .cont1-cont li input, 
+#ie #spices-search .search-list .list-cont1 .cont1-cont li input, 
+#cr #spices-search .search-list .list-cont1 .cont1-cont li input, 
+#ff #spices-search .search-list .list-cont1 .cont1-cont li input, 
+#other #spices-search .search-list .list-cont1 .cont1-cont li input {width: 65px; height: 14px; color: #666;}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide {width: 339px; height: 16px; background-position: 0 0px}
+.section-spices .spices-cont .section-spiceslisttitle .spiceslisttitle-btn, 
+#spices-search .section-pagingpremium .pagingpremium-page .page-bar, 
+#spices-search .search-list .list-cont1 .cont1-title .title-text, 
+#spices-search .search-list .list-cont2 .cont2-title .title-text, 
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-wrap .ui-slider-range, 
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-wrap .ui-slider-handle, 
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide, 
+#spices-search .search-list .list-cont2 .cont2-cont label .cont-btn, 
+#spices-search .search-list .list-cont2 .cont2-btnwrap .btnwrap-btn, 
+#spices-search .section-pagenull .pagenull-img, 
+#spices-search .section-pagenull .pagenull-btn {display: block;background-image: url('http://image1.hanatour.com/2010/images/oversea/price_slide_bar.png');background-repeat: no-repeat;}
+#spices-search .search-list .list-cont1 .cont1-cont li {float: left;}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide #rangeslideinput {position: absolute; font-size: 9px;font-family: Tahoma;font-weight: normal;color: #898989;border: 0px;background-color: transparent;}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-minnum {left:0; top: 15px; text-align: left}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-maxnum {right: 0; top: 15px; text-align: right;}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-wrap {position: relative;width: 330px;height: 10px;}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-wrap .ui-slider-range {display: block; position: absolute; height: 10px; z-index:1; background-position: -339px 0}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-rangeslide .rangeslide-wrap .ui-slider-handle {position: absolute;width: 18px;height: 12px;margin-top: 2px; cursor: default;background-position: -679px 0;z-index: 2; cursor: pointer}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-num.price_min {position: absolute; top: -15px; left: 0; min-height: 22px}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-num.price_max {position: absolute; top: -15px; left: 300px; min-height: 22px}
+#spices-search .search-list .list-cont1 .cont1-cont .cont-num.price_min input,
+#spices-search .search-list .list-cont1 .cont1-cont .cont-num.price_max input {display: inline-block; height: 15px; width: 54px; padding-bottom: 1px; font-family: Tahoma; font-size: 10px; background: url('http://image1.hanatour.com/2010/images/oversea/price_slide_bar.png') no-repeat 0 -53px; color: #fff; text-align: center;}
+#slide_price .input_price {float: left; margin: 4px 0 0 7px;}
+#slide_price .input_price input {width: 55px; height: 20px; padding: 0 3px;  border: 1px solid #BFBFBF; text-align: right; vertical-align: middle; line-height: 20px}
+
+.bar {display: block; background: url(http://image1.hanatour.com/_images/freestyle/slide_bar.png) no-repeat;}
+.cont-rangeslide {float: left; position: relative; width: 182px; height: 7px; margin-top: 8px; background-position: 0 -30px }
+.rangeslide-wrap {position: relative; width: 172px; height: 7px; border: 0 none !important}
+.ui-slider-range {display: block; position: absolute; z-index: 1; height: 7px; background-position: -182px -30px}
+.ui-slider-handle {position: absolute; z-index: 2; width: 11px; height: 23px; margin-top: -7px; background-position: -364px; -30px; cursor: default; }
+
+
+
+.startday_list {width: 868px; margin: 25px auto 0px}
+
+.month_select {position: relative; margin: 0 auto 11px; text-align: center}
+.month_select button {display: inline-block; width: 18px; height: 18px; margin-top: -9px; border: 0; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat;}
+.month_select .before {background-position: -129px 0;}
+.month_select .after {background-position: -147px 0;}
+.month_select .this_month {display: inline-block; padding: 0 15px; font-family: Tahoma; font-size: 20px; color: #646464; line-height: 18px}
+
+.month_select .info_reservation {position:absolute;right:0;top:0;}
+.month_select .info_reservation > ul  {float:left}
+.month_select .info_reservation > ul > li {float: left; margin:0 0 0 12px; font-size: 11px; line-height: 21px}
+@ media screen and (-webkit-min-device-pixel-ratio:0){
+	.month_select .info_reservation > ul > li {line-height: 16px}
+}
+.month_select .info_reservation > ul > li  span {display: inline-block;*display:inline;*zoom:1;width: 5px;height: 7px;margin:0 3px 0 0;background: url('http://image1.hanatour.com/_images/pk/ico_pk.png') no-repeat;vertical-align: middle}
+.month_select .info_reservation > ul > li.start_imt {color: #F63D8B}
+.month_select .info_reservation > ul > li.start_imt span{background-position: 0 0}
+.month_select .info_reservation > ul > li.res_imt {color: #3789DB}
+.month_select .info_reservation > ul > li.res_imt span{background-position: -9px 0}
+.month_select .info_reservation > ul > li.res_end {color: #AAA}
+.month_select .info_reservation > ul > li.res_end span{background-position: -18px 0}
+.month_select .info_reservation .qs_layer {position:relative;float:left;margin:2px 0 0 3px}
+.month_select .info_reservation .qs_layer a {display: inline-block;*display:inline;*zoom:1;width:13px; height:13px;background:url('http://image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat; font-size:0; background-position:-50px -93px; line-height:0;zoom:1; }
+.month_select .info_reservation .qs_layer a:hover {background-position:-50px -70px;}
+.month_select .info_reservation .qs_layer .laypop_txt {display:none;position:absolute;top: 24px;right:-17px;width:285px;padding: 10px 15px 10px 15px;background-color:#fff;border:2px solid #6d7588;font-size:12px;text-align:left;z-index:100;}
+.month_select .info_reservation .qs_layer:hover .laypop_txt {display:block}
+.month_select .info_reservation .qs_layer .laypop_txt .blut{position:absolute;top: -7px;left:289px;width:9px;height:7px;background:url('http://image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat -52px -168px;}
+.month_select .info_reservation .qs_layer .laypop_txt ul {}
+.month_select .info_reservation .qs_layer .laypop_txt ul li {vertical-align:middle;position:relative;clear:both;padding:0;color:#535353;line-height:18px;overflow:hidden;font-family:'Nanum Gothic' , 'Malgun Gothic' , 'Dotum' , 'Apple SD Gothic Neo', Helvetica, Sans-serif;}
+.month_select .info_reservation .qs_layer .laypop_txt ul li > em {float:left;} 
+.month_select .info_reservation .qs_layer .laypop_txt ul li span {float:left;margin-left:2px}
+.month_select .info_reservation .qs_layer .laypop_txt ul li span em {margin:0 0 0 4px;color:black} 
+.month_select .info_reservation .qs_layer .laypop_txt ul li p {float:right;text-align:left;width:216px}
+.month_select .info_reservation .qs_layer .laypop_txt ul li.start_imt span {color: #F63D8B}
+.month_select .info_reservation .qs_layer .laypop_txt ul li.res_imt span {color: #3789DB}
+.month_select .info_reservation .qs_layer .laypop_txt ul li.res_end span {color: #AAA}
+/*pk11001 ¿ë*/
+.info_reservation.type02 {top:-10px;}
+.info_reservation.type02 .qs_layer .laypop_txt {left:-160px}
+.info_reservation.type02 .qs_layer .laypop_txt .blut {left:159px;}
+
+
+/*
+.month_select ul {position: absolute; top: 0; right: 0; margin-top: 7px; overflow: hidden;}
+.month_select ul li {float: left; margin-right: 12px; font-size: 11px; line-height: 16px}
+.month_select ul li.start_imt {color: #F63D8B}
+.month_select ul li.res_imt {color: #3789DB}
+.month_select ul li.res_end {color: #AAAAAA;}
+.month_select ul li span {display: inline-block; width: 5px; height: 7px; margin-right: 3px; background: url('http://image1.hanatour.com/_images/pk/ico_pk.png') no-repeat; vertical-align: middle}
+.month_select ul li.start_imt span {background-position: 0 0}
+.month_select ul li.res_imt span {background-position: -9px 0}
+.month_select ul li.res_end span {background-position: -18px 0}
+*/
+
+
+.table_calendar {margin-bottom: 3px; border-top: 1px solid #5D626E;}
+.table_calendar th:first-child {border-left: 1px solid #5D626E}
+.table_calendar th {width:3%;height: 19px; padding-top: 2px; border-right: 1px solid #5D626E; border-bottom: 1px solid #5D626E; font-weight: normal; background-color: #737987; color: #fff; text-align: center;}
+.table_calendar th.sat {background-color: #9CABCA; color: #CED5E5;}
+.table_calendar th.sun {background-color: #E87EA6; color: #F4BFD3;}
+.table_calendar td:first-child {border-left: 1px solid #D5D5D5}
+.table_calendar td {position: relative; height: 21px; padding-top: 4px; border-right: 1px solid #D5D5D5; border-bottom: 1px solid #D5D5D5;  text-align: center; color: #646464; vertical-align: top;}
+.table_calendar td del {color: #BFBFBF;}
+.table_calendar td a {display: block;  font-weight: bold;}
+.table_calendar td a:hover {text-decoration: none}
+.table_calendar td a.start_imt {position: relative; color: #F63D8B; vertical-align: top}
+.table_calendar td a.res_imt {position: relative; color: #3789DB;}
+.table_calendar td a.res_end {color: #AAAAAA;}
+
+.table_calendar td a .select {display: block; position: absolute; left: -1px; bottom: -5px; *bottom: -4px; width: 100%; height: 45px; border: 2px solid #F63D8B}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+.table_calendar td a .select {bottom: -6px}
+}
+
+
+.table_startday {border-bottom: 1px solid #BFBFBF; font-size: 12px;}
+.table_startday th ,
+.table_startday td {padding: 2px 0;}
+.table_startday th {height: 20px; border-top: 1px solid #5D626E; border-bottom: 1px solid #5D626E; border-right: 1px solid #626775; font-size:11px; font-weight: normal; background-color: #737987; color: #FFF; text-align: center}
+.table_startday th:first-child {border-left: 1px solid #5D626E}
+.table_startday th a {font-weight: normal; color: #FFF;}
+.table_startday th a:hover {text-decoration: none}
+.table_startday th a .ico_down {display: inline-block; width: 13px; height: 13px; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat 5px -89px; *background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat 5px -92px;}
+.table_startday th a .ico_up {display: inline-block; margin-left: 4px; width: 6px; height: 6px; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -7px -95px; }
+.table_startday th a .ico_sort_down {display: inline-block; width: 13px; height: 13px; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -34px -71px; *background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -34px -74px;}
+.table_startday th a .ico_sort_up {display: inline-block; width: 13px; height: 13px; background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -13px -71px; *background: url('http://image1.hanatour.com/_images/pk/btn_pk.png') no-repeat -13px -74px;}
+.table_startday td {border-right: 1px solid #D5D5D5; color: #646464}
+.table_startday td:first-child {border-left: 1px solid #D5D5D5}
+.table_startday td.check ,
+.table_startday td.period {text-align: center}
+.table_startday td.airline,
+.table_startday td.label,
+.table_startday td.state {font-size: 11px; text-align: center}
+.table_startday td.check input {margin: 0}
+.table_startday .bg_gray {background-color: #F8F8F8;}
+.table_startday td.round span {margin-left: 5px}
+.table_startday td.round .depart_date {display: block; color: #F63D8B; clear: both;}
+.table_startday td.round .arrive_date {display: block; }
+.table_startday td.label .pack_class {padding: 3px; font-size: 11px; background-color: #FF905C; color: #FFF; letter-spacing: -1px}
+.table_startday td.label .pack_casual {padding: 3px; font-size: 11px; background-color: #8BBF43; color: #FFF; letter-spacing: -1px}
+.table_startday td.airline {font-size: 11px;}
+.table_startday td.airline img {margin: 5px 0}
+.table_startday td.product a {margin-left: 5px; color: #646464; letter-spacing: -1px}
+.table_startday td.price {text-align: right}
+.table_startday td.price strong {margin-right: 5px}
+.table_startday td .start_imt {color: #F63D8B; letter-spacing: -1px;}
+.table_startday td .res_imt {color: #3789DB; letter-spacing: -1px;}
+.table_startday td .res_end {color: #AAAAAA; letter-spacing: -1px;}
+
+.sort_select {overflow: hidden; margin: 5px 0 5px}
+.sort_select .grade_list {float: left; bottom:3px;}
+.sort_select .grade_list li {margin-bottom: 1px}
+.sort_select .grade_list li img {vertical-align: middle}
+.sort_select .comparePkg {float: right; margin-top: 6px; margin-right: 5px}
+.sort_select .num-view {float: right; margin-top: 3px}
+
+.master_product {zoom: 1; position: relative; z-index: 10; padding-bottom: 3px; margin-bottom: 13px; border-top: 2px solid #F63F8D; background: url('http://image1.hanatour.com/_images/pk/bg_master_bottom.gif') repeat-x 0 bottom}
+.master_product:after {content:""; display: block; clear: both; visibility: hidden; width:0; height: 0;}
+.master_product .thumb_img {float: left; position: relative}
+.master_product .thumb_img .btn_gallery {display: block; position: absolute; right: 0; top: 162px; width: 55px; height: 22px; background:url('http://image1.hanatour.com/2010/images/oversea/btn_pk.png') no-repeat}
+.master_product .thumb_img .btn_gallery.on {background-position:  -179px -32px;}
+.master_product .thumb_img .btn_gallery.off {background-position:  -179px -54px;}
+
+
+.master_product .master_content {float: left; width: 619px; height: 184px; padding: 0 15px; border-right: 1px solid #BFBFBF; }
+.master_product .master_content .master_info {display: inline-block; margin: 16px 0 12px 0; text-decoration: none}
+.master_product .master_content .master_info .p_name {display: block; overflow: hidden; height: 80px}
+.master_product .master_content .master_info .p_name .icon {display: inline-block; float: left; margin-top: 2px}
+.master_product .master_content .master_info .title {float: left; margin: 0 5px 0 10px; font-size: 14px; color: #424242; line-height: 18px; background-color:white;}
+.master_product .master_content .master_info .p_info {display: inline-block; overflow: hidden; height: 48px; width: 100%; margin-top: 10px; font-size: 12px; line-height: 16px; letter-spacing: -1px}
+.master_product .master_content .master_list {overflow: hidden; width: 620px; margin: 0 auto ; padding-top: 13px; border-top: 1px solid #E4E4E4}
+.master_product .master_content .master_list li {float: left; overflow: hidden; height: 14px; margin: 4px 0; margin-top: 2px; padding-left: 5px; background: url('http://image1.hanatour.com/freestyle/bul_dot.png') no-repeat 0 6px; line-height: 16px;}
+.master_product .master_content .master_list li.qu_subtitle_45 {width: 45%; }
+.master_product .master_content .master_list li.qu_subtitle_100 {width: 100%; }
+.master_product .master_content .master_list li strong {display: block; float: left; width: 52px; height: 15px; margin-top: 2px; background: url('http://image1.hanatour.com/2010/images/oversea/txt_pk.png') no-repeat; text-indent: -9999px}
+.master_product .master_content .master_list .txt_price {background-position: -310px 0;}
+.master_product .master_content .master_list .txt_date {background-position: -310px -36px;}
+.master_product .master_content .master_list .txt_country {background-position: -310px -12px;}
+.master_product .master_content .master_list .txt_departure {background-position: -310px -48px;}
+.master_product .master_content .master_list .txt_airline {background-position: -310px -24px;}
+
+
+
+
+/* freesyle.css º¹»ç */
+.page-number_freestyle {position: relative; width: 100%; height: 25px; margin: 25px 0 88px; text-align: center}
+.page-number_freestyle .pagination {width: 500px; margin: 0 auto; text-align: center}
+.page-number_freestyle .pagination .caption,
+.page-number_freestyle .pagination .direction span {overflow: hidden; position: absolute; height: 0; width: 0; font-size: 0; line-height: 0; visibility: hidden;}
+.page-number_freestyle .pagination .direction {display: inline-block; width: 26px; height: 25px; background: url('http://image1.hanatour.com/freestyle/img_guidebook.png') no-repeat 0 -366px;}
+.page-number_freestyle .pagination .direction.prev-end {background-position: 0 -366px; margin-right: 4px; }
+.page-number_freestyle .pagination .direction.prev {background-position: -30px -366px; margin-right: 4px; }
+.page-number_freestyle .pagination .direction.next {background-position: -60px -366px; margin-left: 4px; }
+.page-number_freestyle .pagination .direction.next-end {background-position: -90px -366px;  margin-left: 4px;}
+.page-number_freestyle .pagination span a {display: inline-block; margin: 0 2px; height: 23px; width: 26px; border-top: 1px solid #D5D5D5; border-left: 1px solid #D5D5D5; border-right: 1px solid #BFBFBF; border-bottom: 1px solid #BFBFBF; vertical-align: top; line-height: 24px}
+.page-number_freestyle .pagination span a:hover ,
+.page-number_freestyle .pagination .select a {font-weight: bold; border-top: 1px solid #5390BC; border-left: 1px solid #5390BC; border-right: 1px solid #4A80A6; border-bottom: 1px solid #4A80A6; background-color: #5EA5D3; color: #FFF; text-decoration: none}
+
+.page-number_freestyle.type_red .pagination span a:hover ,
+.page-number_freestyle.type_red .pagination .select a {font-weight: bold; border-top: 1px solid #D9367A; border-left: 1px solid #D9367A; border-right: 1px solid #BF306C; border-bottom: 1px solid #BF306C; background-color: #F63D8B; color: #FFF; text-decoration: none}

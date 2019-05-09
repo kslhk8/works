@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+#faq_container{
+	/* border: 1px solid black; */
+	position: absolute;
+	width: 1064px;
+	height: 648px;/*높이 고정안되나?? : 된다*/
+	margin: 0 auto;
+	padding-bottom: 60px;
+}
+
+#faq_head{
+	/* border: 1px dashed black; */
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 15px; 
+}
+#faq_head > p{
+	text-align: left;
+	font-size: 20px;
+    font-weight: 600;
+	/* font-weight: bold; */
+	/* background-color: #4d4d4d;
+	font: #fff; */
+}
+
+
+
+
+#faq_category{
+	/* border: 1px solid red; */
+	position: relative;
+	
+	width: 1064px;
+	height: 513px;
+}
+
+
+
+
+
+
+
+#faq_category_index{
+	/* border: 2px solid green; */
+	position: absolute;
+	width: 200px;
+	height: 513px;
+	/* background-color:  */
+}
+#faq_category_indexTitle{
+	position: absolute;
+	top: 0;
+	width: 180px;
+	left: 0;
+	/* margin-top: 0px;
+	margin-left: 0px; */
+	height: 32px;
+	background-color: #6d7588;
+}
+#faq_category_indexTitle > p{
+	margin-top: 6px;
+	margin-left: 12px;
+	margin-bottom: 6px;
+	font: bold 15px Tahoma, Arial;
+	color: #ffffff;
+}
+#faq_category_ul{
+	/* border: 1px dashed blue; */
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	width: 178px;
+	height: 477px;
+	list-style: none;
+}
+#faq_category_ul>li>a{
+	text-decoration: none;
+	/* font: 10px Tahoma, Arial; */ 
+}
+#faq_category_ul>li>a:link {
+	color: #4d4d4d;
+}
+#faq_category_ul>li>a:visited {
+	color: #4d4d4d;
+}
+#faq_category_ul>li {
+	/* border: 1px red dashed; */
+	margin-top: 8px;
+	margin-left: 12px;
+	/* font-family: 10px Tahoma, Arial; */ /* Tahoma, Arial */
+	font: 15px Tahoma, Arial;
+}
+/* .hover_pink{
+	font: bold;
+	color: #e85591;
+} */
+.hover_img{
+	/* border: 1px blue blue; */
+	right: 20px;
+}
+
+/*faq_conts*/
+
+#faq_conts{
+	/* border: 1px solid orange; */
+	position: absolute;/*이거 없어지면 완전 대박 망가지는 거였다 ㄷㄷ소오름*/
+	top: 0px;
+	left: 201px;
+	width: 858px;
+	height: 502px; 
+}

@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+#faq_conts_head{
+	/* border: 2px indigo dashed; */
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+}
+#faq_search_div{
+	/* border: 2px sienna solid; */
+	position: absolute;
+	top: 0px;
+	left: 500px;
+	/* right: 0px; */
+	width: 360px;
+	hegith: 30px;
+}
+#total_span{
+	/* border: 1px red solid; */
+	font: bold 13px Tahoma, Arial ;
+}
+
+#faq_search_subDiv1{
+	/* border: 1px solid yellow; */
+	display: inline-block;
+	position: absolute;
+	float: left;
+	top: 2px;
+	width: 180px;
+	height: 30px;
+}
+#faq_search_subDiv2{
+	/* border: 1px dashed blue; */
+	display: inline-block;
+	position: absolute;
+	float: none;
+	top: 0px;
+	left: 180px;
+	width:95px;
+	height: 30px;
+}
+
+#faq_search_subDiv3{
+	/* border: 1px solid red; */
+	display: inline-block;
+	position: absolute;
+	float: none;
+	top: 0px;
+	left: 275px;
+	width: 80px;
+	height: 30px;
+}
+#faq_search_ip{
+	top: 0px;
+	width: 167px;
+	height: 28px;
+	font: 13px Tahoma, Arial;
+} 
+
+#faq_search_bt{
+	position: absolute;
+	border: none;
+	background: none;
+	paadding: 0;
+	left: 196px;
+}
+#faq_wirte_bt{
+	position: absolute;
+	border: none;
+	background: none;
+	paadding: 0;
+	/* left: 276px; */
+}
+#faq_search_img{
+	cursor: pointer;
+}
+#faq_write_img{
+	cursor: pointer;
+}
+
+
+#faq_summary_div{
+	/* border: 1px blue dashed; */
+	position: relative;
+	height: 80px;
+}
+#faq_summayT{
+	border-collapse: collapse;
+	border-top: 1px solid #d5d5d5;
+}
+#faq_summaryT td{
+	border: 0.5px solid #d5d5d5;
+	width:214px;
+	height: 30px;
+	top: 10px;
+	font: 15px Tahoma, Arial;
+	text-align: center;
+}
+
+
+#faq_cont_faqList_div{
+	/* border: 1px crimson solid; */
+	position: relative;
+}
+#faqListT{
+	border-collapse: collapse;
+}
+#faqListT td{
+	border-top: 0.5px solid #d5d5d5;
+	border-bottom: 0.5px solid #d5d5d5;
+	width: 858px;
+	height: 20px;
+	top: 10px;
+	font: 15px Tahoma, Arial;
+	text-align: left;
+	padding: 15px;
+}
+tr.ot_subject{
+	cursor: pointer;
+	font: 15px Tahoma, Arial;
+}
+tr.ot_content{
+	font: 15px Tahoma, Arial;
+}
+
+
+
+

@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+#notice_listT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588;
+	width: 1064px;
+}
+
+#notice_listT td{
+	border: 1px solid #c6c6c6;
+}
+.notice_list_col td{
+	background-color: #f2f2f2;
+	font: bold 15px Tahoma, Arial ;
+	text-align: center;
+	height: 40px;
+}
+#notice_listT>tr>td{
+	font: 15px Tahoma, Arial ;
+	
+}
+

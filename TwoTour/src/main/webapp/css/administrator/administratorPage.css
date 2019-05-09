@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+*{
+margin: 0;
+padding: 0;
+font-family:'Nanum Gothic' , 
+			'Malgun Gothic' , 
+			'Dotum', 
+			'Apple SD Gothic Neo', 
+			Helvetica, 
+			Sans-serif;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	font-size: 11px;
+	/* line-height: 1.5em; */
+	color: #808080;
+}
+
+input, textarea, select {
+		font-size: 11px;
+		line-height: 1.5em;
+		font-family: "돋움", Dotum, "굴림", Gulim, Arial, AppleGothic, "애플고딕", sans-serif;
+		color: #666666;
+}
+
+
+img{
+	 vertical-align:top; 
+}
+
+table{
+	border-collapse: collapse;
+	empty-cells:show;
+}
+
+
+#administratorPage_wrap01 {position:absolute;top:180px;left:50px;}
+
+#administratorPage_contents {position:absolute;left:180px;width:800px; height:1200px; border-left:1px solid #e4e4e4; }
+
+#administratorPage_left_menu {width:170px; font-style:'Nanum Gothic'; position:absolute; left:-40px; top:10px; }
+#administratorPage_left_menu h4 {display:block;width:170px;border-bottom: 1px solid #252525; color:#252525; font-size:20px;font-weight:600;padding:0 0 6px 10px; }
+#administratorPage_left_menu .administrator_menu_list  {width: 168px; padding:10px 0 0 0;}
+#administratorPage_left_menu li {font-size:13px;}
+#administratorPage_left_menu .administrator_menu_list > li > a{display:block; text-decoration:none;color:#424242;font-weight:600;line-height:32px; border-bottom: 1px solid #e4e4e4; padding: 0 0 0 15px; }
+#administratorPage_left_menu .administrator_menu_list > li > a:hover{color:#b9025c;text-decoration:none;}
+#administratorPage_left_menu .administrator_menu_list > li.depth2 > a {background:url(//image1.hanatour.com/common/lnb/LNB_2depth_off.gif) no-repeat 145px 50%; }
+#administratorPage_left_menu .administrator_menu_list > li.depth2.open > a {color:#b9025c;background: url(//image1.hanatour.com/common/lnb/LNB_2depth_on.gif) no-repeat 145px 50%;}
+#administratorPage_left_menu .administrator_menu_list > li.depth2.open > ul { display:block;}
+#administratorPage_left_menu .administrator_menu_list > li.depth2.open > ul a:hover{text-decoration:underline;color:#b9025c; }
+#administratorPage_left_menu .administrator_menu_list > li.depth2> ul {display:none; padding: 10px 0 60px 0; border-bottom: 1px solid #e4e4e4; }
+#administratorPage_left_menu .administrator_menu_list > li > ul > li a{font-style:'Nanum Gothic';text-decoration:none;font-size:12px;line-height:17px; padding: 2px 0 2px 17px; display: block;color: #252525;}
+
+#administratorPage_left_menu .administrator_menu_list > li.one > ul  {padding: 10px 0 55px 0;}
+#administratorPage_left_menu .administrator_menu_list > li.two > ul  {padding: 10px 0 80px 0;}
+#administratorPage_left_menu .administrator_menu_list > li.three > ul {padding: 10px 0 30px 0;}
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

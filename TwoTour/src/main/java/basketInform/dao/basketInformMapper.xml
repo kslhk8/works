@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="basketInformSQL">
+	<insert id="insertBasketInform" parameterType="java.util.Map">
+		insert into basketinform values(#{id},#{product_name},#{depart_date},
+		#{adult_price},#{teen_price},#{baby_price},#{search},basket_seq.nextval)
+	</insert>
+	<select id="getBasketInformList" parameterType="String" resultType="basketInform">
+		select * from basketinform where id=#{id}
+	</select>
+	
+	<update id="deleteBasketList" parameterType="int" >
+		delete basketinform where seq=#{basket_seq}
+	</update>
+	
+ </mapper>

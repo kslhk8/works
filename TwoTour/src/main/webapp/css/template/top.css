@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+
+/* 전체 */
+*{ margin:0; padding:0; }
+
+body{ font:30px "Lucida Grande", Georgia, Arial, Verdana; }
+
+a:link{ text-decoration:none; }
+
+ul{ margin:0; padding:0; height:43px; }
+
+#header{ width:100%; position:absolute; top:0; }
+
+
+
+
+/* 제일 위쪽 리스트 */
+ #top_div_wrap{ background-color:rgb(246,246,246); 
+		   position:relative; border:1px solid rgb(192,192,192); 
+		   height:37px; }
+
+#top_div_First { right:50px; display:inline-block;
+			  	 position:absolute; }
+
+
+#top_ul_First li{ display:inline-block;  list-style:none;
+			   	  font:12px Tahoma, Arial; }
+
+#top_ul_First li a{ padding:5px 10px; text-decoration:none;
+				 	width:70px; color:black; text-transform:uppercase;
+				 	white-space:nowrap; text-align:center; }
+
+#top_ul_First li ul{ margin:3px 0 0 0; padding:10px 0;
+				  	position:absolute; visibility:hidden;
+				 	 width:auto; border:1px solid rgb(192,192,192);
+				  	overflow:visible; height:auto;
+				  	list-style-position:outside; 
+				  	background-color:white; }
+
+#top_ul_First li ul li{ font:11px Tahoma, Arial;
+					 display:block; margin:5px 0; list-style:none; }
+
+#top_ul_First li ul li a{ width:auto; font-size:10px;
+					   padding:3px 10px; }
+
+#top_ul_First li ul li a:hover{ padding:3px 10px; }
+
+#top select{ background-color:rgb(246,246,246); 
+			 border:1px solid rgb(192,192,192); } 
+			 
+/* ul#top_ul_First{  
+   border: 1px black dashed; 
+   margin-left: -41px;   
+}
+
+ul#top_ul_First li{
+   border: 1px red dashed;
+   float:left;
+   list-style: none;
+   margin-right: 0.5em;
+   background-color: #DDD;
+   padding: 0 0.25em;
+   font:12px Tahoma, Arial;
+}
+ul#top_ul_First li li{
+   border: 1px pink dashed;
+   float: none;
+   margin-left: -44px;
+    margin-top: 3px;
+    font:11px Tahoma, Arial;
+    margin: 1px 0 0 0;
+    padding: 5px;
+    background-color: #FFF;
+}
+ul#top_ul_First li li: first-child{
+    margin-top: 2px;
+}
+ul#top_ul_First ul{
+   display: none;
+   position: absolute;//이걸하면 일반 방향과 다른 절대 위치에 배치 - 최적화문제 해결
+   
+} 
+#top_div_wrap{ 
+   background-color:rgb(246,246,246); 
+   position:relative; 
+   border:1px solid rgb(192,192,192); 
+   height:37px; 
+}
+#top_div_First { 
+   right:50px;//relative를 기준으로 오른쪽으로 50px만큼만 떨어져 있겠다.
+   //display:inline-block;
+   position:absolute; 
+}
+
+#top_ul_First li a{ 
+   padding:5px 10px; 
+   text-decoration:none;
+   width:70px; 
+   color:black; 
+   //text-transform:uppercase;//이건 왜했지??
+   //white-space:nowrap;//해야할까?
+   text-align:center; 
+}
+
+#top_ul_First li ul{ 
+   margin: 3px 0 0 0;
+    padding: 10px;
+   background-color:white;
+   border:1px solid rgb(192,192,192);
+   //height:auto; //안줘도 자동으로 잘 잡고 들어온다?!
+   //overflow:visible;//다 잘보여!!
+   //list-style-position:outside;//모르겠다! 
+   //position:absolute; 
+   //visibility:hidden;
+}
+#top select{ 
+   //background-color: rgb(246,246,246);//안바뀜..
+   //border: 1px solid rgb(192,192,192); 
+} */
+
+
+
+
+
+/* 검색창과 로고 */
+#top_div_wrap2{ height:70px; top:7px; position:relative; width:100%; }
+
+#top_div_logo{ display:inline-block;  position:absolute; padding-top:1.5%; 
+		   padding-left:1%; height:65%; width:20%;}
+		  
+#top_div_search{ margin-top:10px; display:inline-block; margin-left:80px; position:absolute;
+		     left:15%; padding-top:7px; padding-left:15px; height:50%; 
+		     width:60%; border:3px solid pink;}
+
+#top_searchBox{ margin-left:10px; height:70%; width:70%; border:none;
+				display:inline-block; }
+
+#img_logo{ display:inline-block; height:100%; margin-left:30px; width:100px;}
+
+#top_img_button{ display:inline-block; float:right; margin-right:10px; 
+		  height:30px; width:30px; cursor:pointer; }
+
+
+
+
+
+
+
+
+
+
+
+
+

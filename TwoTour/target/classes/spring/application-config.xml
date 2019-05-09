@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+    
+    <!-- Uncomment and add your base-package here:
+         <context:component-scan
+            base-package="org.springframework.samples.service"/>  -->
+<tx:annotation-driven transaction-manager="transactionManager"/>
+	<!--  Transaction  자동 AOP? close하는것 -->
+	<bean id="transactionManager" 
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- DataSource ConnectionPool -->
+	<bean id="dataSource" 
+		class="org.apache.commons.dbcp2.BasicDataSource"
+		destroy-method="close"
+		p:driverClassName="oracle.jdbc.driver.OracleDriver"
+		p:url="jdbc:oracle:thin:@localhost:1521:xe"
+		p:username="oxygen"
+		p:password="itbank"
+		p:maxIdle="3"
+		p:maxTotal="20">
+	</bean>
+	
+	<!-- SqlSessionFactory resources가 기본 위치 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:spring/mybatis-config.xml"/>
+		<property name="mapperLocations" value="classpath:*/dao/*.xml"/>
+
+		
+	</bean>
+	
+	<!-- SqlSession -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+	</bean>
+	
+	<context:component-scan base-package="trip.dao"/>
+	<context:component-scan base-package="hotel.dao"/>
+	<context:component-scan base-package="rentCar.dao"/>
+	<context:component-scan base-package="member.dao"/>
+	<context:component-scan base-package="city.dao"/>
+	<context:component-scan base-package="trip.bean"/>
+	<context:component-scan base-package="member.bean"/>
+	<context:component-scan base-package="tripPlan.dao"/>
+	<context:component-scan base-package="maincityInform.dao"/>
+	<context:component-scan base-package="clause.dao"/>
+	<context:component-scan base-package="safetyInform.dao"/>
+	<context:component-scan base-package="travelerInform.dao"/>
+	<context:component-scan base-package="payInform.dao"/>
+	<context:component-scan base-package="reservationInform.dao"/>
+	<context:component-scan base-package="reservationInform.bean"/>
+	<context:component-scan base-package="basketInform.dao"/>
+	<context:component-scan base-package="administrator.dao"/>
+		<context:component-scan base-package="hotel.dao"/>
+				<context:component-scan base-package="productFree.dao"/>
+						<context:component-scan base-package="clientCenter.dao"/>
+		<context:component-scan base-package="clientCenter.bean" />
+	
+	
+</beans>

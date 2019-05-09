@@ -1,0 +1,170 @@
+@charset "UTF-8";
+#reservation_background_div{ 
+	position:absolute; top:170px; height:1300px; width:99.9%;
+	background-color : white;
+	background-repeat:no-repeat; background-size:100% 100%;
+}
+#reservation_top_name{
+	position:relative; left:30px; top:30px; background-color:white; border:1px solid grey; width:900px; padding-top:10px;
+	font:19px Tahoma, Arial;  height:30px; 
+}
+
+#top_name1{
+	position:absolute; text-align:center; padding-left:20px;
+}
+#top_name2{
+	position:absolute; left:300px; font:15px Tahoma, Arial; text-align:center;
+}
+#top_name2>strong{
+	padding-right:50px;
+}
+
+#reservation_content_info{
+	position:relative; top:50px;
+}
+#reservation_item_name{
+	position:absolute; left:30px; top:5px;
+}
+#reservation_item_name_content{
+	position:relative; left:30px; top:25px;
+}
+.reservation_tot_td{
+	height:80px; border:1px solid grey; width:58%; font:16px Tahoma, Arial;
+}
+.reservation_td{
+	height:80px;  border:1px solid grey; width:14%; font:13px Tahoma, Arial; text-align:center;
+}
+
+#reservation_airplane_info{
+	position:relative; left:30px; top:25px; padding-top:5px;width:900px; background-color:#575b66; font:13px Tahoma, Arial; color:white;
+	height:20px; 
+}
+#reservation_airplane_info > ul > li{
+	float:left; list-style:none; border-right: 1px solid black; width:280px; text-align:center;
+}
+#reservation_airplane_info >ul > li > img{
+	height:14px; width:20px;
+}
+#reservation_clause_info{
+	position:absolute; left:30px; top:160px;
+}
+#reservation_clause_content{
+	position:relative; left:30px; top:80px; width:600px; font:13px Tahoma, Arial;
+}
+#reservation_clause_content > ul > li{
+	float:left; list-style:none; border:1px solid grey; width:197px; text-align:center; height:30px; padding-top:15px; cursor:pointer;
+	background-color: rgb(235,235,235);
+}
+#clause_content{
+		position:absolute; left:30px; top:226px;font:13px Tahoma, Arial;width:900px; text-align:left;
+}
+#clause_content_accept{
+	position:relative; left:675px; font:13px Tahoma, Arial;
+}
+#clause_content1{
+			visibility:hidden;position:absolute; left:30px; top:226px;font:13px Tahoma, Arial;width:900px; text-align:left;
+}
+#clause_content_accept1{
+	position:relative; left:675px; font:13px Tahoma, Arial;
+}
+#clause_content2{
+			visibility:hidden;position:absolute; left:30px; top:226px;font:13px Tahoma, Arial;width:900px; text-align:left;
+}
+#clause_content_accept2{
+		position:relative; left:675px; font:13px Tahoma, Arial;
+}
+#reservation_member_info{
+	position:absolute; top:420px; left:30px;
+}
+#reservation_member_notice{
+	position:relative; top:10px; font:13px Tahoma, Arial;
+}
+#reservation_member_notice > strong{
+	margin-right:588px; color:black;
+}
+#member_info_div{
+	position:relative; top:320px; left:30px;
+}
+.member_info_td{
+	height:33px; width:15%; font:13px Tahoma, Arial; color:black;padding-left:15px; border:1px solid grey; background-color:rgb(240,240,240);
+} 
+.member_content_td{
+	height:33px; width:35%; font:12px Tahoma, Arial; padding-left:15px; border:1px solid grey;
+}
+.member_content_td > input[type=text]{
+	width:60px;
+}
+.member_content1_td >input[type=text]{
+	width:280px;
+}
+.member_info1_td{
+		height:13px; width:15%; font:13px Tahoma, Arial; color:black;padding-left:15px; border:1px solid grey; background-color:rgb(240,240,240);
+}
+.member_content1_td{
+	height:13px; width:35%; font:12px Tahoma, Arial; padding-left:15px; border:1px solid grey;
+	
+}
+#trip_member_info{
+	position:relative; top:336px; left:30px; border:1px solid grey; width:900px; height:64px; color:black; font:12px Tahoma, Arial; 
+}
+#trip_member_info > span{
+	position: absolute;
+}
+#trip_member_info > span > label{
+	position:absolute; top:15px; width:150px; font:12px Tahoma, Arial; text-align:center;
+}
+#trip_member_table{
+	position:relative; left:30px; top:340px;
+}
+
+
+.member_table_tr > th{
+	 font:11px Tahoma, Arial; height:34px; border:1px solid grey; color:black;
+}
+.member_table_tr > td{
+	font:11px Tahoma, Arial; height:40px; text-align:center; border:1px solid grey;
+}
+#member_table_tr > td > input[type="text"]{
+	height:20px;
+}
+.member_passport_tr > td{
+		font:11px Tahoma, Arial; height:40px; border:1px solid grey;
+	
+}
+
+.member_passport_tr > td > ul>li{
+	float:left; width:200px; list-style:none; padding-left:40px; padding-top:12px; color:black;
+}
+#check_value{
+	position:relative; top:360px; left:30px; text-align:center; width:900px;font:11px Tahoma, Arial; color:rgb(241, 84, 155);
+}
+#pay_select{
+	position:relative; top:370px; left:30px; width:900px; display:inline-block;
+}
+#pay_select > img{
+	display:inline-block; border:1px solid grey; float:left; padding-left:16px;
+}
+#pay_select > p{
+	border: 1px solid grey; width:590px;  float:left; display:inline-block; text-align:left; padding-top:18px; 
+	padding-left:10px; height:52px; font:12px Ta7homa, Arial;
+}
+#pay_select > p > #do_reservation{
+	position:absolute; width:95px; height:24px;  padding-top:8px;
+	font:12px Tahoma, Arial; background-color:white; border:1px solid grey; right:112px; text-align:center; color:black; cursor:pointer
+}
+#pay_select > p > #do_pay{
+	position:absolute; width:95px; right:7px; padding-top:8px;
+	font:12px Tahoma, Arial; height:24px; background-color:#EC008C; border:1px solid grey; color:white; text-align:center; cursor:pointer;
+	 
+}
+#do_pay_check{
+	visibility:hidden; position:absolute; width:300px; height:100px; border:1px solid red; top:680px; left:300px; text-align:center; padding-top:15px; color:black; border:1px solid #EC008C; 
+}
+#do_pay_finish{
+	position:absolute; width:95px; right:7px; padding-top:8px;  top:60px; left:155px;
+	font:12px Tahoma, Arial; height:24px; background-color:#EC008C; border:1px solid grey; color:white; text-align:center; cursor:pointer;
+}
+#do_modify{
+	position:absolute; width:95px; height:24px;  padding-top:8px; top:60px; left:45px;
+	font:12px Tahoma, Arial; background-color:white; border:1px solid grey; text-align:center; color:black; cursor:pointer
+}

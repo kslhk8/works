@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="productFreeSQL">
+
+<!-- 항공 목록 -->
+	<select id="getAirplaneSchedule" parameterType='java.util.Map' resultType='airplaneDTO'>
+		select * from AIRPLANEINFORM_TEMP 
+	</select>
+<!-- 항공목록: 편도 -->
+	<select id="getAirplaneScheduleUni" parameterType='java.util.Map' resultType='airplaneDTO' >
+		select * from AIRPLANEINFORM_TEMP 
+		where depart_city like #{depart_city}||'%' 
+		and depart_date=#{depart_date} 
+		and arrive_city like #{arrive_city}||'%'
+		order by airplane_name asc, ADULT_COST asc, DEPART_TIME asc
+	</select>
+<!-- 항공목록: 왕복 -->
+	<select id="getAirplaneScheduleReTurn" parameterType='java.util.Map' resultType='airplaneDTO' >		
+		select * from AIRPLANEINFORM_TEMP where (
+			depart_city like #{depart_city}||'%' 
+			and depart_date=#{depart_date}  
+			and arrive_city like #{arrive_city}||'%'
+			) or  (
+			depart_city like #{arrive_city}||'%' 
+			and depart_date=#{return_date} 
+			and arrive_city like #{depart_city}||'%'
+		) order by depart_time asc
+		
+	</select>
+	
+<!-- 항공 1편 -->
+	<select id="getOneAirplaneSchedule" parameterType='java.util.Map' resultType='airplaneDTO' >
+		select * from AIRPLANEINFORM_TEMP where
+			airplane_code=#{airplane_code}
+			and depart_city like #{depart_city}||'%' 
+			and depart_date=#{depart_date}  
+			and depart_time=#{depart_time}
+			and arrive_city like #{arrive_city}||'%'
+	</select>	
+	
+	<select id="getDepart_airplane" parameterType="java.util.Map" resultType="airplaneDTO">
+	select airplane_name,airplane_code,imagename,depart_city,to_char(to_date(depart_date), 'YYYY"년" MM"월" DD"일"') as depart_date,depart_time,depart_day,arrive_city,to_char(to_date(arrive_date), 'YYYY"년" MM"월" DD"일"') as arrive_date,arrive_time,arrive_day,totalTime from airplaneinform where airplane_code=#{depart_code} and depart_date=#{depart_date}
+		</select>
+		
+		<select id="getArrive_airplane" parameterType="java.util.Map" resultType="airplaneDTO">
+	select airplane_name,airplane_code,imagename,depart_city,to_char(to_date(depart_date), 'YYYY"년" MM"월" DD"일"') as depart_date,depart_time,depart_day,arrive_city,to_char(to_date(arrive_date), 'YYYY"년" MM"월" DD"일"') as arrive_date,arrive_time,arrive_day,totalTime from airplaneinform where airplane_code=#{arrive_code} and arrive_date=#{arrive_date}
+		</select>
+
+</mapper>

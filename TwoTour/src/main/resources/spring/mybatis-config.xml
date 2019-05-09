@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="member.bean.MemberDTO" alias="member"/>
+		<typeAlias type="trip.bean.TripDTO" alias="trip"/>
+		<typeAlias type="productFree.bean.AirplaneDTO" alias="airplaneDTO"/>
+		<typeAlias type="rentCar.bean.RentCarDTO" alias="rentCar"/>
+		<typeAlias type="hotel.bean.HotelDTO" alias="hotel"/>
+		<typeAlias type="trip.bean.PackageTripDTO" alias="packageTrip"/>
+		<typeAlias type="city.bean.CityDTO" alias="city"/>
+		<typeAlias type="tripPlan.bean.TripPlanDTO" alias="tripPlan"/>
+		<typeAlias type="maincityInform.bean.MaincityInformDTO" alias="maincityInform"/>
+		<typeAlias type="clause.bean.ClauseDTO" alias="clause"/>
+		<typeAlias type="safetyInform.bean.SafetyInformDTO" alias="safetyInform"/>
+		<typeAlias type="travelerInform.bean.TravelerInformDTO" alias="travelerInform"/>
+		<typeAlias type="payInform.bean.PayInformDTO" alias="payInform"/>
+		<typeAlias type="reservationInform.bean.ReservationInformDTO" alias="reservationInform"/>
+		<typeAlias type="basketInform.bean.BasketInformDTO" alias="basketInform"/>
+		<typeAlias type="recentViewProduct.bean.RecentViewProductDTO" alias="recentViewProduct"/>
+		<typeAlias type="hotel.bean.HotelDTO" alias="hotel"/>
+		
+		<typeAlias type='clientCenter.bean.FaqDTO' alias='faqDTO' />
+		<typeAlias type='clientCenter.bean.SummaryDTO' alias='summaryDTO'/>
+		<typeAlias type='clientCenter.bean.NoticeDTO' alias='noticeDTO'/>
+		<typeAlias type='clientCenter.bean.ConsultDTO' alias='consultDTO'/>
+		<typeAlias type='clientCenter.bean.ClientBoardDTO' alias='clientboardDTO'/>
+		
+	</typeAliases>
+	<!-- <mappers>
+		<mapper resource="user/dao/userMapper.xml" />
+	</mappers> applicationContext.xml에서 대체 할 수 있다. -->
+</configuration>
+
+
+
+
+
+
+
+
+  

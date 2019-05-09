@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+#writeForm_background_div{ 
+	position:absolute; top:150px; height:1150px; width:99.9%;
+	background-color : rgb(245,245,245);
+	background-repeat:no-repeat; background-size:100% 100%;
+}
+
+
+
+
+
+/* 해외여행 패키지 */
+#writeform_text_wrap{ position:relative; width:100%; height:200px; text-align:center; right:60px;
+							display:inline-block; padding:20px 50px; font-size:20px; }
+#writeForm_inform_wrap{ background-color:white;
+	 position:relative; width:979px; height:1100px; text-align:center; bottom:100px;
+							display:inline-block; padding:30px 50px;
+}			
+#text_1{
+	font:33px Tahoma, Arial;
+}
+#text_2{
+	font:14px Tahoma, Arial; font-weight:bold;
+}
+#text_3{
+	font:12px Tahoma, Arial;
+}
+
+#writeForm_inform_box{
+	position:relative; width:1080px; height:85px; display:inline-block; right:50px;
+	bottom:30px;
+}
+#writeForm_inform_box1{
+	position:absolute; height:50px; display:inline-block; width:530px;
+	 background-color: rgb(235,235,235); cursor:pointer; padding-top:25px; padding-right:5px;
+	color:black; font:20px Tahoma, Arial; font-weight:bold;  left:0px;
+}
+#writeForm_inform_box2{
+	position:absolute; height:50px; display:inline-block; width:517px;
+	background-color:rgb(241, 84, 155); padding-right:30px;  right:1px; cursor:pointer; text-align:center;
+	 color:white; font:20px Tahoma, Arial;  padding-top:25px; font-weight:bold;
+}
+
+#writeForm_inform_table{
+	font:20px Tahoma, Arial;
+	position:relative; width:1077px; height:395px; display:inline-block; right:50px;
+}
+#writeForm_terms_table{
+	font:20px Tahoma, Arial;
+	position:relative; width:1077px; height:645px; display:inline-block; right:50px; 
+}
+#table_name_wrap{
+	position:absolute; width:1077px; height:65px; border:1px solid rgb(240,240,240);
+}
+#table_name{
+	position:absolute; width:72px; height:42px; background-color:rgb(242,242,242); display:inline-block;
+	left:1px; padding-top:22px;  font:13px Tahoma, Arial; font-weight:bold; padding-right:48px; 
+}
+#table_name_content{
+	position:absolute; width:160px; height:41px; display:inline-block; left:155px; 
+	padding-top:13px; font:10px Tahoma, Arial;
+}
+
+#table_name_content > input[type=text]{
+	width:160px; height:35px; border: 1px solid rgb(230,230,230); padding-left:10px;
+}
+#nameDiv{
+	color:rgb(241, 94, 175); font-size:8pt;
+			position:absolute; clear: "both";
+}
+#table_name_sex{
+	position:absolute; width:160px; height:40px; display:inline-block; left:305px; 
+	padding-top:13px; 
+}
+
+#table_name_sex > ul > #man{
+	display:inline-block; height:28px; cursor:pointer; width:38px;
+	list-style:none; font:13px Tahoma, Arial; bold:bolder; 
+	text-align:center; olor:white; padding-top:5.5px; 
+	background-color:rgb(241, 84, 155); color:white;
+ }
+ 
+ #table_name_sex > ul > #girl{
+	display:inline-block; height:28px; cursor:pointer; width:38px;
+	list-style:none; font:13px Tahoma, Arial; bold:bolder; 
+	text-align:center; cursor:pointer; color:white; padding-top:5.5px; 
+	background-color:rgb(235,235,235);; color:black;
+ }
+ 
+#table_name_foreigner{
+	position:absolute; width:160px; height:50px; display:inline-block; left:425px; 
+	padding-top:15px;
+}
+#table_name_foreigner > select {
+	width:110px; height:32px; border: 1px solid rgb(230,230,230);  color:grey;
+}
+
+#table_id_wrap{
+	position:absolute; top:65px; width:100%; height:60px; border:1px solid rgb(240,240,240);
+}
+#table_id{
+	position:absolute; width:85px; height:40px; background-color:rgb(242,242,242); display:inline-block;
+	left:1px; padding-top:22px;  font:13px Tahoma, Arial; font-weight:bold; padding-right:35px;
+}
+#table_id_content{
+	position:absolute; width:165px; height:41px; display:inline-block; left:154px; 
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#table_id_content > input[type=text]{
+	width:280px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#idDiv{
+	color:rgb(241, 94, 175); font-size:8pt;
+		position:absolute; clear:"both";
+}
+
+#table_id_check{
+	position:absolute; width:130px; height:25px;  display:inline-block; background-color: rgb(241, 84, 155);
+	 padding-top:6px; left:475px; top:13px;
+}
+#table_id_check > label{
+	font:15px Tahoma, Arial; font-weight: bold; color:white; padding-top:10px;
+	cursor:pointer; width:100px; text-align:center;
+}
+
+#table_pwd_wrap{
+	position:absolute; top:127px; width:100%; height:80px;
+	 border:1px solid rgb(240,240,240);
+}
+#table_pwd{
+	position:absolute; width:95px; height:52px; background-color:rgb(242,242,242); display:inline-block;
+	left:1px; padding-top:30px;  font:13px Tahoma, Arial; font-weight:bold; padding-right:25px;
+}
+#table_pwd_content{
+	position:absolute; width:160px; height:40px; display:inline-block; left:154px; 
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#table_pwd_content > input[type=password]{
+	width:280px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#pwdDiv{
+	color:rgb(241, 94, 175); font-size:8pt;
+			position:absolute; clear: "both"; text-align:left; width:500px;
+}
+#pwd_notice{
+	color:rgb(180, 180, 180); font-size:9pt; width:500px; top:60px;
+			position:absolute; clear:"both"; text-align:left;
+}
+#table_repwd_content{
+	position:absolute; width:160px; height:40px; display:inline-block; left:475px; 
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#table_repwd_content > input[type=password]{
+	width:280px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+
+#table_email_wrap{
+	position:absolute; top:209px; width:100%; height:60px;
+	 border:1px solid rgb(240,240,240);
+}
+
+#table_email{
+	position:absolute; width:81px; height:40px; background-color:rgb(242,242,242); display:inline-block;
+	left:1px; padding-top:20px;  font:13px Tahoma, Arial; font-weight:bold; padding-right:39px;
+}
+#write{
+	cursor:pointer;
+}
+#table_email_content{
+	position:absolute; width:165px; height:40px; display:inline-block; left:154px; 
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#emailDiv{
+	color:rgb(241, 94, 175); font-size:8pt;
+			position:absolute; clear: "both"; text-align:left; width:500px;
+}
+#table_email_content > input[type=text]{
+	width:280px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+
+#golbange2{
+	position:absolute; width:70px; height:40px; display:inline-block; left:425px; 
+	padding-top:16px; font:18px Tahoma, Arial;
+}
+#table_email_email{
+	position:absolute; width:100px; height:40px;  display:inline-block;
+	 padding-top:12px;  font:13px Tahoma, Arial; font-weight:bold; padding-right:30px; left:475px;
+}
+#table_email_email > select{
+	width:140px; height:33px; border: 1px solid rgb(230,230,230);  
+	padding-left:10px;  color:grey;
+}
+#table_email_email > select option{
+	font:13px Tahoma, Arial; 
+}
+#table_email_send{
+	position:absolute; width:130px; height:25px;  display:inline-block; background-color: rgb(241, 84, 155);
+	 padding-top:6px; left:635px; top:13px;
+}
+#table_email_send > label{
+	font:15px Tahoma, Arial; font-weight: bold; color:white; padding-top:10px;
+	cursor:pointer; width:100px; text-align:center; 
+} 
+#table_email_number{
+	position:absolute; width:130px; height:25px;  display:inline-block;   
+	 left:785px; top:13px;
+}
+#table_email_number > input[type=text]{
+	width:130px; height:30px; border: 1px solid rgb(230,230,230);
+}
+#table_email_check{
+	position:absolute; width:50px; height:24px;  display:inline-block;  background-color:  rgb(241, 84, 155);
+	 left:935px; top:14px; padding-top:7px;
+}
+#table_email_check > label{
+	font:15px Tahoma, Arial; font-weight: bold; color:white;
+	cursor:pointer; width:50px; text-align:center;
+}
+
+#table_birth_wrap{
+	position:absolute; top:271px; width:100%; height:60px;
+	 border:1px solid rgb(240,240,240);
+}
+#table_birth{
+	position:absolute; width:88px; height:40px; background-color:rgb(242,242,242); display:inline-block;
+	left:1px; padding-top:20px;  font:13px Tahoma, Arial; font-weight:bold; padding-right:32px;
+}
+#table_birth_year{
+	position:absolute; width:100px; height:40px;  display:inline-block;
+	 padding-top:12px;  padding-right:28px; left:149px;
+}
+#table_birth_year > select{
+	width:80px; height:33px; border: 1px solid rgb(230,230,230);   font:13px Tahoma, Arial; 
+	padding-left:10px; color:grey;
+}
+
+#table_birth_month{
+	position:absolute; width:100px; height:36px;  display:inline-block;
+	 padding-top:12px;  font:13px Tahoma, Arial; padding-right:30px; left:243px;
+}
+#table_birth_month > select{
+	width:80px; height:33px; border: 1px solid rgb(230,230,230);   font:13px Tahoma, Arial; 
+	padding-left:10px; color:grey;
+}
+
+#table_birth_day{
+	position:absolute; width:100px; height:36px;  display:inline-block;
+	 padding-top:12px;  font:13px Tahoma, Arial; padding-right:30px; left:343px;
+}
+#table_birth_day > select{
+	width:80px; height:33px; border: 1px solid rgb(230,230,230);   font:13px Tahoma, Arial; 
+	padding-left:10px; color:grey;
+}
+#il{
+	position:absolute; width:20px; height:36px;  display:inline-block; top:11px;
+	 padding-top:8px;  font:13px Tahoma, Arial; padding-right:30px; left:440px;
+}
+#table_period_wrap{
+	position:absolute; top:333px; width:100%; height:60px;
+	 border:1px solid rgb(240,240,240);
+}
+#table_period{
+	position:absolute; width:110px; height:40px; background-color:rgb(242,242,242); display:inline-block;
+	left:1px; padding-top:20px;  font:13px Tahoma, Arial; font-weight:bold; padding-left:10px;
+}
+#table_period_content{
+	position:absolute; width:350px; height:20px;  display:inline-block;
+	 padding-top:15px;  padding-right:30px; text-align:left; left:155px; font:14px Tahoma, Arial;
+}
+
+
+#table_period_notice{
+	position:absolute; width:100%; height:20px;  display:inline-block;
+	 top:30px; padding-top:10px;  text-align:left; padding-right:30px;
+	  left:155px; font:12px Tahoma, Arial; color:rgb(180, 180, 180); 
+}
+
+#table_accept_wrap{
+	position:absolute; width:100%; height:37px; top:10px;
+}
+#table_accept_content{
+	position:absolute; width:80px; height:35px; display:inline-block;
+	 padding-top:20px;  font:17px Tahoma, Arial; font-weight:bold; text-align:left; left:0.5px;
+}
+#table_accept_content1{
+	position:absolute; width:100% height:35px;  display:inline-block;
+	 padding-top:22px; left:90px; font:13px Tahoma, Arial; color:grey;
+}
+
+#table_terms_box{
+	position:absolute; width:100%; height:80px; top:60px;
+	 border:1px solid rgb(235,235,235);
+}
+#table_box_content{
+	position:absolute; width:99.9%; height:41px;  border:1px solid rgb(235,235,235);
+}
+#box1{
+	position:absolute; width:400px; height:45px; display:inline-block; left:15px;
+	 padding-top:13px;  font:14px Tahoma, Arial; padding-left:5px; text-align:left;
+}
+#box2{
+	position:absolute; width:55px; height:20px; display:inline-block; border:1px solid grey; top:10px;
+	text-align:center; font:12px Tahoma, Arial;  left:430px; cursor:pointer; padding-top:4px;
+}
+#box3{
+	position:absolute; width:400px; height:42px; display:inline-block; left:580px;
+	 padding-top:13px;  font:14px Tahoma, Arial;  padding-left:10px; text-align:left;
+}
+#box4{
+	position:absolute; width:55px; height:20px; display:inline-block; border:1px solid grey; top:10px;
+	text-align:center; font:13px Tahoma, Arial; left:980px; cursor:pointer; padding-top:4px;
+} 
+#table_box_content1{
+	position:absolute; width:99.9%; height:40px;  border:1px solid rgb(240,240,240); top:43px; background-color:rgb(235,235,235);
+}
+#box5{
+	position:absolute; width:400px; height:37px; display:inline-block; left:15px;
+	 padding-top:12px;  font:14px Tahoma, Arial; padding-left:5px;  text-align:left;
+}
+#table_important_terms{
+	position:absolute; width:100%; height:30px; top:180px;
+	
+}
+#important_terms{
+	position:absolute; width:200px; height:25px; display:inline-block; left:0.5px; text-align:left;
+	font:17px Tahoma, Arial; font-weight:bold;
+}
+#important_terms1{
+	position:absolute; width:600px; height:21px; display:inline-block; left:115px;
+	font:13px Tahoma, Arial; padding-left:10px; padding-top:3px; color:grey;
+}
+#table_terms_guide{
+	position:absolute; width:100.1%; height:370px; top:220px;
+	background-color:rgb(240,240,240);
+}
+#guide_name{
+	position:absolute; width:500px; height:25px; display:inline-block; left:0.5px;
+	font:13px Tahoma, Arial; font-weight:bold; text-align:left; padding-top:20px; padding-left:23px;
+}
+#guide_value{
+	position:absolute; width:100%; height:30px; display:inline-block; top:30px; left:0.5px;
+	font:13px Tahoma, Arial; text-align:left; padding-top:20px; padding-left:25px;
+}
+
+#guide_name1{
+	position:absolute; width:500px; height:25px; display:inline-block; top:160px; left:0.5px;
+	font:13px Tahoma, Arial; font-weight:bold; text-align:left; padding-top:20px; padding-left:25px;
+}
+#guide_value1{
+	position:absolute; width:100%; height:30px; display:inline-block; top:190px; left:0.5px;
+	font:13px Tahoma, Arial; text-align:left; padding-top:20px; padding-left:25px;
+}
+#table_accept_write{
+	position:absolute; width:100%; height:123px; top:580px;
+	 
+}
+#accpet_write{
+	position:absolute; width:300px; height:85px; top:30px; left:390px;
+	background-color: rgb(241, 84, 155); color:white; cursor:pointer;
+}
+#write1{
+	text-align:center;  font:15px Tahoma, Arial; font-weight:bold; padding-top:20px;
+}
+#write2{
+	text-align:center; font:12px Tahoma, Arial;
+}

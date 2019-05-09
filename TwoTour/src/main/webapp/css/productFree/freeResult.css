@@ -1,0 +1,1356 @@
+@charset "UTF-8";
+
+#productFree_air_logo{
+	width: 50px;
+	height: 35px;
+}
+
+.select_input_int_arrive, .retDateValSel, .freeResult_depart_date, #compRT {
+	width: 196px;
+	height: 30px;	
+	border-radius: 2px;
+	border: 1px solid #b2b2b2;
+}
+#adtCntRT, #chdCntRT, #infCntRT{
+	width: 93px;
+	height: 30px;	
+	border-radius: 2px;
+	border: 1px solid #b2b2b2;
+}
+
+.top_search .search_view .search_box > ul.user_info{
+	/* padding-top: 10px; */
+}
+.top_search .search_view .search_box > ul.user_info select option{
+	font-family: 'Nanum Gothic' , 'Malgun Gothic' , 'Dotum' , 'Apple SD Gothic Neo', Helvetica, Sans-serif;
+}
+#freeResult_searchBt{
+/* margin-top: 5px;
+	margin-left: 10px; */
+	background-color: transparent;/*배경색 : 투명*/
+	baockground-repeat: no-repeat;
+	background-position: 0px 0px;
+	border: none;
+	cursor: pointer;
+}
+#airMainDiv{
+	/* border: 1px red solid; */
+	position:relative;
+}
+#left_area{
+	/* border: 1px yellow solid; */
+	position: absolute;
+	display: inline-block;
+	width: 208px;
+	
+}
+#result_list_area{
+	/* border: 1px blue solid; */
+	position: absolute;
+	display: inline-block;
+	left: 230px;
+	width: 840px;
+}
+
+#airplane_scheduleT{
+	border-collapse: collapse;
+	/* border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588; */
+
+}
+
+#airplane_scheduleT td{
+	color: #000000;
+	/* border: 1px solid #c6c6c6; */
+	/* border-bottom: 1px solid #6d7588; */
+}
+tr.airplane_scheduleT_th{
+	/* background-color: #f2f2f2; */
+	font: bold 15px Tahoma, Arial ;
+	text-align: center;
+	height: 40px;
+}
+#airplane_scheduleT>tr>td{
+	font: 15px Tahoma, Arial ;
+	
+}
+.freeResult_divSet{
+	/* border: 1px green solid; */
+	position: relavtive;
+	height: 100%;
+}
+.freeResult_forTd1{
+	/* border: 1px red solid; */
+	position: relative;
+	display: inline-block;
+	width: 53px;
+	font: 15px Tahoma, Arial;
+}
+.freeResult_forTd2{
+	
+	/* border: 1px red solid; */
+	position: relative;
+	display: inline-block;
+	width: 202px;
+	font: 15px Tahoma, Arial;
+}
+.freeResult_forTd3, .freeResult_forTd4, .freeResult_forTd5 {
+	/* border: 1px blue solid; */
+	position: relative;
+	display: inline-block;
+	width: 95px;
+	text-align: center;
+	font: 15px Tahoma, Arial;
+}
+.freeResult_forTd6{
+	/* border: 1px red solid; */
+	position: relative;
+	display: inline-block;
+	width: 260px;
+	text-align: center;
+	font: bold 20px Tahoma, Arial;
+	color: #e85581;
+}
+
+#priceTableBt{
+	background-color: #ffffff;
+    border: solid 1px black;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+#reservAirBt{
+	background-color: #ffffff;
+    border: solid 1px black;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*최상단*/
+.hana_air_ticket {font-size:12px}
+.hana_air_ticket .section_01{margin: 30px auto 70px;min-width:1064px}
+.hana_air_ticket h1,.hana_air_ticket h2,.hana_air_ticket h3,.hana_air_ticket h4,.hana_air_ticket h5,.hana_air_ticket h6,.hana_air_ticket strong {font-weight:600}
+
+.hana_air_ticket input[type="radio"].pb_radio + label {background: url('//image1.hanatour.com/_images/hana/common/form/pb_icon_set.png') no-repeat 0 -198px}
+.hana_air_ticket input[type="radio"].pb_radio.on + label {background: url('//image1.hanatour.com/_images/hana/common/form/pb_icon_set.png') no-repeat -160px -118px}
+
+
+.top_search {min-height: 118px;background:url('/TwoTour/image/productFree/top_search_area_bg.jpg') no-repeat 0 0;padding-top: 30px}
+.top_search.on {position:relative;height:571px;}
+.top_search span.model {display:none}
+.top_search.on span.model{display:block;position:absolute;left:50%;bottom:0;margin:0 0 0 420px}
+
+.search_control {display:none;width: 1035px;height:65px;background:#fff;margin: 0 auto;padding: 23px 0 0 29px}
+.search_control h6.tit {float:left;width:86px;background-repeat:no-repeat ;background-image:url('/TwoTour/image/productFree/search_control_title.png');font-size: 15px;color: #252525;width: 64px;height: 42px;padding: 0 0 0 23px;line-height: 42px;border-right: 1px dashed #c6c6c6}
+.search_control.unilateral h6.tit {background-position: 0 -53px}
+.search_control.travel_back h6.tit {background-position: 0 16px}
+.search_control.many_type01 h6.tit ,
+.search_control.many_type02 h6.tit {background-position: 0 16px}
+.search_control .air_info > div {background: url('/TwoTour/image/productFree/search_control_line.gif') repeat-x 0 26px;position: relative;height: 48px;margin: 0 auto;display:block}
+.search_control .air_info div .start strong ,
+.search_control .air_info div .end strong {display: block;width:100%;font-size:13px;text-overflow: ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
+.search_control .air_info div .start span,
+.search_control .air_info div .end span{margin-top: 16px;display: block;font-size: 11px;color: #757575;letter-spacing:0;*letter-spacing:-1px}
+.search_control .air_info div .start ,
+.search_control .air_info div .end {text-align: center;width: 80px;position: absolute;top:0;background-image: url('/TwoTour/image/productFree/search_control_icon.png');background-repeat:no-repeat}
+.search_control .air_info div .start {left:0}
+.search_control .air_info div .end {right:0;background-position: 10px 20px}
+
+.search_control .air_info {width: 586px;height: 48px;float: left;margin-top: -3px;border-right: 1px dashed #c6c6c6}
+
+.type01 {_display:inline; *display:inline;}
+.type01 .on {display:block;}
+.type01 .off {display:none;}
+
+.search_control.travel_back .air_info .type01{width: 450px}
+.search_control.travel_back .air_info div .start {background-position: 0 -100px}
+
+.search_control .txt {width: 213px;height: 42px;float: left;color:#252525}
+.search_control .txt strong.grade {font-size:15px;margin:0 0 0 25px}
+.search_control .txt ul {overflow:hidden;margin:5px 0 0 20px}
+.search_control .txt ul li {font-size:14px;float: left;padding: 0 0 0 5px;background: url('/TwoTour/image/productFree/search_control_blut02.gif') no-repeat 0 center;margin-left: 5px}
+.search_control .txt ul li:first-child {padding:0;background:none}
+.search_control .txt ul li strong {font-size:16px}
+
+.search_control button{width:120px;height:40px;background:url('/TwoTour/image/productFree/search_control_button.gif') no-repeat 0 0;font-size:0;float: left}
+.search_control button:hover {background-position:-193px 0}
+.search_control button.on{background-position:0 -40px}
+.search_control button.on:hover {background-position:-193px -40px}
+
+
+
+.search_control.unilateral .air_info .type01{width: 450px}
+.search_control.unilateral .air_info div .start {background-position: 0 -212px}
+
+.top_search .search_view {display:none;position:relative;width:964px;height:265px;background:#FFF ;opacity:0.9; z-index:60; margin:2px auto;padding:25px 0 0 100px}
+.top_search.on .search_view {display:block}
+.top_search .search_view .check_radio {width:852px}
+.top_search .search_view .check_radio ul {height:30px;border-bottom:1px dashed #e4e4e4}
+.top_search .search_view .check_radio ul li {float:left;margin-right:20px}
+.top_search .search_view .search_box {position:relative;display:none}
+.top_search .search_view .search_box > ul {height: 30px;clear:both;margin-top: 10px}
+.top_search .search_view .search_box.unilateral > ul {margin-top:30px}
+.top_search .search_view .search_box > ul > li {float:left;width: auto}
+.top_search .search_view .search_box > ul > li .pb_ly_major_city {line-height:18px}
+.top_search .search_view .search_box > ul > li.blut {padding-right: 104px;background: url('/TwoTour/image/productFree/search_view_blut.png') no-repeat right center;margin-right: 103px}
+.top_search .search_view .search_box > ul > li:first-child {width:75px !important;color:#252525;font-size:13px;font-weight:600;line-height:30px}
+.top_search .search_view .search_box > ul > li.txt {color:#252525;font-size:13px;font-weight:600;line-height:30px;width: 70px;padding-left: 137px}
+.top_search .search_view .search_box > ul > li .pb_select {width:196px}
+.top_search .search_view .search_box > ul > li .sel_input {z-index:89;width: 174px;background-color: #fff;margin: 0}
+.top_search .search_view .search_box > ul > li .sel_input.type02 {width: 120px}
+.top_search .search_view .search_box > ul > li .pb_select.type04{width: 141px}
+.top_search .search_view .search_box > ul > li.day_unsettled {}
+.top_search .search_view .search_box > ul > li.day_unsettled button {background:#fff;border: 1px solid #b2b2b2;width: 50px;height: 30px;display: block;border-radius: 2px;margin-left: 4px}
+.top_search .search_view .search_box > ul > li.day_unsettled button.undecided,
+.top_search .search_view .search_box > ul > li.day_unsettled button:hover{border:1px solid #757575;background-color:#fff;color:#535353;font-weight:600}
+.top_search .search_view .search_box > ul > li.lock {}
+.top_search .search_view .search_box > ul > li.lock .sel_input {background-color:#f8f8f8}
+.top_search .search_view .search_box > ul > li.lock .sel_input input {color:#aaaaaa;cursor:default}
+.top_search .search_view .search_box > ul > li.lock.day_unsettled button,
+.top_search .search_view .search_box > ul > li.lock.day_unsettled button.on,
+.top_search .search_view .search_box > ul > li.lock.day_unsettled button:hover{background:#f8f8f8;color:#aaaaaa;cursor:default;border: 1px solid #b2b2b2;font-weight:normal}
+.top_search .search_view .search_box > ul.user_info > li {margin: 0 4px 0 0 !important}
+.top_search .search_view .search_box > ul.user_info > li p{margin:6px 0 0 10px;color:#737373}
+.top_search .search_view .search_box > ul.user_info > li:first-child {margin: 0 0 0 0 !important}
+.top_search .search_view .search_box > ul.user_info > li.txt {width: 70px;padding-left: 42px;margin: 0 !important}
+.top_search .search_view .search_box.many_type > ul.user_info > li.txt {padding-left:61px}
+.top_search .search_view .search_box > ul.user_info > li .pb_select {width:93px}
+.top_search .search_view .search_box > ul.user_info > li .pb_select.type02 {width: 196px}
+
+.top_search .search_view .search_box.many_type > ul > li {float:left;width: auto}
+.top_search .search_view .search_box.many_type > ul > li.blut {padding-right: 15px;background: url('/TwoTour/image/productFree/search_view_blut.png') no-repeat right center;margin-right: 10px}
+.top_search .search_view .search_box.many_type > ul > li + li + li + li {margin-left: 5px}
+.top_search .search_view .search_box.many_type > ul > li .sel_input {width: 174px}
+
+.top_search .search_view .search_box .btn {clear: both;text-align: center;margin-top: 8px;
+position: absolute;right:105px;bottom: 0;  border:1px blue solid;}
+.top_search .search_view .search_box .btn a{color: #fff !important;width: 130px;font-size:16px}
+
+
+/* checkbox / radio */
+input[type="checkbox"].pb_check,
+input[type="radio"].pb_radio {z-index:2; overflow:hidden; position:relative; left:0; top:0; width:18px; height:18px; padding:0; margin: -1px; clip:rect(0,0,0,0); cursor:pointer; border:0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity: 0;}
+input[type="checkbox"].pb_check + label,
+input[type="radio"].pb_radio + label {z-index:1; display:inline-block; position:relative; height:18px; left:-18px; line-height:18px; padding-left:20px; cursor:pointer; vertical-align:middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;}
+input[type="checkbox"].pb_check + label {color:#535353;background: url('//image1.hanatour.com/_images/hana/common/form/pb_icon_set.png') no-repeat -160px 2px;}
+input[type="checkbox"].pb_check.on + label {background: url('//image1.hanatour.com/_images/hana/common/form/pb_icon_set.png') no-repeat -160px -38px;}
+input[type="checkbox"].pb_check.bold + label {color:#535353;font-weight:normal;}
+input[type="checkbox"].pb_check.bold.on + label {color:#353535;font-weight:600;}
+input[type="checkbox"].pb_check.type_01 + label {}
+input[type="checkbox"].pb_check.type_02 + label {}
+
+input[type="radio"].pb_radio + label {color:#535353;background: url('//image1.hanatour.com/_images/hana/common/form/pb_icon_set.png') no-repeat -160px -78px;}
+input[type="radio"].pb_radio.on + label {background: url('//image1.hanatour.com/_images/hana/common/form/pb_icon_set.png') no-repeat -160px -118px;}
+input[type="radio"].pb_radio.bold + label {color:#535353;font-weight:normal;}
+input[type="radio"].pb_radio.bold.on + label {color:#252525;font-weight:600;}
+input[type="radio"].pb_radio.type_01 + label {}
+input[type="radio"].pb_radio.type_02 + label {}
+
+.bold {font-weight:600}
+.m_t0 {margin-top:0px !important}
+.m_t5 {margin-top:5px !important}
+.m_t10 {margin-top:10px !important}
+.m_t15 {margin-top:15px !important}
+.m_t20 {margin-top:20px !important}
+.m_t25 {margin-top:25px !important}
+.m_t30 {margin-top:30px !important}
+.m_t35 {margin-top:35px !important}
+.m_t40 {margin-top:40px !important}
+.m_t45 {margin-top:45px !important}
+.m_t50 {margin-top:50px !important}
+
+.m_r0 {margin-right:0px !important}
+.m_r5 {margin-right:5px !important}
+.m_r10 {margin-right:10px !important}
+.m_r15 {margin-right:15px !important}
+.m_r20 {margin-right:20px !important}
+.m_r25 {margin-right:25px !important}
+.m_r30 {margin-right:30px !important}
+.m_r35 {margin-right:35px !important}
+.m_r40 {margin-right:40px !important}
+.m_r45 {margin-right:45px !important}
+.m_r50 {margin-right:50px !important}
+
+.m_b0 {margin-bottom:0px !important}
+.m_b5 {margin-bottom:5px !important}
+.m_b10 {margin-bottom:10px !important}
+.m_b15 {margin-bottom:15px !important}
+.m_b20 {margin-bottom:20px !important}
+.m_b25 {margin-bottom:25px !important}
+.m_b30 {margin-bottom:30px !important}
+.m_b35 {margin-bottom:35px !important}
+.m_b40 {margin-bottom:40px !important}
+.m_b45 {margin-bottom:45px !important}
+.m_b50 {margin-bottom:50px !important}
+
+.m_l0 {margin-left:0px !important}
+.m_l5 {margin-left:5px !important}
+.m_l10 {margin-left:10px !important}
+.m_l15 {margin-left:15px !important}
+.m_l20 {margin-left:20px !important}
+.m_l25 {margin-left:25px !important}
+.m_l30 {margin-left:30px !important}
+.m_l35 {margin-left:35px !important}
+.m_l40 {margin-left:40px !important}
+.m_l45 {margin-left:45px !important}
+.m_l50 {margin-left:50px !important}
+
+.pb_radio+label.infocus {outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+
+.pb_check+label.infocus {outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+
+.pb_select .disable .tit{background: #f8f8f8 url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) no-repeat right -440px !important;}
+.pb_select .disable .tit span , .pb_select .disable .overcon .con a span , input[type="checkbox"].pb_check + label.disable {color:#aaaaaa !important;}
+
+.pb_select {z-index:59;display:inline-block; *display:inline; *zoom:1; position:relative; width:100%; height: 28px; font-size:0; line-height:0;}
+.pb_select .tit {display:block; padding:0px 26px 0 10px; height:28px; font-size:12px; line-height:26px; border-radius: 2px; border: 1px solid #fff; background: #fff url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) no-repeat 100% -310px; text-align:left;}
+.pb_select .tit:focus {outline:1px dotted #000; outline:-webkit-focus-ring-color auto 5px;}
+.pb_select .tit > span {display:inline-block; overflow:hidden; margin-left:0; padding:0px; line-height:26px; white-space:nowrap; text-overflow:ellipsis;}
+.pb_select .tit span span, 
+.pb_select .overcon .con a span {display:inline; color:#535353;}
+.pb_select .tit.on span span {color:#252525;}
+.pb_select .tit span span.acctNa, 
+.pb_select .overcon .con a .acctNa {padding-right:5px; font-weight:bold;}
+.pb_select .tit.on {border:1px solid #4a505d !important; background-position:100% -367px;}
+.pb_select .overcon *{font-size:12px;}
+.pb_select .overcon .con {width:100%; padding:0;}
+.pb_select .overcon .con a {/*xxx overflow:hidden;*/ display:block; padding:/*xxx 0 0 0 10px*/0 10px 0 10px; white-space:nowrap;line-height:30px;height:30px}
+.pb_select .overcon .con a.on {color:#252525; background-color:#e1e1e1;}
+.pb_select .overcon .con li {float:none; width:100%; margin:0; padding:0 !important;text-align:left;}
+.pb_select .overcon .con li:last-child {}
+.pb_select > div > div {/*xxx width:100% !important;*/ padding-bottom:1px;  }
+.pb_select > div > div > div {border:1px solid #4a505d; border-top:none; background:#fff;}
+.pb_select .select.selDisabled .tit {color:#aaa !important; cursor:default; background-color:#f6f6f6; background-position:100% -192px;}
+.pb_select .select.selDisabled a:hover {color:#aaa;}
+.pb_select a:hover {text-decoration:none;}
+.pb_select.selectBtm > div > div {top:auto !important; bottom:40px;}
+.pb_select.selectBtm > div > div > div {border-top:1px solid #f9a61a; border-bottom:none;}
+.pb_select.st_01 .tit {border:1px solid #b2b2b2;}
+.pb_select.st_01 .tit.on {border:1px solid #4a505d}
+.pb_select.st_01 > div > div > div {border:1px solid #4a505d; border-top: none; background:#fff;}
+
+.product_select_option{  text-align:right;}
+.product_select_option .option_list {padding:10px 0 10px;height:25px;float:right;}
+.product_select_option .option_list a.btn_list_align01 {float:left;display:inline-block; width:86px; height:22px; padding-top:3px; font-size:12px; color:#535353; text-align:center; vertical-align:top; border:1px solid #6d7588;border-radius:2px 0 0 2px}
+.product_select_option .option_list a.btn_list_align01.on {color:#fff; font-weight:600; background:#6d7588; }
+.product_select_option .option_list .pb_select.type_01 .overcon .con li:first-child {display:none;}
+.product_select_option .option_list .pb_select.type_01 > div > div > div {height:50px !important;}
+.pb_select.type_01 {float:left;margin-left:-1px;}
+.pb_select.type_01 .select .list_icon {display:inline-block; vertical-align:top;color:#535353;background: url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) no-repeat right -512px;padding-right:12px;margin-left:4px}
+.pb_select.type_01 .select .tit.on .list_icon {background: url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) no-repeat right -481px;}
+.pb_select.type_01 .select.on .list_icon {background:none;padding:0;}
+.pb_select.type_01 .select .list_icon:hover {color:#252525}
+.pb_select.type_01 .select .icon_up {display:none; width:10px; height:26px; vertical-align:top; background: url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) repeat-x 3px -413px;}
+.pb_select.type_01 .select .icon_down {display:none; width:10px; height:26px; vertical-align:top; background: url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) repeat-x -47px -413px;}
+.pb_select.type_01 .select .overcon .con a .list_icon {display:inline-block; vertical-align:top; line-height:13px;margin-left:-3px}
+.pb_select.type_01 .select .overcon .con a .icon_up {display:none;height:12px; background: url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) repeat-x 3px -420px;}
+.pb_select.type_01 .select .overcon .con a .icon_down {display:none;height:12px; background: url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) repeat-x -47px -420px;}
+.pb_select.type_01 .select.on a.tit span {background:#6d7588;color:#fff;}
+.pb_select.type_01 .select.on a.tit span span {background:url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) no-repeat right -543px;color:#fff;padding-right:14px}
+.pb_select.type_01 .select.on a.tit.on span span {background:url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) no-repeat right -574px;}
+.pb_select.type_01 .select.on a.tit > span {display:block;width:100% !important}
+.pb_select.type_01 .select.on .icon_down {display:none;background:#6d7588 url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) repeat-x -97px -413px;}
+.pb_select.type_01 .select.on .icon_up {display:none;background:#6d7588 url(//image1.hanatour.com/_images/hana/common/form/bg_form.png) repeat-x -145px -413px;}
+/* type_01 - 상품 정렬 셀렉트 */
+.pb_select.type_01 .tit {padding:0; text-align:center; border:1px solid #6d7588; background:none;line-height:24px;height:25px;border-radius:0;}
+.pb_select.type_01.first_last .tit {border-radius:2px 0 0 2px;}
+.pb_select.type_01.right_last .tit {border-radius:0 2px 2px 0;}
+.pb_select.type_01 .tit.on {border:1px solid #6d7588 !important;}
+.pb_select.type_01 .overcon .con a {padding:6px 0;height:13px;line-height:13px}
+.pb_select.type_01 .overcon .con a.on {background-color: #f2f2f2}
+.pb_select.type_01 .overcon .con a span {line-height:13px;background:none;padding:0}
+.pb_select.type_01 .overcon .con li {text-align:center;}
+.pb_select.type_01 > div > div > div {margin-top:-1px !important; border:1px solid #6d7588; border-top: none; border-bottom-color:#6d7588; background:#fff;}
+.pb_select.type_01.selectBtm > div > div > div {border-top:1px solid #f9a61a; border-bottom-color:#d5d5d5;}
+*first-child+html div .pb_select.type_01 {margin-right:3px;}
+
+
+*:first-child+html div .hotel_result .product_select_option .option_list .pb_select {margin-right:4px;} 
+
+
+/*버튼*/
+.btns button {padding:10px;}
+/* 버튼 type_01 */
+.btn_view {display:inline-block; width:110px; padding: 10px 0; font-size:13px; font-weight:600; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; text-align:center; vertical-align:top}
+.btn_view:hover {text-decoration:none;}
+.btn_view.type_01 {background-color:#e85581; color:#FFF;}
+/* .btn_view.type_01 span {zoom:1; display:inline-block; width:15px; height:13px;  background: url('//image1.hanatour.com/_images/hana_free/icon_set.png') no-repeat -235px -415px; vertical-align:middle} */
+.btn_view.type_01:hover {background-color:#ff5e8f;}
+
+.btn_01 {zoom:1; display:inline-block; width:110px; padding:12px 0; font-size:13px; font-weight:600; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; text-align:center; vertical-align:middle; line-height:18px}
+.btn:hover {text-decoration:none}
+.btn_01 span {padding-right:10px; background:url('//image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat right -148px}
+
+.btn_01.type_01 {padding:11px 0 11px; background-color:#e85581; color:#FFF;}
+.btn_01.type_01:hover {background-color:#ff5e8f;}
+
+.btn_01.type_02 {padding:10px 0; background-color:#e45b85; color:#fff; line-height:18px;}
+
+.btn_01.type_03 {padding:10px 0; border:1px solid #e85581; font-size:13px; font-weight:600; background-color:#FFF; color:#e85581;}
+.btn_01.type_03:hover {color:#ff5e8f;border:1px solid #ff5e8f}
+
+.btn_01.type_04 {padding:10px 0; background-color:#5e9acd; color:#fff;}
+
+.btn_01.type_05 {padding:10px 0; background-color:#aaa; color:#fff;}
+
+.btn_01.type_06 {padding:10px 0; border:1px solid #b2b2b2; background-color:#fff; color:#535353;}
+.btn_01.type_06:hover {border:1px solid #757575; color:#252525;}
+
+/* 버튼 type_02 */
+.btn_02 {zoom:1; display:inline-block; padding:2px 8px 1px; border:1px solid #aaa; font-size:11px; font-weight:600; background-color:#FFF; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; color:#535353; text-align:center; vertical-align:middle; line-height:18px}
+.btn_02 span {padding-right:8px; background:url('//image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat 54px -70px}
+
+/* 아이콘 버튼 */
+.btn_flight_sch {zoom:1; display:inline-block; font-size:12px; color:#424242}
+.btn_flight_sch em {display:block; margin-top:7px; font-style:normal}
+.btn_flight_sch:hover {color:#252525}
+.btn_flight_sch .ico_flight_view {zoom:1; display:inline-block; width:29px; height:29px; background:url('//image1.hanatour.com/_images/hana/p_schedule/icon_set.png') no-repeat 0 0}
+.btn_flight_sch:hover .ico_flight_view {background-position:-39px 0;}
+
+/* 인쇄하기 버튼 */
+.btn_print {zoom:1; display:inline-block; background:url('//image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat -455px -215px; border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; text-align:center; vertical-align:middle}
+.btn_print.type_01 {width:58px; height:48px; font-size:0; border:1px solid #999; line-height:0}
+.btn_print.type_01:hover {background-position:-455px -258px;}
+
+.btn_print.type_02 {width:216px; padding:14px 0; border:1px solid #888; background-image:none;}
+.btn_print.type_02 span {display:inline-block; height:24px; padding-left:35px; font-size:16px; font-weight:600; background:url('//image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat -470px -228px; color:#424242; line-height:24px;}
+.btn_print.type_02:hover span {background-position:-470px -271px}
+
+.jspContainer {overflow:hidden; position:relative;}
+.jspPane {position:absolute; left:0 !important;}
+.jspVerticalBar {position:absolute; right:0; width:17px; height:100%;}
+.jspTrack {position:relative; background:#f1f1f1;top:17px;}
+.jspDrag {position:relative; top:0; left:0px; cursor:pointer; background:#bcbcbc;}
+.jspCapTop {height:0px;}
+.jspCapBottom {height:0px;}
+
+a.jspArrow {background-image:url('//image1.hanatour.com/_images/hana/common/form/jspVerticalBar.png');position: absolute;right:0;width:17px;height:17px;}
+a.jspArrowUp{top: 0;}
+a.jspArrowUp:hover {background-position:0 -34px}
+a.jspArrowUp.jspDisabled,
+a.jspArrowUp.jspDisabled:hover{background-position:0 -17px}
+a.jspArrowDown{background-position:-17px 0;bottom: 0;}
+a.jspArrowDown:hover {background-position:-17px -34px}
+a.jspArrowDown.jspDisabled,
+a.jspArrowDown.jspDisabled:hover{background-position:-17px -17px}
+
+input, select, textarea, button {vertical-align: middle}
+
+input {margin:0;padding:0;border:none;}
+/* input type */
+.sel_input {float:left; position:relative; height: 28px; margin-right: 4px; padding:0 10px; border:1px solid #b2b2b2; border-radius: 2px;}
+.sel_input.full_size {width:100%;}
+.sel_input.infocus {border:1px solid #757575;}
+.sel_input.error {border:1px solid #e85581;}
+.sel_input input {width:100%; height:28px; font-size:12px; line-height:28px; letter-spacing:-1px; color:#535353; vertical-align: top;}
+.sel_input input:focus {color:#252525}
+.sel_input button,
+.sel_input a {position: absolute;right: 10px;top: 6px;display: block;background: url('//image1.hanatour.com/_images/hana/common/form/form.png') no-repeat;}
+
+.sel_input.on {border: 1px solid #e85581 !important}
+
+.sel_input.int_arrive button {background-position:0 -35px;width:13px;height:16px;}/* 도착도시 아이콘 */
+.sel_input.int_arrive input:focus + button,
+.sel_input.int_arrive button:focus {background-position:0 -223px;}
+.sel_input.sel_checkin button,
+.sel_input.sel_checkout button {background-position:0 0;width:16px;height:16px;}/* 달력아이콘 */
+.sel_input.sel_checkin input:focus + button,
+.sel_input.sel_checkin button:focus,
+.sel_input.sel_checkout input:focus + button,
+.sel_input.sel_checkout button:focus {background-position:0 -184px}
+
+
+.sel_input.int_calendar input {width:80%}
+.sel_input.int_calendar button {width:16px; height:16px; background-position:0 0;}
+.sel_input.int_city input {width:85%}
+.sel_input.int_city button {width:16px; height:16px; background-position:0 -36px;}
+
+/*tnb.css*/
+.ir {display: block;position: absolute;top: -9999px;left: -9999px;text-indent: -999em;overflow: hidden;background-repeat: no-repeat;text-align: left;}
+body,div,ul,ul li,p,ol,ol li , li , dl, dl dt, dl dd, h1, h2, h3, h4, h5, h6 ,form, fieldset,button {margin: 0; padding: 0;letter-spacing: -1px;}
+ul, ul li, ol, ol li {list-style-type: none}
+caption,legend,hr{display:none;}
+input,
+button {border: 0 none; background: none; cursor: pointer;}
+a,
+a:link {text-decoration: none; color: #444; cursor: pointer;}
+a:hover {text-decoration: none}
+
+img, fieldset {border: 0;}
+a img {border: 0 none;}
+
+/* 달력 */
+.calendar_Area {border: 2px solid #6d7588;padding: 6px;overflow: hidden}
+.calendar {float: left;width: 100%}
+.calendar .ui-widget {font-family:'NanumGothic','나눔고딕'}
+.calendar strong.tit {color:#252525;font-weight:600;display: block;margin: 6px 0 0 11px}
+.calendar .ui-widget-content {border: none;background: none}
+.calendar .ui-corner-all {border-radius: 0}
+
+.calendar .ui-widget-header {background:none;border: none;padding: 0 !important;height: 42px}
+.calendar .ui-datepicker {width: 100%;padding: 0}
+.calendar .ui-datepicker table{margin:0 !important; border-right: 1px solid #c6c6c6}
+.calendar .ui-datepicker th{border-left: 1px solid #c6c6c6;border-top: 1px solid #c6c6c6;border-bottom: 1px solid #c6c6c6}
+.calendar .ui-datepicker th:first-child.ui-datepicker-week-end {color:#ff4f4f}
+.calendar .ui-datepicker th.ui-datepicker-week-end {color:#3083d5}
+
+.calendar .ui-datepicker td {padding:0;border-left: 1px solid #c6c6c6;border-bottom: 1px solid #c6c6c6;font-size: 13px}
+.calendar .ui-datepicker td.ui-datepicker-week-end .ui-state-default{color:#3083d5}
+.calendar .ui-datepicker td.ui-state-disabled {opacity: 0.35;filter:Alpha(Opacity=35)}
+.calendar .ui-datepicker td.ui-state-disabled span {border:2px solid #f1f1f1}
+.calendar .ui-datepicker td.ui-datepicker-days-cell-over,
+.calendar .ui-datepicker td.ui-datepicker-current-day {background-color:#e45b85}
+.calendar .ui-datepicker td.ui-datepicker-days-cell-over a ,
+.calendar .ui-datepicker td.ui-datepicker-current-day a {border:2px solid #e45b85;color:#fff !important}
+.calendar .ui-datepicker td.sun .ui-state-default,
+.calendar .ui-datepicker td.holiday .ui-state-default{color:#ff4f4f}
+
+
+
+.calendar .ui-state-disabled, .calendar .ui-widget-content .ui-state-disabled, .calendar .ui-widget-header .ui-state-disabled {opacity: 1.0;filter:Alpha(Opacity=100);background-image: none;background: #f1f1f1}
+.calendar .ui-state-default, .calendar .ui-widget-content .calendar .ui-state-default, .calendar .ui-widget-header .ui-state-default {background: none !important;border: none;color: #808080}
+.calendar .ui-datepicker td span, .calendar .ui-datepicker td a {padding: 0;text-align: center;padding: 5px 0px;border:2px solid #fff}
+.calendar .ui-datepicker td a.ui-state-hover {border:2px solid #e45b85}
+
+.calendar .ui-datepicker .ui-datepicker-title {padding-top: 7px}
+.calendar .ui-datepicker .ui-datepicker-title .this_month {position:relative}
+.calendar .ui-datepicker .ui-datepicker-title .this_month a.sel_m {background:url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -240px 0;position:absolute;width:10px;height:10px;right:40px;top:10px}
+.calendar .ui-datepicker .ui-datepicker-title .this_month a.sel_m:hover {background:url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -278px 0;}
+
+.calendar .ui-datepicker .ui-datepicker-title .inner_year_layer {margin-top:6px; }
+.calendar .ui-datepicker .ui-datepicker-title .inner_year_layer .ui-datepicker-year  {position:relative; z-index:10; height:142px !important; border-left:1px solid #6d7588; border-bottom:1px solid #6d7588; border-right: 0 none; font-size:13px; color:#535353; cursor:pointer;}
+.calendar .ui-datepicker .ui-datepicker-title .inner_year_layer .ui-datepicker-month {position:relative; z-index:10; height:142px !important; width:50%; border-left:1px solid #e4e4e4; border-bottom:1px solid #6d7588; border-right:1px solid #6d7588; font-size:13px; color:#535353; cursor:pointer;}
+.calendar .ui-datepicker .ui-datepicker-title .inner_year_layer .ui-datepicker-year option {padding:6px 10px 5px;}
+.calendar .ui-datepicker .ui-datepicker-title .inner_year_layer .ui-datepicker-month option {padding:5px 10px;}
+.calendar .ui-datepicker .ui-datepicker-title .inner_year_layer option:checked {background-color:#f5f5f5;}
+
+.calendar .ui-icon {background: none}
+.calendar .ui-datepicker .ui-datepicker-prev {display: block;float: left;width: 38px;height: 40px;background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -107px 11px;cursor: pointer !important;border:none}
+.calendar .ui-datepicker .ui-datepicker-prev:hover {background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -161px 12px;border:none}
+.calendar .ui-datepicker .ui-datepicker-next {display: block;float: right;width: 38px;height: 40px;background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -133px 11px;border:none}
+.calendar .ui-datepicker .ui-datepicker-next:hover {background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -190px 12px;border:none}
+.calendar .ui-datepicker .ui-datepicker-prev span {}
+.calendar .ui-datepicker .ui-datepicker-next span {}
+.calendar .ui-icon-circle-triangle-e {}
+
+
+.calendar .sel_month {height: 39px;text-align: center;position: relative}
+.calendar .sel_month .btn_before {display: block;float: left;width: 38px;height: 40px;background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -107px 12px}
+.calendar .sel_month .btn_before:hover {background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -162px 12px}
+.calendar .sel_month .this_month {float: left;width: 162px;height: 40px;font-size: 14px;font-weight: 600;color: #424242;line-height: 38px}
+.calendar .sel_month .this_month .sel_m {zoom: 1;display: inline-block;width: 10px;height: 10px;margin-left: 10px;background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -243px 5px}
+.calendar .sel_month .this_month .sel_m:hover , .calendar .sel_month .this_month .sel_m.on {background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -281px 5px}
+.calendar .sel_month .btn_after {display: block;float: right;width: 38px;height: 40px;background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -134px 12px}
+.calendar .sel_month .btn_after:hover {background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat -190px 12px}
+.calendar .sel_month .calendar_list {position: absolute;left: 50%;top: 35px;margin-left: -55px;display:none}
+.calendar .sel_month .calendar_list ul {border-left:1px solid #e85581;border-right:1px solid #e85581;border-bottom:1px solid #e85581;background-color: #fff}
+.calendar .sel_month .calendar_list ul li {width:108px;height:27px;line-height:27px;border-top:1px solid #e4e4e4}
+.calendar .sel_month .calendar_list ul li:first-child {border-top:1px solid #e85581}
+.calendar .sel_month .calendar_list ul li a {display:block;color:#535353}
+.calendar .sel_month .calendar_list ul li a:hover , .calendar .sel_month .calendar_list ul li a.on {background-color:#f8f8f8;color:#252525}
+.calendar .table_month {border-left: 1px solid #c6c6c6;border-right: 1px solid #c6c6c6;border-top: 1px solid #c6c6c6}
+.calendar .table_month th,
+.calendar .table_month td {border-left: 1px solid #c6c6c6;border-bottom: 1px solid #c6c6c6;text-align: center}
+.calendar .table_month th:first-child,
+.calendar .table_month td:first-child {border-left: 0 none}
+.calendar .table_month th {padding: 6px 0}
+.calendar .table_month th.sun {color:#fa364a}
+.calendar .table_month th.sat {color:#3d7dca}
+.calendar .table_month td {padding: 0;font-size: 13px;color: #363636}
+.calendar .table_month td .div_sec {position:relative}
+.calendar .table_month td a {display: block;position:relative;z-index:1;padding: 8px 0 9px}
+.calendar .table_month td.bg_sel a {color:#FFF}
+.calendar .table_month td.bg_sel .chk {display: block;position: absolute;left: -1px;top: -1px;*top:-2px;width: 100%;background: #e45b85;border: 1px solid #cd2b5c;height: 100%}
+.calendar .table_month td:hover .hr {display: block;position: absolute;left: -1px;top: -1px;*top:-4px;width: 105%;height: 105%;background: url(http://image1.hanatour.com/hana/a_schedule/calendar_set.png) no-repeat 0 0}
+.calendar .table_month td:hover .hrRB {display: block;position: absolute;left: -1px;top: -1px;*top:-2px;border-bottom: 2px solid #e85581;width: 100%;heighT: 100%;border-right: 2px solid #e85581}
+.calendar .table_month td.sat a {color: #3083d5}
+.calendar .table_month td.sun a ,
+.calendar .table_month td.holiday a {color: #ff4f4f}
+.calendar .table_month td.past {padding: 8px 0 9px;background-color: #F1F1F1;color: #A6A6A6}
+.calendar .table_month td.past.sat {color:#AECBE7}
+.calendar .table_month td.past.sun {color:#F6BDBD}
+.calendar .start_date {padding: 15px 0 15px 14px}
+
+/* 2016-03-23 임정호 달력*/
+.pb_multi_calendar {font-family:'NanumGothic','나눔고딕' !important;*zoom:1;position: absolute;left: 35%;top: 200px;display:none;border: 2px solid #6d7588 !important;background: #fff url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar_bg.gif) repeat-x 0 0 !important;padding: 0 14px 14px 0;border-radius: 0 !important;margin-left:-11px;margin-top:3px}
+*:first-child+html div .pb_multi_calendar {width: 726px;}
+.pb_multi_calendar:after {content: ""; display: block; clear: both; visibility: hidden; width: 0; height: 0;padding:0 !important}
+.pb_multi_calendar .ui-datepicker-row-break {display:none;}
+.pb_multi_calendar .ui-datepicker-group {float: left;margin-left: 14px;}
+.pb_multi_calendar .ui-datepicker-group:first-child {border-left: none;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header {position: relative;height:40px;text-align: center;background-color: #6E7588;padding: 0;border-radius: 0;border: none;font-weight: normal;background: none;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header.ui-corner-left {margin-left:-14px;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header.ui-corner-right {margin-right:-14px;}
+
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header a span {text-indent:-999px; font-size:0; width:0; height:0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-prev {position: absolute;left: 0;top: 0;display: block;width: 38px !important;height: 38px !important;background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -2px -117px !important;opacity: 1.0;border-radius: 0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-prev:hover {background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -64px -117px !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled ,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled:hover {background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -2px -117px !important;cursor:default;opacity: 1.0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-title {font-size: 15px; font-weight: 600; color: #FFF; line-height: 33px;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-next {z-index:2; position: absolute; right: 0px; top: 0; display: block; width: 38px !important; height: 38px !important;background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -2px -176px !important;left:auto !important;border-radius: 0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-next:hover {background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -64px -176px !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-next.ui-state-disabled,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header .ui-datepicker-next.ui-state-disabled:hover {background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -2px -176px !important;cursor:default;opacity: 1.0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-header a:hover {background-color: #4a505d !important;border:none !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar {width:100%;padding:12px;margin:0;border-spacing:0;left: inherit;left: initial;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar th,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td {text-align:center;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td:first-child {}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar th {padding: 4px 0 13px 0;font-weight:normal;font-size:12px;color: #535353;background: url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar_th_bg.gif) repeat-x 0 0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td {font-size:12px;color:#363636;border-bottom:1px solid #e4e4e4;position: relative;height: 35px;width: 36px;vertical-align: top;line-height: 35px;opacity: 1.0;padding: 0;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td a {display: block;height: 35px;line-height: 35px;border: none;background: none;padding: 0;text-align: center;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td span {border: none;background: none;padding: 0 !important;text-align: center;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.sat a {color: #3d7dca !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.sun a ,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.holiday a{color: #fa364a !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-state-disabled .ui-state-default {color: #aaa !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-state-disabled.ui-datepicker-today{color: #aaa !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-state-disabled.sun .ui-state-default ,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-state-disabled.holiday .ui-state-default {color:#fdafb7 !important;opacity: 1.0 !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-state-disabled.sat .ui-state-default {color:#b1cbea !important;opacity: 1.0 !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-datepicker-current-day a {background: url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat 100% -74px !important;position: absolute;left: 0;top: 0;width: 36px;height: 37px;text-align: center;line-height: 36px;color: #fff !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-datepicker-today a {background: url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar_today.png) no-repeat center center;position: absolute;left: 0;top: 0;width: 36px;height: 37px;text-align: center;line-height: 36px;color: #e85984 ;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-datepicker-today span.ui-state-default {background: url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar_today.png) no-repeat center center;position: absolute;left: 0;top: 0;width: 36px;height: 37px;text-align: center;line-height: 36px;color: #e85984 !important;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-checkin-state-active.ui-datepicker-current-day a,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-checkin-state-active span.ui-state-default,
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-checkin-state-active a {background: url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat 0 0 !important;color:#fff !important;width:36px;height:37px;position: absolute;left: 0;top: -1px;line-height: 36px;padding: 0 !important;text-align: center;}
+/*.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-checkin-state-active a {background-position:0 0 !important}*/
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-datepicker-range a{background: #fdf0f4 !important;color: #252525;width:36px;height: 35px !important;position: absolute;left: 0;top: -1px;line-height: 36px !important;border-top: 1px solid #e5d8dc;border-bottom: 1px solid #e5d8dc;}
+.pb_multi_calendar .ui-datepicker-group .ui-datepicker-calendar td.ui-checkout-state-active a{background: url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat -108px 0 !important;color: #fff !important;width:36px;height: 37px !important;position: absolute;left: 0;top: -1px;line-height: 36px !important;}
+
+.pb_multi_calendar  a.ui-state-hover {width:36px;height:37px !important;line-height:37px !important;background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat 0 -74px !important;position: absolute;left: 0;top:-1px;}
+.pb_multi_calendar.datepicker-check-in-active  a.ui-state-hover {width:36px;height:37px !important;line-height:37px !important;background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat  0 -37px !important;position: absolute;left: 0;top:-1px}
+.pb_multi_calendar.datepicker-check-out-active  a.ui-state-hover {width:36px;height:37px !important;line-height:37px !important;background:url(http://image1.hanatour.com/_images/hana/common/calendar/ui-datepicker-calendar.png) no-repeat right -37px !important;position: absolute;left: 0;top:-1px;}
+
+
+
+
+/* 달력 크기조절 */
+
+.pb_multi_calendar.ui-datepicker-multi-2 {width:532px !important;}
+.pb_multi_calendar.ui-datepicker-multi-3 {width:798px !important;}
+.pb_multi_calendar.ui-datepicker-multi-2 .ui-datepicker-group,
+.pb_multi_calendar.ui-datepicker-multi-3 .ui-datepicker-group{width:252px !important;}
+
+
+input::-ms-clear {display:none}
+
+/*search_result_list*/
+.search_result_list {width:1064px;margin:34px auto 0}
+.search_result_list .left_area {width:208px;float:left;padding-bottom:30px}
+.search_result_list .left_area h3.tit {height:34px;line-height:34px;color:#fff;font-weight:600;background-color:#6d7588;padding-left:15px;font-size:13px}
+.search_result_list .left_area .result_serch {border:1px solid #d5d5d5;border-top:none}
+.search_result_list .left_area .result_serch .sel_option_list {position:relative;z-index:9}
+.search_result_list .left_area .result_serch .sel_option_list:hover {z-index:10}
+.search_result_list .left_area .result_serch .sel_option_list h4 {height:24px; padding:6px 30px 0 16px;font-size:12px; font-weight:600; line-height:18px; color:#353535; background:#eee;border-top:2px solid #ffffff}
+.search_result_list .left_area .result_serch .sel_option_list.first h4 {border-top:none}
+.search_result_list .left_area .result_serch .sel_option_list .btn_fold {position:absolute; left:0px; top:2px; display:block; width:100%;height:30px;background:url(//image1.hanatour.com/_images/hana/hana_hotel_serach/serch_select_blut.png) no-repeat 184px 11px}
+.search_result_list .left_area .result_serch .sel_option_list .btn_fold:hover {background:url(//image1.hanatour.com/_images/hana/hana_hotel_serach/serch_select_blut.png) no-repeat 184px -89px}
+.search_result_list .left_area .result_serch .sel_option_list .btn_unfold {position:absolute;left:0;top:2px; display:block; width:100%;height:30px;background:url(//image1.hanatour.com/_images/hana/hana_hotel_serach/serch_select_blut.png) no-repeat 184px -38px}
+.search_result_list .left_area .result_serch .sel_option_list .btn_unfold:hover {background:url(//image1.hanatour.com/_images/hana/hana_hotel_serach/serch_select_blut.png) no-repeat 184px -138px}
+
+#stSel {height:80px}
+#cnxidSel {height:56px}
+.search_result_list .left_area .result_serch .sel_option_list.on h4 {color:#252525;  background:#eee}
+.search_result_list .left_area .result_serch .list_box {padding:8px 0 6px}
+.search_result_list .left_area .result_serch .list_box p {margin:0 0 0 15px}
+.search_result_list .left_area .result_serch .list_box ul {padding: 0 0 0 14px}
+.search_result_list .left_area .result_serch .list_box li {padding:4px 0;font-size: 12px;position:relative;height:18px}
+.search_result_list .left_area .result_serch .list_box li:hover {z-index:99}
+.search_result_list .left_area .result_serch .list_box li input {float:left}
+.search_result_list .left_area .result_serch .list_box li label {margin:0 0 0 3px;padding:0 0 0 19px;float:left;width: 154px;height:inherit;height:initial}
+.search_result_list .left_area .result_serch .list_box li label p {float: left;margin:0 0 0 0;}
+.search_result_list .left_area .result_serch .list_box li label .qs_layer {margin: 2px 2px 0 3px;z-index:10}
+.search_result_list .left_area .result_serch .list_box li label .qs_layer .laypop_txt {z-index:10;width:170px;left:-92px;font-weight:normal}
+.search_result_list .left_area .result_serch .list_box li label .qs_layer .laypop_txt span.blut {left:91px}
+.search_result_list .left_area .result_serch .list_box li label span.list_count {}
+.search_result_list .left_area .result_serch .list_box li img {margin:2px 8px 0 0}
+.search_result_list .left_area .result_serch .list_box li.side {padding: 31px 2px 10px 9px;*padding:21px 2px 10px 9px;height: auto;width:168px}
+.search_result_list .left_area .result_serch .list_box li.side .price {position: absolute;top: 0;left: 0;font-size: 12px;color: #424242;width: 100%;line-height: 18px}
+.search_result_list .left_area .result_serch .list_box li.side .price span {float: left;margin-right: 3px}
+.search_result_list .left_area .result_serch  input[type="checkbox"].pb_check.bold.on + label,
+.search_result_list .left_area .result_serch  input[type="radio"].pb_radio.bold.on + label{*font-weight:400}
+
+
+.search_result_list .left_area .air_ticket_comparison {position: relative;margin-top:10px}
+.search_result_list .left_area .air_ticket_comparison h3 {height: 25px;background-color: #6d7588;color: #fff;padding: 9px 0 0 16px;font-size: 13px}
+.search_result_list .left_area .air_ticket_comparison .btn_fold {position:absolute; left:0px; top:2px; display:block; width:100%;height:30px;background: url(//image1.hanatour.com/_images/hana/hana_air/air_ticket_comparison_flod.png) no-repeat 185px -231px}
+.search_result_list .left_area .air_ticket_comparison .btn_unfold {position:absolute; left:0px; top:2px; display:block; width:100%;height:30px;background: url(//image1.hanatour.com/_images/hana/hana_air/air_ticket_comparison_flod.png) no-repeat 185px -186px}
+.search_result_list .left_area .air_ticket_comparison .list_box {border: 1px solid #d5d5d5;border-top: none;padding: 7px 0 14px 0}
+.search_result_list .left_area .air_ticket_comparison .box {height: 79px;padding: 0 0 0 16px}
+.search_result_list .left_area .air_ticket_comparison .box span{background:url(//image1.hanatour.com/_images/hana/hana_air/air_ticket_comparison_blut.gif) no-repeat right center;padding-right: 5px;margin-right: 5px}
+.search_result_list .left_area .air_ticket_comparison .box strong{color:#e85581}
+.search_result_list .left_area .air_ticket_comparison .btn {overflow:hidden;padding:0 0 0 16px}
+.search_result_list .left_area .air_ticket_comparison .btn a {width:54px;border:1px solid #b2b2b2;float:left;text-align:center;margin-right:3px;border-radius:2px;color:#535353;font-weight:600;font-size:11px;padding:2px 0 0 0}
+.search_result_list .left_area .air_ticket_comparison .btn a:hover {color:#252525;border:1px solid #757575}
+.search_result_list .left_area .air_ticket_comparison .btn a.reservation {border:1px solid #e85581;color:#e85581}
+.search_result_list .left_area .air_ticket_comparison .btn a.reservation:hover {border:1px solid #ff5e8f;color:#ff5e8f}
+.search_result_list .left_area .air_ticket_comparison .line {margin: 10px auto;border-top: 1px dashed #d5d5d5;width: 176px;height:0px}
+.search_result_list .left_area .air_ticket_comparison a.comparison {display: block;background-color: #e85581;color: #fff;margin: 10px auto 0;width: 174px;text-align: center;font-size: 13px;font-weight: 600;padding: 9px 0;border-radius: 2px}
+.search_result_list .left_area .air_ticket_comparison a.comparison:hover {background-color:#ff5e8f}
+
+.search_result_list .left_area .hotel_banner {border:1px solid #d5d5d5;margin-top:14px;height:94px;position: relative}
+.search_result_list .left_area .hotel_banner .txt {float: left;width: 102px;margin: 20px 0 0 15px}
+.search_result_list .left_area .hotel_banner .txt > strong {color:#424242;font-size:13px;display: block}
+.search_result_list .left_area .hotel_banner .txt > span {color:#424242;font-size:12px;line-height: 13px;display: block;margin: 3px 0 1px 0}
+.search_result_list .left_area .hotel_banner .txt > p {color:#e85581;font-size:12px;font-weight:600}
+.search_result_list .left_area .hotel_banner > img {width:58px;height:58px;border:1px solid #eeeeee;position:absolute;top:22px;right:12px}
+.search_result_list .left_area .hotel_banner .txt .name {overflow:hidden;padding-top:1px}
+.search_result_list .left_area .hotel_banner .txt .name > img {float:left;width:25px;height:15px;margin-top:1px}
+.search_result_list .left_area .hotel_banner .txt .name > span {float:left;font-size:12px;margin:-1px 0 0 0}
+.search_result_list .left_area .hotel_banner span.label {position:absolute;left:-5px;top:-8px;width:92px;height:29px;background: url(//image1.hanatour.com/_images/hana/hana_air/hotel_banner_label.png) no-repeat 0 0;text-align:center;color:#fff;font-size:12px;font-weight:600;line-height:24px;}
+
+.search_result_list .left_area .air_banner {position: relative;margin-top:16px;height:78px;border:1px solid #d5d5d5;}
+.search_result_list .left_area .air_banner .txt {float: left;margin: 20px 0 0 15px;width:80px;}
+.search_result_list .left_area .air_banner .txt > strong {display: blockcolor:#424242;font-size:13px;}
+.search_result_list .left_area .air_banner .txt > span {display: block;margin: 2px 0 0 0;color:#424242;font-size:12px;line-height: 13px;}
+.search_result_list .left_area .air_banner .txt > p {color:#e85581;font-size:12px;font-weight:600}
+.search_result_list .left_area .air_banner .name {float:right;padding:21px 0 0 0;width:110px;}
+.search_result_list .left_area .air_banner .name > img {float:right;margin:2px 24px 5px 0;width:40px;height:30px;}
+.search_result_list .left_area .air_banner span.label {position:absolute;left:-5px;top:-8px;width:92px;height:29px;background: url(//image1.hanatour.com/_images/hana/hana_air/business_banner_label.png) no-repeat 0 0;text-align:center;color:#fff;font-size:12px;font-weight:600;line-height:24px;}
+
+/*air_ticket_result	*/
+.air_ticket_result {float: left;width: 840px;margin-left: 16px}
+
+.air_ticket_result .result_title {border-bottom:2px solid #6d7588;overflow:hidden}
+.air_ticket_result .result_title p {float:left;margin:10px 0 0 10px;min-width:200px}
+.air_ticket_result .result_title > strong{font-size:20px;font-weight:600;color:#353535;float:left;line-height:35px;padding:0 0 0 2px}
+.air_ticket_result .result_title > span{font-size:12px;color:#737373;float:left;margin:8px 0 0 10px}
+
+.air_ticket_result .result_title ul {clear:both;overflow:hidden;padding-bottom:3px}
+.air_ticket_result .result_title ul li {float:left;border:1px solid #b2b2b2;margin:0 5px 5px 0;padding-right:8px;border-radius:2px;height:29px;overflow:hidden}
+.air_ticket_result .result_title ul li a {display:block;background:url(//image1.hanatour.com/_images/hana/hana_hotel_serach/btn_close.gif) no-repeat right center;padding:9px 12px 9px 7px;color:#535353;font-size:12px;letter-spacing:0}
+.air_ticket_result .result_title ul li.reset {background-color:#6d7588;border:1px solid #6d7588}
+.air_ticket_result .result_title ul li.reset a {background:none;padding:9px 7px;color:#fff}
+.air_ticket_result .result_title .keywords_list {padding:0 0 10px 0;clear:both;overflow: hidden}
+.air_ticket_result .result_title .keywords_list a {display: inline-block;*display:inline;*zoom:1;height:22px; margin: 0 5px 0 0; padding:4px 5px 0 8px; font-size:12px; color:#535353; border:1px solid #b2b2b2; border-radius:2px;float:left}
+.air_ticket_result .result_title .keywords_list a img{margin:3px 0 0 0}
+.air_ticket_result .result_title .keywords_list a span.bul_word_close {display: inline-block;*display:inline;*zoom:1; width:13px; height:13px; margin:3px 0 0 2px; vertical-align:top; background:url('//image1.hanatour.com/_images/hana/search_engine/engine_icon_set.png') no-repeat 3px -277px}
+.air_ticket_result .result_title .keywords_list a:hover {color:#252525; border:1px solid #757575}
+.air_ticket_result .result_title .keywords_list a:hover span.bul_word_close {}
+.air_ticket_result .result_title .keywords_list a.btn_all_delete {padding-right:8px; color:#fff; border:1px solid #818aa1; background:#6d7588}
+.air_ticket_result .result_title .keywords_list a.btn_all_delete:hover {background:#818aa1}
+
+.air_ticket_result .product_none {position:relative;width:838px;height:310px;border:1px solid #c6c6c6;margin-top:20px}
+.air_ticket_result .product_none > img {display:block;margin:60px auto 20px;text-align:center} 
+.air_ticket_result .product_none > strong {color:#252525;font-size:20px;text-align:center;display:block;line-height:26px}
+.air_ticket_result .product_none .tip {background-color:#f8f8f8;height:74px;width:100%;position:absolute;left:0;bottom:0}
+.air_ticket_result .product_none .tip > strong {font-size:13px;color:#e85581;float:left;margin:25px 0 0 160px}
+.air_ticket_result .product_none .tip ul {overflow:hidden;margin:25px 0 0 40px;float:left}
+.air_ticket_result .product_none .tip ul li {float:left;background:url(//image1.hanatour.com/_images/hana/hana_air/blut14.png) no-repeat 0 center;padding: 0 0 0 20px;margin-right:40px;line-height:18px;font-weight:normal;color:#535353}
+.air_ticket_result .product_none .tip ul li strong{color:#252525}
+ 
+
+.air_ticket_result .list_title {clear: both;border: 1px solid #d5d5d5;border-bottom: none;background-color: #f8f8f8;height: 40px}
+.air_ticket_result .list_title strong {color: #252525;font-size: 13px;float: left;line-height: 40px;text-align: center}
+.air_ticket_result .list_title .name,
+.air_ticket_result .product_list ul li .name{width: 270px;float: left}
+.air_ticket_result .list_title .couse,
+.air_ticket_result .product_list ul li .couse{width: 95px;float: left}
+.air_ticket_result .list_title .time,
+.air_ticket_result .product_list ul li .time{width: 95px;float: left}
+.air_ticket_result .list_title .rules,
+.air_ticket_result .product_list ul li .rules{width: 95px;float: left}
+.air_ticket_result .list_title .seat,
+.air_ticket_result .product_list ul li .seat{width: 95px;float: left}
+.air_ticket_result .list_title .price,
+.air_ticket_result .product_list ul li .price{width: 188px;float: left}
+.air_ticket_result .product_list {padding-bottom:70px}
+.air_ticket_result .product_list .more_btn {border-left:1px solid #c6c6c6;border-bottom:1px solid #c6c6c6;border-right:1px solid #c6c6c6;background-color:#f2f2f2;padding:10px 0;text-align:center}
+.air_ticket_result .product_list .more_btn a{font-weight:600;color:#535353;display: inline-block;*display:inline;*zoom:1;background:url(//image1.hanatour.com/_images/hana/hana_air/more_btn.gif) no-repeat right 7px;padding:0 15px 0 0}
+.air_ticket_result .product_list .more_btn a:hover{color:#252525;background:url(//image1.hanatour.com/_images/hana/hana_air/more_btn.gif) no-repeat right -27px}
+.air_ticket_result .product_list ul {}
+.air_ticket_result .product_list > ul > li {border:1px solid #e4e4e4;margin-top:-1px}
+.air_ticket_result .product_list > ul > li:first-child {border-top:1px solid #fff}
+.air_ticket_result .product_list > ul > li:hover {border:1px solid black;z-index:10;position:relative;cursor: pointer}
+.air_ticket_result .product_list ul li .defult_product_list {height:90px}
+.air_ticket_result .product_list ul li .name{position: relative}
+.air_ticket_result .product_list ul li.best {background: url(//image1.hanatour.com/_images/hana/hana_air/product_list_icon.png) no-repeat 0 -40px}
+.air_ticket_result .product_list ul li .name > img{width:30px;height:21px;float:left;margin: 35px 0 0 40px}
+.air_ticket_result .product_list ul li .name .txt {float: left;margin: 38px 0 0 5px}
+
+.air_ticket_result .product_list ul li.icon .name .txt {position:relative;width:170px;margin: 33px 0 0 5px}
+.air_ticket_result .product_list ul li.icon .name .txt.two {margin: 20px 0 0 5px}
+.air_ticket_result .product_list ul li.icon .name .txt > div {float:left;margin:0 2px 2px 0}
+.air_ticket_result .product_list ul li.icon .name .txt .laypop {width:186px;border:2px solid #6d7588;position:absolute;top: 37px;left: 0;background-color:#fff;z-index: 11;padding: 12px 18px 12px 15px;display:none}
+.air_ticket_result .product_list ul li.icon .name .txt .laypop a.close {position:absolute;top:0;right:0;display:none}
+.air_ticket_result .product_list ul li.icon .name .txt .laypop p {color:#424242;font-size:12px;line-height: 17px}
+.air_ticket_result .product_list ul li.icon .name .txt > div a:hover .laypop {display:block}
+.air_ticket_result .product_list ul li .name .txt strong{font-size:13px;color:#424242;display: block;margin-bottom:5px}
+.air_ticket_result .product_list ul li .name .txt > div > a {color:#fff;}
+.air_ticket_result .product_list ul li .name .txt > div > span {color:#fff;padding:2px;border-radius:2px}
+.air_ticket_result .product_list ul li .name .txt > .type01 > a > span {display:block;text-indent:-9999px;font-size:0;width:61px;height:16px;background:url(//image1.hanatour.com/_images/hana/hana_air/air_label_img01.png) no-repeat 0 0;}
+.air_ticket_result .product_list ul li .name .txt > .type01:hover > a > span {background:url(//image1.hanatour.com/_images/hana/hana_air/air_label_img01.png) no-repeat 100% 0;}
+.air_ticket_result .product_list ul li .name .txt > .type01:hover .laypop {display:block;}
+.air_ticket_result .product_list ul li .name .txt .type02 {}
+.air_ticket_result .product_list ul li .name .txt > div + div + div {clear:both}
+.air_ticket_result .product_list ul li .name .txt > div + div + div + div{clear:none;}
+
+.air_ticket_result .product_list ul li .couse{font-size:13px;color:#424242;text-align:center;padding: 36px 0 0 0}
+.air_ticket_result .product_list ul li .time{font-size:13px;color:#424242;text-align:center;padding-top: 24px;line-height: 20px}
+.air_ticket_result .product_list ul li .rules{padding-top: 31px}
+.air_ticket_result .product_list ul li .rules a{color:#535353;font-size:11px;width:54px;height:20px;text-align:center;line-height:22px;border:1px solid #b2b2b2;display:block;margin: 0 auto;border-radius: 2px;background-color:#fff}
+.air_ticket_result .product_list ul li .rules a:hover{color:#252525;border:1px solid #757575}
+.air_ticket_result .product_list ul li .seat{padding: 31px 0 0 0}
+.air_ticket_result .product_list ul li .seat span{text-indent: -9999px;background-image: url(//image1.hanatour.com/_images/hana/hana_air/product_list_icon.png);font-size: 0;width: 58px;height: 20px;background-repeat: no-repeat;margin: 0 auto;display: block}
+.air_ticket_result .product_list ul li .seat .wait{background-position: -60px -18px}
+.air_ticket_result .product_list ul li .seat .poss{background-position: 0 -18px}
+.air_ticket_result .product_list ul li .price .qs_layer{margin: 27px 15px 0 0;}
+.air_ticket_result .product_list ul li .price .qs_layer:hover {z-index:10}
+.air_ticket_result .product_list ul li .price .qs_layer:hover .laypop_txt{display:none}
+.air_ticket_result .product_list ul li .price .qs_layer > p {float: left;width: 135px;padding: 2px 5px;text-align: right;color: #424242;font-size: 12px}
+.air_ticket_result .product_list ul li .price .qs_layer a {float: left;margin-top: 2px}
+.air_ticket_result .product_list ul li .price .qs_layer a:hover  .laypop_txt{display:block}
+.air_ticket_result .product_list ul li .price .qs_layer .laypop_txt {left: 95px;width: 80px;line-height: 16px}
+.air_ticket_result .product_list ul li .price .qs_layer .laypop_txt .blut {left: 50%;margin-left: -5px}
+.air_ticket_result .product_list ul li .price > strong {display: block;color: #e85581;font-size: 20px;clear: both;line-height: 20px;padding: 7px 0 0 0;width: 140px;text-align: right;position: relative}
+.air_ticket_result .product_list ul li .price > strong > span {font-size: 14px;position: absolute;right: -25px;top: 6px;width: 24px;text-align:left;}
+
+.air_ticket_result .product_list ul li .airport_info,
+.air_ticket_result .product_list ul li .airport_info_choice{display:none}
+.air_ticket_result .product_list ul li.product_open .airport_info,
+.air_ticket_result .product_list ul li.product_open .airport_info_choice{display:block}
+
+.air_ticket_result .product_list ul li.product_open {background-color:#f6fafd;border:1px solid #3e98bf;position:relative;z-index:8}
+.air_ticket_result .product_list ul li.product_open:hover {cursor: default}
+.air_ticket_result .product_list ul li.product_open .airport_info {position:relative;}
+.air_ticket_result .product_list ul li.product_open .airport_info > div {border-top: 1px solid #d5d5d5;background: #fff}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > div.tit {text-align:center;floaT: left;width: 150px;height: 160px;background-color: #f8f8f8}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > div.tit img {display:block;margin: 40px auto 10px;width: 24px;height: 20px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > div.tit strong{color:#252525;font-size:15px;font-weight:600;display:block;line-height: 18px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > div.tit p{color:#535353;font-size:13px;line-height: 14px;margin-top: 8px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > div.tit p.date {margin-top:4px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll {margin-left: 150px;height: 160px;overflow-y: auto;border-left: 1px solid #e4e4e4}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul {}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li {height:80px;border-bottom:1px solid #e4e4e4;}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li + li:last-child {border-bottom:none}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li:hover,
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li.on {background:#f2f2f2}
+/*.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li:first-child {border-top:none}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li.on {border: 2px solid #e85581}*/
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table {width: 100%}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td {text-align: center;line-height: 1.5em}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.air_time {color:#252525;font-size:20px;font-weight:600;text-align:center;line-height:20px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.air_time span {margin:0 0 0 3px;font-size:12px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.line_info {padding: 15px 0}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.line_info .air_info {color:#535353;font-size:12px;background:url(//image1.hanatour.com/_images/hana/hana_air/air_control_line.png) no-repeat center bottom;padding-bottom:8px;display:block;margin:0 auto;text-overflow: ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;width: 180px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.line_info .air_info span {color:#e85581}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.line_info .air_time {color:#535353;padding: 5px 0 0 0}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.line_info .air_time span {color:#389eff;background:url(//image1.hanatour.com/_images/hana/hana_air/airport_info_blut.gif) no-repeat right center;padding-right:5px;margin-right:5px}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.seat_a {background: url(//image1.hanatour.com/_images/hana/hana_air/airport_info_txt_bg.png) no-repeat center center}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.seat_a span {color:#e85581;font-size:13px;font-weight:600}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.seat_a strong {color:#252525}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.btn {text-align: left}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.btn a {color:#535353;background-color:#fff;border:1px solid #b2b2b2;float: left;margin: 0 0 0 37px;border-radius: 2px;width: 65px;padding: 4px 0;text-align: center}
+.air_ticket_result .product_list ul li.product_open .airport_info > div > .scroll ul li table tbody td.btn a:hover {color:#252525;border:1px solid #757575}
+.air_ticket_result .product_list ul li.product_open .airport_info > .info_box .check_date {background-color:#f8f8f8}
+.air_ticket_result .product_list ul li.product_open .airport_info > .info_box .check_date p {margin:0 0 0 150px;padding:10px 20px;background-color:#fff;color:#e85581;border-top:1px solid #e4e4e4;border-left:1px solid #e4e4e4}
+.air_ticket_result .product_list ul li.product_open .pay_choice {background-color:#fff}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box {padding-top:20px; min-height:63px;border-bottom:1px solid #e4e4e4;position: relative}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box p {text-align:center;position: absolute;left: 40px;top: 25px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box p strong{color:#252525;font-size:15px;display: block;line-height: 18px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box p span{color:#424242;font-size:13px;line-height: 16px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box ul {padding: 0 0 0 180px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box ul:after {content:""; display:block; clear:both; visibility:hidden; width:0; height:0}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box ul li {float:left;height:18px;min-width: 200px;font-size: 13px; padding-bottom:8px;*width:240px;}
+.air_ticket_result .product_list ul li.product_open .pay_choice .card_box ul li .name {width: 116px;*width:130px}
+
+
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info {min-height: 200px;border-bottom:1px solid #e4e4e4} 
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box {float: left;padding: 20px 0 20px 35px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box .tit{color:#252525;font-size:15px;line-height: 18px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box .tb_line {border-top:1px solid #6d7588;margin-top: 5px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table{width:504px;border-left:1px solid #d5d5d5;line-height: 1.5em}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table thead th{padding:7px 0;text-align:center;color:#424242;font-size:13px;font-weight:600;border-right:1px solid #e4e4e4;border-bottom:1px solid #d5d5d5;line-height: 1.5em}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table thead th span.t {float:left}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table thead th .qs_layer {float:left;margin:3px 0 0 4px;position:static}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table thead th .qs_layer:hover {position:relative}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table thead th .qs_layer p {line-height:18px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table tbody th {text-align:center;color:#424242;background-color:#f8f8f8;border-right:1px solid #e4e4e4;border-bottom:1px solid #d5d5d5}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table tbody td {padding:7px 0;text-align:center;color:#535353;border-right:1px solid #e4e4e4;border-bottom:1px solid #d5d5d5;line-height: 1.5em}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table tbody td.t_left {padding:7px 0 7px 15px;text-align:left}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .tb_box table tbody td span.t {float:left;margin-left:10px;width:50px;text-align:right}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .all_pay_info {border-left:1px solid #e4e4e4;background-color:#f6f6f6;width:265px;float: right;min-height: 200px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .all_pay_info .tit {color:#252525;font-size:15px;line-height: 18px;display: block;text-align: right;padding: 20px 35px 0 0}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .all_pay_info .pay{text-align:right;padding-right:10px;margin: 30px 16px 20px 0}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .all_pay_info .pay strong {font-size:33px;color:#e85581;line-height: 38px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .all_pay_info .pay span{float:right;*float:none;margin:2px 0 2px 2px;font-size:15px}
+.air_ticket_result .product_list ul li.product_open .pay_choice .pay_info .all_pay_info p {text-align: right;margin: 0 35px 0 0;line-height: 15px;font-size: 12px;color:#737373}
+.air_ticket_result .product_list ul li.product_open .btn_box {background-color: #fff;height: 76px;padding-top: 20px;text-align: center}
+.air_ticket_result .product_list ul li.product_open .btn_box> a {width:150px;height:50px;font-size:16px;font-weight:600;display: inline-block;*display:inline;*zoom:1;line-height: 50px;border-radius: 2px;margin: 0 3px}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type01 {border:1px solid #b2b2b2;color:#535353}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type01:hover {color:#252525;border:1px solid #757575}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type02 {border:1px solid #e85581;color:#e85581;position:relative}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type02:hover {border:1px solid #ff5e8f;color:#ff5e8f}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type02:hover .laypop_txt {display:block;top:47px;width:175px;left:-33px}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type02:hover .laypop_txt .blut{left: 98px}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type02:hover .laypop_txt p {color:#535353}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type03 {border:1px solid #e85581;background-color:#e85581;color:#fff}
+.air_ticket_result .product_list ul li.product_open .btn_box a.type03:hover {border:1px solid #ff5e8f;background-color:#ff5e8f}
+
+/* 아이콘 */
+.ico {zoom:1; display:inline-block; background:url('http://image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat}
+
+.ico_sns {zoom:1; display:inline-block; width:30px; height:30px; margin:0 2px; background:url('http://image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat}
+.ico_sns:hover {-ms-filter:"progif:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity:0.60}
+.ico_sns.facebook {background-position:-150px 0;}
+.ico_sns.kakao {background-position:-185px 0;}
+.ico_sns.urlcopy {background-position:-220px 0;}
+.ico_sns.email {background-position:-255px 0;}
+.ico_sns.twitter {background-position:-290px 0;}
+
+.ico.tag {padding-left:47px; font-size:12px; background-position: -462px -325px; line-height:19px}
+
+/* Question Mark */
+.ico.location_01 {width:10px; height:13px; margin:-2px 2px 0 10px; background-position:-50px -30px; vertical-align:middle}
+a:hover .ico.location_01 {-ms-filter:"progif:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity:0.60;}
+
+.ico.location_02 {width:12px; height:16px; margin:-2px 2px 0 0; background-position:-50px 2px; vertical-align:middle}
+.ico.location_03 {width:12px; height:15px; margin:-5px 5px 0 0; background-position:-95px 2px; vertical-align:middle}
+
+.qs_layer {float:left; position:relative; margin:4px 7px 0 7px}
+.ico.qs_02 {width:13px; height:13px; font-size:0; background-position:-50px -93px; line-height:0}
+.ico.qs_02:hover {background-position:-50px -70px;}
+
+.ico.qs_03 {width:13px; height:13px; font-size:0; background-position:-50px -116px; line-height:0}
+.ico.qs_03:hover {background-position:-50px -141px;}
+
+/* 레이어팝업 */
+.laypop_txt {font-size:12px;border:2px solid #6d7588;position:absolute;top: 24px;background-color:#fff;z-index:9990;padding: 10px 15px 10px 15px;width:158px;text-align:left;display:none;left: -20px;}
+.qs_layer:hover .laypop_txt {display:block}
+.laypop_txt span.blut {width:9px;height:7px;background:url('http://image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat -52px -168px;position:absolute;top: -7px;left: 20px;}
+.laypop_txt p {margin:0;line-height:120%}
+
+/*
+	스크롤 안에 들어가는 레이어팝업 
+	overflow:auto 에 들어가는곳에 sc_laypop_tool 도 넣어줘야함
+*/
+.sc_layer {float:left; position:relative; margin:4px 7px 0 7px}
+.sc_laypop {font-size:12px;border:2px solid #6d7588;position:absolute;top: 0;background-color:#fff;z-index:9990;padding: 10px 15px 10px 15px;width:158px;text-align:left;display:none;left: 0;}
+.sc_laypop span.blut {width:9px;height:7px;background:url('http://image1.hanatour.com/_images/hana/common/icon_set.png') no-repeat -52px -168px;position:absolute;top: -7px;left: 20px;}
+.sc_laypop p {margin:0}
+
+/* 블릿 : bullet */
+.bullet {background:url('http://image1.hanatour.com/_images/hana/common/icon/bul_set.png') no-repeat}
+.bullet.b_01 {margin-bottom:10px; padding-left:20px; font-weight:600; font-size:15px; background-position:0 1px; color:#252525}
+.bullet.b_02 {margin-bottom:8px; padding-left:15px; font-weight:600; font-size:13px; background-position:0 -37px; color:#252525}
+
+
+.reservation_done {min-height: 360px;text-align: center;border: 1px solid #c6c6c6;padding-top: 60px}
+.reservation_done img {display: block;margin: 0 auto}
+.reservation_done .done{color:#000;font-size:24px;display: block;line-height: 52px}
+.reservation_done p {font-size:16px;line-height:23px}
+/*.reservation_done .time {font-size:20px;display: block;margin: 0 0 20px 0}*/
+.reservation_done .txt_01 {margin:20px 0 0 0;font-size:18px;font-weight:600;line-height:27px}
+.reservation_done ul {width: 640px;margin: 15px auto 0;text-align:center;}
+.reservation_done ul li {padding: 3px 0 3px 13px;font-size: 13px}
+.reservation_done .btn {padding-top: 30px}
+.reservation_done .btn a {font-size:16px;color:#fff;font-weight:600;background-color:#e85581;display:block;width:218px;height:50px;line-height:50px;text-align: center;border-radius: 2px;margin: 0 auto}
+.reservation_done .btn a:hover {background-color:#ff5e8f}
+.reservation_done .btn a span{background: url(//image1.hanatour.com/_images/hana/hana_air/payment_blut.png) no-repeat right center;padding-right: 11px}
+
+.not_ticket {min-height: 350px;text-align: center;border: 1px solid #c6c6c6;padding-top: 60px}
+.not_ticket img {display: block;margin: 0 auto}
+.not_ticket .done{color:#000;font-size:24px;display: block;line-height: 52px}
+.not_ticket p {text-align:center;font-size:15px;border-bottom:1px dotted #d8d8d8;padding:10px 0 35px;margin:0 80px;line-height:22px;color:#666}
+.not_ticket .btn {padding-top: 30px}
+.not_ticket .btn a {font-size:16px;color:#fff;font-weight:600;background-color:#e85581;display:block;width:218px;height:50px;line-height:50px;text-align: center;border-radius: 2px;margin: 0 auto}
+.not_ticket .btn a:hover {background-color:#ff5e8f}
+.not_ticket .btn a span{background: url(//image1.hanatour.com/_images/hana/hana_air/payment_blut.png) no-repeat right center;padding-right: 11px}
+
+.receipt {width: 517px}
+.receipt .scroll_box  {padding:0}
+.receipt_area {background: url(//image1.hanatour.com/_images/hana/hana_air/receipt_bg.gif) repeat-y 0 0;padding: 15px 50px 45px}
+.receipt_area  table {width: 100%;border-top: 1px solid #6d7588;margin: 5px 0 0 0}
+.receipt_area  table tbody th {background-color:#f2f2f2;border-bottom:1px solid #e5e5e5;color: #252525;padding: 8px 0 8px 14px;font-weight: normal;font-size: 12px;text-align:left}
+.receipt_area  table tbody th strong {display:block;font-size: 13px}
+.receipt_area  table tbody td {border-bottom:1px solid #e5e5e5;white-space: pre-line;background-color:#fff;padding: 8px 0 8px 10px}
+
+.pay_choice_box {position:relative}
+.pay_choice_box .bt_tit {float: none !important;margin: 0 !important;left: 0;top: 10px;position: absolute}
+.pay_choice_box .pay_choice{min-height: 35px;margin-left: 130px}
+
+.int_box {float: left;margin-top: 5px}
+.int_box .sel_input {width:100px}
+.int_box span.pay{float: left;margin: 5px 0 0 0}
+.int_box a.mileage {color: #535353;border: 1px solid #b2b2b2;border-radius: 2px;float: left;padding: 5px 9px;margin-left: 10px}
+.int_box a.mileage:hover {color:#252525;border:1px solid #757575}
+
+.pay_laypop {border:2px solid #4a505d;position:relative;display:none;margin-top:10px}
+.pay_laypop .btn_box {padding:20px 0 10px;text-align:Center}
+.pay_laypop .btn_box a{margin:0 2px}
+.pay_laypop a.close {width:38px;height:36px;background:#4a505d url(//image1.hanatour.com/_images/hana/p_schedule/btn_close.gif) no-repeat center center;position:absolute;right:0;top:0;font-size:0}
+.pay_laypop .pd_layout {padding:20px 16px}
+.pay_laypop .pd_layout .rd_box {border-top:1px solid #6d7588}
+.pay_laypop .s_tit {display:block;color:#252525;font-size:13px;padding:10px 0}
+.pay_laypop table.tb_type02 td.mileage {padding:0 0 0 13px}
+.pay_laypop table.tb_type02 td.mileage .center_t {margin:0 auto;width:180px;}
+.pay_laypop table.tb_type02 td.mileage input {text-align:right}
+.pay_laypop table.tb_type02 td > a {color:#535353;font-weight:600;font-size:12px;border:1px solid #b2b2b2;display: inline-block;*display:inline;*zoom:1;margin: 0 5px;line-height:25px;padding: 0 10px;border-radius: 2px;float:none}
+.pay_laypop table.tb_type02 td > a:hover {color:#252525;border:1px solid #757575}
+.pay_laypop .pd_layout .pay_table {margin:5px 0 0 0;border-top:1px solid #6d7588}
+
+.pay_laypop .radio_list {padding:20px 0  10px;zoom: 1}
+.pay_laypop .radio_list:after {content:""; display: block; clear: both; visibility: hidden}
+.pay_laypop .radio_list.radio_bg {height:50px;width:100%;background-color:#f6fafd;padding: 0;margin-top: 30px}
+.pay_laypop .radio_list.radio_bg li {margin:17px 0 0 10px}
+.pay_laypop .radio_list.radio_bg li:first-child {margin-left:25px}
+.pay_laypop .radio_list li {float:left}
+.pay_laypop .radio_list li .qs_layer {margin:3px 15px 0 -11px;line-height:18px;float:right}
+.pay_laypop .radio_list li .qs_layer .laypop_txt{width:200px}
+.pay_laypop  .btn_list {zoom:1;padding: 5px 0 0 0;margin-right: -5px}
+.pay_laypop  .btn_list:after {content:""; display: block; clear: both; visibility: hidden}
+.payment_type_title {height: 20px;padding: 40px 0 0px 0}
+.payment_type_title h5.tit{float: left;margin: 0}
+.payment_type_title ul {float: left;margin-left: 20px}
+.payment_type_title ul li{float: left}
+.pay_laypop .card_info {overflow:hidden;width:100%;padding:0 0 15px 0;background-color:#f6fafd}
+.pay_laypop .card_info > strong {width:71px;height:17px;float:left;margin:16px 0 0 110px;font-size:15px;color:#3e98bf;text-align:center;}
+.pay_laypop .card_info > span{float:left;margin:16px 0 0 5px;font-size:13px;color:#252525}
+.pay_laypop .card_info > a {background-color:#fff ;float:left;margin:13px 0 0 10px}
+
+.pay_laypop .card_info.promotion_type > strong {margin:25px 0 0 26px}
+.pay_laypop .card_info.promotion_type > a {margin:22px 0 0 10px}
+
+.pay_laypop .check_txt_box {background-color:#f8f8f8;padding:25px 35px;margin-top: -1px}
+.pay_laypop .check_txt_box p.label_check{height: 35px;font-size:13px}
+
+.list_box ul li .ui-widget-content {position:relative;width:154px;border:none;height: 3px;background: #aaaaaa;}
+
+.search_result_list .left_area .result_serch .list_box li.side .ui-widget-header {position:absolute;height:3px;background:#e85581 !important}
+.search_result_list .left_area .result_serch .list_box li.side .ui-state-default, 
+.search_result_list .left_area .result_serch .list_box li.side .ui-widget-content .ui-state-default, 
+.search_result_list .left_area .result_serch .list_box li.side .ui-widget-header .ui-state-default {position:absolute;top:-3px;background: #fff url(//image1.hanatour.com/_images/hana/hana_air/side_price_icon.gif) no-repeat 0 0 !important;width:10px;height:10px;border: none}
+
+
+.airport_info_choice {background-color: #6d7588;padding: 10px;width: 820px;margin-left: -1px}
+.airport_info_choice .aic {display:block;position: relative;background-color: #fff;height: 140px;margin-bottom: 2px;}
+.airport_info_choice .aic.hidden_area {height:150px}
+.airport_info_choice .aic .tit_info {height:37px;padding: 15px 0 0 0}
+.airport_info_choice .aic .tit_info img {float: left;margin: 5px 0 0 30px}
+.airport_info_choice .aic .tit_info > strong {font-size:16px;margin: 2px 0 0 5px;float: left;line-height: 20px;min-width:90px}
+.airport_info_choice .aic .tit_info > strong span{margin-left:4px}
+.airport_info_choice .aic .tit_info p.air {float:left}
+.airport_info_choice .aic .tit_info p.air img {width:34px;height:24px;margin:0}
+.airport_info_choice .aic .tit_info p.air strong {float:left;margin:3px 0 0 0;color:#424242;font-size:13px}
+.airport_info_choice .aic .tit_info ul {overflow:hidden;float: left;margin: 1px 0 0 10px}
+.airport_info_choice .aic .tit_info ul li {float:left;padding:0 0 0 5px;margin:0 0 0 5px;background:url(//image1.hanatour.com/_images/hana/hana_air/blut_11.gif) no-repeat 0 80%;line-height: 20px;color:#535353;font-size:12px}
+.airport_info_choice .aic .tit_info ul li.color_b {color:#389eff !important}
+.airport_info_choice .aic .tit_info ul li:first-child {background:none;padding:0;margin:0}
+
+.airport_info_choice .undecided {height:70px}
+.airport_info_choice .undecided .tit_info {padding:22px 0 0 0}
+
+.airport_info_choice .aic .air_line {height: 84px;width: 616px;margin: 0 0 0 30px}
+.airport_info_choice .aic.type00 .air_line {background: url(//image1.hanatour.com/_images/hana/hana_air/airport_info_choice_bg.gif) no-repeat 14px 23px}
+.airport_info_choice .aic.type_del .air_line{background:url(//image1.hanatour.com/_images/hana/hana_air/airport_info_choice_bg.gif) no-repeat 14px -70px}
+.airport_info_choice .aic.type01 .air_line{background:url(//image1.hanatour.com/_images/hana/hana_air/airport_info_choice_bg.gif) no-repeat 14px -163px}
+.airport_info_choice .aic.type02 .air_line{background:url(//image1.hanatour.com/_images/hana/hana_air/airport_info_choice_bg.gif) no-repeat 14px -256px}
+.airport_info_choice .aic.type03 .air_line{background: url(//image1.hanatour.com/_images/hana/hana_air/airport_info_choice_bg.gif) no-repeat 14px -349px}
+.airport_info_choice .aic .air_line .leave {float: left;position: absolute;width: 80px;margin-left: -20px;text-align:center}
+.airport_info_choice .aic .air_line div .top strong {color: #252525;font-size: 13px;line-height:17px;display: block;text-align:center;width:80px;text-overflow: ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
+.airport_info_choice .aic .air_line .leave .top p.time {background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type01.png) no-repeat center 0;padding: 17px 0 0 0}
+.airport_info_choice .aic .air_line div .btm {position: absolute;text-align: center;top:40px;left: 273px;width: 115px}
+.airport_info_choice .aic .air_line div .btm span {color:#535353;font-size:12px}
+.airport_info_choice .aic .air_line div .btm span.hidden_info {font-size:11px;text-overflow: ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;margin-top:2px;display:block}
+.airport_info_choice .aic .air_line div .btm p {text-overflow: ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;line-height:13px;font-size:12px;font-weight:600;margin-top:3px}
+.airport_info_choice .aic .air_line .arrival {float: right;position: relative;width: 80px;margin-right:-20px}
+.airport_info_choice .aic .air_line .arrival .top strong {color: #252525;font-size: 13px;line-height:17px;display: block;text-align:center;width:80px;text-overflow: ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden}
+.airport_info_choice .aic .air_line .arrival .top p.time {background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type02.png) no-repeat 15px 0;padding: 17px 0 0 15px;text-align: left}
+.airport_info_choice .aic .air_line div .top p.time  {font-size: 18px;font-weight: 600;color: #252525;margin-top: 6px;width: 80px}
+.airport_info_choice .aic .air_line div .top p.time span {font-size:13px;margin-left:3px}
+
+.airport_info_choice .aic .air_line .transfer {float: left;position: relative;width: 80px;padding-bottom: 19px;text-align:center}
+.airport_info_choice .aic.type_del .air_line .transfer_t01 {margin-left: 208px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type03.png) no-repeat center bottom}
+.airport_info_choice .aic.type_del .air_line .leave .btm {left: 273px}
+.airport_info_choice .aic.type01 .air_line .leave .btm {left: 140px}
+.airport_info_choice .aic.type01 .air_line .transfer_t01 {margin-left: 208px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type03.png) no-repeat center bottom}
+.airport_info_choice .aic.type01 .air_line .transfer_t01 .btm {left: 120px}
+.airport_info_choice .aic.type02 .air_line .leave .btm{left:76px}
+.airport_info_choice .aic.type02 .air_line .transfer_t01 .btm{left:78px}
+.airport_info_choice .aic.type02 .air_line .transfer_t02 .btm {left: 76px}
+.airport_info_choice .aic.type02 .air_line .transfer_t01 {margin-left: 111px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type04.png) no-repeat center bottom}
+.airport_info_choice .aic.type02 .air_line .transfer_t02 {margin-left: 113px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type05.png) no-repeat center bottom}
+.airport_info_choice .aic.type03 .air_line .leave .btm{left:64px}
+.airport_info_choice .aic.type03 .air_line .transfer_t01 .btm{left:44px}
+.airport_info_choice .aic.type03 .air_line .transfer_t02 .btm{left:44px}
+.airport_info_choice .aic.type03 .air_line .transfer_t03 .btm {left: 64px}
+.airport_info_choice .aic.type03 .air_line .transfer_t01 {margin-left: 87px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type04.png) no-repeat center bottom}
+.airport_info_choice .aic.type03 .air_line .transfer_t02 {margin-left: 41px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type06.png) no-repeat center bottom}
+.airport_info_choice .aic.type03 .air_line .transfer_t03 {margin-left: 41px;background: url(//image1.hanatour.com/_images/hana/hana_air/aic_img_type05.png) no-repeat center bottom}
+.airport_info_choice .aic .txt_i {position: absolute;right: 41px;top: 74px;height: 24px;width: 61px;font-size:13px;text-align: right;border-left: 1px dashed #d5d5d5;padding-top: 10px}
+
+.insurance_join {position:relative;padding-top:10px;height:20px;}
+.insurance_join p span {margin:0 10px;}
+.insurance_join a {position:absolute;right:0;top:5px;color:#535353;border:1px solid #b2b2b2;background-color:#fff;padding: 4px 7px;border-radius: 2px;margin-left: 8px}
+.insurance_join a:hover {color:#252525;border:1px solid #757575}
+
+.insurance_join {position:relative;margin:30px 0 0 0;padding:10px 0 5px;overflow:hidden;}
+.insurance_join h5.tit {float:left;margin:0}
+.insurance_join p {float:left;margin-left:10px}
+.insurance_join p span {margin:0 10px;}
+
+.insurance_join a {position:absolute;right:0;top:2px;color:#535353;border:1px solid #b2b2b2;background-color:#fff;padding: 4px 7px;font-size:12px;border-radius: 2px;margin-left: 8px}
+.insurance_join a span {padding-right: 10px;background: url(//image1.hanatour.com/_images/hana/hana_air/blut08.gif) no-repeat right center}
+.insurance_join a:hover {color:#252525;border:1px solid #757575}
+
+.wifi_service {border-top:1px solid #6d7588;border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;margin-top:5px;padding-bottom:20px}
+.wifi_service .tit {background-color:#f2f2f2;}
+.wifi_service .tit strong{display:block;font-size:15px;color:#252525;padding:0 0 0 23px;line-height: 40px !important}
+.wifi_service .txt ul {margin: 10px 20px 14px}
+.wifi_service .txt ul li {font-size:13px;color:#535353;line-height: 21px;background: url(//image1.hanatour.com/_images/hana/hana_air/blut13.gif) no-repeat 0 10px;padding: 0 0 0 8px}
+.wifi_service .btn_area {margin: 0px 20px}
+.wifi_service .btn_area a {color:#535353;border:1px solid #b2b2b2;background-color:#fff;padding: 4px 7px;font-size:12px;border-radius: 2px;margin-left: 8px}
+.wifi_service .btn_area a:hover {color:#252525;border:1px solid #757575}
+.wifi_service .btn_area a span{padding-right: 10px;background: url(//image1.hanatour.com/_images/hana/hana_air/blut08.gif) no-repeat right center}
+
+
+.rolling_banner {position:relative;margin-top:13px}
+.rolling_banner .slides_container {position:relative;top:27px;width:794px; height:120px; overflow:hidden;}
+.rolling_banner .slides_container div {position:absolute;left:0;top:0;width:794px; height:120px;}
+.rolling_banner .slides_container div img {width:794px; height:120px;}
+.rolling_banner .pagination {z-index:99; position:absolute;right:0;top:10px}
+.rolling_banner .pagination li {float:left; margin:0 4px;}
+.rolling_banner .pagination li a {display:block; float:left; overflow:hidden; width:10px; height:0; padding-top:10px; background:url(//image1.hanatour.com/_images/hana/hana_air/rolling_off.png);}
+.rolling_banner .pagination li a.current {background:url(//image1.hanatour.com/_images/hana/hana_air/rolling_on.png) no-repeat 0 0;}
+
+.pop_loding {position:fixed;top:50%;left:50%;width:300px;margin:-50px 0 0 -150px;text-align:center;z-index:10001}
+.pop_loding p {color:#fff;font-size:15px}
+.pop_loding p strong{display:block;padding:0 0 15px;font-size:20px;}
+.pop_loding img{margin:15px 0 0 0}
+
+table.tb_type02 tfoot td ul li a {}
+table.tb_type02 tfoot td ul li a:hover {}
+
+/* pop_system */
+.pop_system {}
+.pop_system .title_area {margin:0;padding:0 20px;height:50px;background:#c83d67 url(//image1.hanatour.com/_images/hana/common/popup/popwar_title_bg.jpg) no-repeat 100% 50%;}
+.pop_system .title_area h1 {color:#fff;font-size:15px;line-height:50px;}
+.pop_system .pop_title {height:51px;background:#4a505d;}
+.pop_system .pop_title h1 {font-size:18px;font-weight:500;line-height:47px !important;padding-left:27px;color:#fff;float:left;width:400px}
+.pop_system .pop_title a {display:block;float:right;margin:16px 20px 0 0;width:17px;height:16px;font-size:0;text-indent:-9999px;background:url('//image1.hanatour.com/_images/hana/p_schedule/btn_close.gif') no-repeat 0 0;}
+.pop_system .contents_area {padding:22px 26px}
+.pop_system .contents_area:after {content: ""; display: block; clear: both; visibility: hidden; width: 0; height: 0}
+
+.pop_system .tit_pay_rules {position: relative;min-height: 45px}
+.pop_system .tit_pay_rules a{position: absolute;right: 0;top: 0}
+
+.pop_system table.tb_type03 {width:100%}
+.pop_system table.tb_type03 tbody th {background:#f2f2f2;border-bottom:1px solid #e4e4e4;padding: 8px 0 8px 11px;color: #252525;text-align: left;border-left:1px solid #e4e4e4;font-size: 13px}
+.pop_system table.tb_type03 tbody th.two_txt {line-height:24px;padding:11px}
+.pop_system table.tb_type03 tbody th:first-child {border-left:none}
+.pop_system table.tb_type03 tbody td {white-space: pre-line;border-bottom: 1px solid #e4e4e4 !important;padding: 12px 0 12px 20px;text-align: left;font-size: 13px !important;color: #424242;border-left: 1px solid #e4e4e4}
+.pop_system table.tb_type03 tbody td.day {padding:4px 0 4px 20px}
+.pop_system table.tb_type03 tbody td.check_radio {white-space:normal}
+.pop_system table.tb_type03 tbody td.check_radio ul li {float:left;}
+.pop_system table.tb_type03 tbody td.txt_pre {white-space: nowrap}
+.pop_system table.tb_type03 tbody td.txt_pre span {float: left;color: #454545}
+.pop_system table.tb_type03 tbody td.txt_pre ul {margin:5px 0}
+.pop_system table.tb_type03 tbody td.txt_pre ul li {margin:8px 0 0 0}
+.pop_system table.tb_type03 tbody td.txt_pre ul li:first-child {margin:0}
+.pop_system table.tb_type03 tbody td.txt_pre ul li strong {margin-right:4px}
+.pop_system table.tb_type03 tbody td.txt_pre img{float: left;margin: 4px 10px 0}
+.pop_system table.tb_type03 tbody td.t_left {padding:9px 10px}
+.pop_system table.tb_type03 tbody td:first-child {border-left:none}
+.pop_system table.tb_type03 tbody td.int{padding: 9px 0 9px 11px !important;text-align: left;white-space: nowrap}
+.pop_system table.tb_type03 tbody td.int .sel_input {position: static;margin:0}
+.pop_system table.tb_type03 tbody tr.btm th , .pop_system table.tb_type03 tbody tr.btm td {border-bottom:1px solid #cccccc !important}
+.pop_system table.tb_type03 tbody tr.btm th.defult , .pop_system table.tb_type03 tbody tr.btm td.defult {border-bottom:1px solid #e4e4e4 !important}
+.pop_system table.tb_type03 tbody td.int .sel_ipt  ,
+.pop_system table.tb_type03 tbody td.int .txt_ipt  {float:left}
+.pop_system table.tb_type03.payment tbody th {line-height:40px}
+.pop_system table.tb_type03.payment tbody th,
+.pop_system table.tb_type03.payment tbody td {text-align:center;padding:9px 0;line-height:20px}
+.pop_system table.tb_type03.payment tfoot th {text-align:left;background-color:#f2f2f2;border-bottom:1px solid #cccccc;padding:15px 0 15px 20px}
+.pop_system table.tb_type03.payment tfoot th strong{color:#252525}
+.pop_system table.tb_type03.t_center tbody th,.pop_system table.tb_type03.t_center tbody td {text-align:center;padding:12px 0}
+.pop_system table.tb_type03 tbody tr.ver_top th {vertical-align: top}
+.pop_system table.tb_type03 tbody tr.ver_top td {vertical-align: top}
+.pop_system table.tb_type03 tbody td span.name {font-weight: 600}
+.pop_system table.tb_type03 tbody td span.money {float: right;margin-right: 10px;font-weight: 600;color: #e85581}
+.pop_system table.tb_type03 tbody td.pay strong {font-size:23px;color:#e85581;float: left;margin-top: 5px}
+.pop_system table.tb_type03 tbody td.pay span {font-size:13px;color:#e85581;float: left;margin: 7px 0 0 3px}
+.pop_system table.tb_type03 tbody td.question {white-space: normal}
+.pop_system table.tb_type03 tbody td.question ul {}
+.pop_system table.tb_type03 tbody td.question ul li {background: url(//image1.hanatour.com/_images/hana/hana_air/blut04.gif) no-repeat 0 9px;padding: 3px 0 3px 8px}
+.pop_system table.tb_type03 tbody td.prev_p {color:#737373}
+
+/*invoice*/
+.invoice {position:relative;width:930px;}
+.invoice .print_btn, .invoice .time_t  {text-align:right}
+.invoice .time_t {margin:5px 0 8px;color:#737373;font-size:13px;}
+.invoice table.tb_type03 {width:100%}
+.invoice table.tb_type03 tbody th {background:#f2f2f2;border-bottom:1px solid #e4e4e4;padding: 8px 0 8px 11px;color: #252525;text-align: left;border-left:1px solid #e4e4e4;font-size: 13px}
+.invoice table.tb_type03 tbody th.two_txt {line-height:24px;padding:11px}
+.invoice table.tb_type03 tbody th:first-child {border-left:none}
+.invoice table.tb_type03 tbody td {white-space: pre-line;border-bottom: 1px solid #e4e4e4 !important;padding: 12px 0 12px 20px;text-align: left;font-size: 13px !important;color: #424242;border-left: 1px solid #e4e4e4}
+.invoice table.tb_type03 tbody td.txt_pre {white-space: nowrap}
+.invoice table.tb_type03 tbody td.txt_pre span {float: left;color: #454545}
+.invoice table.tb_type03 tbody td.txt_pre img{float: left;margin: 4px 10px 0}
+.invoice table.tb_type03 tbody td.t_left {padding:9px 10px}
+.invoice table.tb_type03 tbody td:first-child {border-left:none}
+.invoice table.tb_type03 tbody td.int{padding: 9px 0 9px 11px !important;text-align: left;white-space: nowrap}
+.invoice table.tb_type03 tbody td.int .sel_input {position: static;margin:0}
+.invoice table.tb_type03 tbody tr.btm th , .invoice table.tb_type03 tbody tr.btm td {border-bottom:1px solid #cccccc !important}
+.invoice table.tb_type03 tbody td.int .sel_ipt  ,
+.invoice table.tb_type03 tbody td.int .txt_ipt  {float:left}
+.invoice table.tb_type03.payment tbody th {line-height:40px}
+.invoice table.tb_type03.payment tbody th,
+.invoice table.tb_type03.payment tbody td {text-align:center;padding:9px 0;line-height:20px}
+.invoice table.tb_type03.payment tfoot th {text-align:left;background-color:#f2f2f2;border-bottom:1px solid #cccccc;padding:15px 0 15px 20px}
+.invoice table.tb_type03.payment tfoot th strong{color:#252525}
+.invoice table.tb_type03 tbody tr.ver_top th {vertical-align: top}
+.invoice table.tb_type03 tbody tr.ver_top td {vertical-align: top}
+.invoice table.tb_type03 tbody td span.name {font-weight: 600}
+.invoice table.tb_type03 tbody td span.money {float: right;margin-right: 10px;font-weight: 600;color: #e85581}
+.invoice table.tb_type03 tbody td.pay strong {font-size:23px;color:#e85581;float: left;margin-top: 5px}
+.invoice table.tb_type03 tbody td.pay span {font-size:13px;color:#e85581;float: left;margin: 7px 0 0 3px}
+.invoice table.tb_type03 tbody td.question {white-space: normal}
+.invoice table.tb_type03 tbody td.question ul {}
+.invoice table.tb_type03 tbody td.question ul li {background: url(//image1.hanatour.com/_images/hana/hana_air/blut04.gif) no-repeat 0 9px;padding: 3px 0 3px 8px}
+.invoice table.tb_type03 tbody td.prev_p {color:#737373}
+.invoice .pop_btn {text-align: center;padding: 30px 0}
+.invoice .pop_btn a {line-height:40px;min-width:120px;display: inline-block;*display:inline;*zoom:1;border-radius: 2px;font-size:15px;font-weight:600}
+.invoice .pop_btn a.type_01 {background-color:#e85581;color:#fff}
+.invoice .pop_btn a.type_01:hover {background-color:#ff5e8f}
+
+/*possport_into*/
+.passport_into {position:relative;overflow:hidden;margin-top: 10px;padding:15px 20px;border-top:1px solid #6d7588;border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;}
+.passport_into p.passport_ch {float:left;margin-left:-10px}
+.passport_into a.btn {display: inline-block;*display:inline;*zoom:1;position:absolute;right:15px;top:20px;color:#535353;font-weight:600;font-size:12px;border:1px solid #b2b2b2;margin: 0 5px;line-height:25px;padding: 0 10px;border-radius: 2px;}
+.passport_into a.btn:hover {color:#252525;border:1px solid #757575}
+.passport_into a.btn span {padding-right: 10px;background: url(//image1.hanatour.com/_images/hana/hana_air/blut08.gif) no-repeat right center}
+
+@media print{
+	body {}
+	#header_section,
+	.floating_dim,
+	#hanatour_sns,
+	#company_info,
+	#footer,
+	.hana_air_ticket,
+	.pop_wrap .passenger_info .time_t ,
+	.floating_content {display:none !important}
+	.pop_contents{border:none}
+	.pop_wrap .mail_submit {display:none}
+	#wrap .pop_wrap {position:static;margin:0 !important;padding:0 !important;width:auto !important;left:0;top:0}
+	#wrap .pop_wrap .pop_title {display:none}
+	#wrap .pop_wrap .pop_contents {border:none}
+	#wrap .pop_wrap .pop_contents .btn_print {display:none}
+	#wrap .pop_wrap.receipt .pop_contents .receipt_area {width:400px}
+	.pop_wrap .scroll_box,
+	.pop_wrap .area_box {max-height:9999px !important;padding:0;overflow-y:visible !important}
+	.pop_wrap.w_1000 .print_area{padding:0;}
+	.pop_wrap.w_1000 .print_area .print_abso {display:none}
+	.pop_wrap.w_1000 .print_area .mail_submit {display:none}
+}
+
+/*type05_sc_laypop */
+.type05_sc_laypop_txt .laypop {width:240px;border:2px solid #6d7588;position:absolute;top:0;left: 0;background-color:#fff;z-index: 11;padding: 12px 18px 12px 15px;display:none}
+.type05_sc_laypop_txt .laypop a.close {position:absolute;top:0;right:0;display:none}
+.type05_sc_laypop_txt .laypop p {color:#424242;font-size:12px;line-height: 17px}
+
+/* pop_wrap */
+.pop_wrap table.tb_type03 tbody td.check_radio2 {white-space:normal;}
+.pop_wrap table.tb_type03 tbody td.check_radio2 ul {overflow:hidden; padding-left:3px; border-top:1px dashed #d5d5d5;}
+.pop_wrap table.tb_type03 tbody td.check_radio2 ul:first-child {border-top:0 none;}
+.pop_wrap table.tb_type03 tbody td.check_radio2 ul:first-child li {padding:0;}
+.pop_wrap table.tb_type03 tbody td.check_radio2 ul li {float:left; width:30%; padding-top:8px;}
+.pop_wrap table.tb_type03 tbody td.check_radio2 ul.inquiry_list {margin-top:12px; padding-top:5px;}
+.pop_wrap table.tb_type03 tbody td.check_radio2 ul.inquiry_list li {width:35%;}
+.pop_wrap table.tb_type03 tbody td .info_txt {white-space:normal;}
+.pop_wrap table.tb_type03 tbody td .info_txt > div {display:none; overflow-y:auto; height:111px; font-size:12px; color:#737373; letter-spacing:0;}
+.pop_wrap table.tb_type03 tbody td .info_txt .info_conts_text1 {}
+.pop_wrap table.tb_type03 tbody td .info_txt .info_conts_text2 {}
+.pop_wrap table.tb_type03 tbody td .info_txt .txt_point_st1 {display:block; margin-bottom:2px; padding-left:12px; font-size:13px; color:#535353; background: url(//image1.hanatour.com/_images/hana/hana_air/blut04_01.gif) no-repeat 2px 7px;}
+.pop_wrap table.tb_type03 tbody td .inquiry_txt {white-space:normal; overflow-y:auto; min-height:80px; max-height:250px;}
+
+/* faq_conts */
+.faq_conts { }
+.faq_conts .btn_area {padding-bottom:6px; text-align:right;}
+.faq_conts a.faq_more {display:inline-block; margin:0 0 0 5px; padding:1px 10px; color:#535353; font-weight:600; font-size:13px; border:1px solid #b2b2b2; border-radius:2px; line-height:26px;}
+.faq_conts a.faq_more:hover {color:#252525;border:1px solid #757575;}
+.faq_conts a.faq_more span {padding-right:10px; background: url(//image1.hanatour.com/_images/hana/hana_air/blut08.gif) no-repeat right center;}
+.faq_conts .faq_air_list {border-top:1px solid #6d7588; border-bottom:1px solid #c6c6c6;}
+.faq_conts .faq_air_list > div {border-top:1px solid #e4e4e4;}
+.faq_conts .faq_air_list > div:first-child {border-top:none;}
+.faq_conts .faq_air_list > div span:first-child {padding-left:17px;}
+.faq_conts .faq_air_list > div span {display:inline-block; font-size:13px; vertical-align:top;}
+.faq_conts .faq_air_list .tit {}
+.faq_conts .faq_air_list .txt {width:617px; padding-left:3px;}
+.faq_conts .faq_air_list .faq_question_box {}
+.faq_conts .faq_air_list .faq_question_box .q_click {display:block; padding:16px 0; color:#424242; background:url(//image1.hanatour.com/_images/hana/hana_air/bul_qna_open.png) no-repeat 690px 20px;}
+.faq_conts .faq_air_list .faq_question_box .q_click.on {display:block; font-weight:600; background:url(//image1.hanatour.com/_images/hana/hana_air/bul_qna_close.png) no-repeat 690px 20px;}
+.faq_conts .faq_air_list .faq_question_box .q_click.on .tit {color:#e85581;}
+.faq_conts .faq_air_list .faq_question_box .q_click.on .txt {color:#252525;}
+.faq_conts .faq_air_list .faq_question_box .tit {}
+.faq_conts .faq_air_list .faq_question_box .txt {}
+.faq_conts .faq_air_list .faq_answer_box {display:none; padding:18px 0; background-color:#f8f8f8; line-height:20px;}
+.faq_conts .faq_air_list .faq_answer_box.show {display:block;}
+.faq_conts .faq_air_list .faq_answer_box .tit {color:#e85581; font-weight:600;}
+.faq_conts .faq_air_list .faq_answer_box .txt {color:#424242;}
+
+
+/* .hana_air_floating_banner */
+.hana_air_floating_banner {position:absolute;left:50%;top:305px;margin:0 0 0 0;z-index:9}
+.hana_air_floating_banner a {}
+.hana_air_floating_banner a img {}
+.hana_air_floating_banner .btn_close {position:absolute;top:10px;right:10px;width:27px; height:27px; background:url('//image1.hanatour.com/popup/float_mini/asia/btn_float_mini_close.png') no-repeat 0 0}
+
+/* receipt_application */
+.receipt_application p {font-size:12px}
+.receipt_application .receipt_type01,.receipt_application .receipt_type02 {width:930px}
+.receipt_application .check_radio {height:18px;margin:8px 0 0 2px}
+.receipt_application .check_radio li {float:left;min-width:110px}
+.receipt_application .number_type01 {line-height:30px}
+.receipt_application .number_type01 .sel_input {display: inline-block;*display:inline;*zoom:1;float:none;width:50px;vertical-align:top;margin:0 3px !important;padding:0 6px}
+.receipt_application .tb_line {margin-top:10px}
+.receipt_application strong.title_blut {display:block}
+.receipt_application strong.tit {display:block;margin-top:5px;}
+
+.receipt_application .tab_menu {overflow:hidden;clear:both;margin-top:10px}
+.receipt_application .tab_menu li {float:left;width:464px;text-align:center}
+.receipt_application .tab_menu li.on {position:relative;z-index:1}
+.receipt_application .tab_menu li a {background-color:#f2f2f2;display:block;height: 100%;width: 100%;line-height:58px;border: 1px solid #d5d5d5;color: #424242;font-size: 13px;font-weight: normal}
+.receipt_application .tab_menu li.on a {background-color:#fff;border: 1px solid #6d7588;border-bottom: none;font-weight: 600}
+.receipt_application table.tb_type02 thead th {background:#f2f2f2;border-bottom:1px solid #e4e4e4;padding: 9px 0;color: #252525;text-align: center;border-left:1px solid #e4e4e4;}
+.receipt_application table.tb_type02 thead th:first-child {border-left:none}
+.receipt_application table.tb_type02 tbody td.t_center,
+.receipt_application table.tb_type03 tbody td.t_center{padding:12px 0;}
+.receipt_application table.tb_type02 tbody td.t_right,
+.receipt_application table.tb_type03 tbody td.t_right{padding:12px 20px}
+
+.color_p {color:#e85581 !important}	

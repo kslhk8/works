@@ -1,0 +1,85 @@
+@charset "UTF-8";
+#background_find_inform{
+	position:absolute; top:150px; height:490px; width:1080px;
+	background-repeat:no-repeat; background-size:100% 100%;
+}
+#findInform_text_wrap{
+	position:relative; top:30px;width:100%; height:90px; text-align:center;
+	display:inline-block; font-size:20px; margin:3px; 
+}
+#inform_text1{
+		font:20px Tahoma, Arial; color:black; 
+}
+#inform_text2{
+	font:12px Tahoma, Arial;
+}
+#findInform_content_wrap{
+	position:relative; height:360px; width:418px; left:330px; border:1px solid grey;
+}
+#content_top_wrap{
+	position:relative; width:420px;height:40px; 
+}
+#top_id_wrap{
+cursor:pointer;	position:absolute; width:209px; text-align:center; height:38px; padding-top:12px;  font:18px Tahoma, Arial; color:#4a505d; background-color:white;  border:1px solid grey;
+}
+#top_pwd_wrap{
+	cursor:pointer; position:absolute; right:1px; width:212px; text-align:center;  height:38px; padding-top:12px;  font:18px Tahoma, Arial; color:white; background-color:#4a505d;  border:1px solid grey;
+}
+#content_body_id{
+	position:absolute; top:74px; width:100%; border-bottom: 1px dotted grey; height:190px;
+}
+#id_img{
+	position:absolute; padding-left:40px;height:67px; border-bottom:1px dotted grey; width:382px;
+}
+#body_id_name{ 
+	position:absolute; top:90px; left:43px;  font:13px Tahoma, Arial; color:black;
+}
+#body_id_name > input[type=text]{
+	padding-left:5px; width:130px;
+}
+#body_id_email{
+	position:absolute; top:117px; left:30px;  font:13px Tahoma, Arial; color:black;
+}
+#body_id_email >input[type=text]{
+	padding-left:5px; width:132px;
+}
+#body_id_email > select{
+	width:92px;
+}
+#body_id_birth{
+		position:absolute; top:144px; left:18px;  font:13px Tahoma, Arial; color:black;
+}
+#body_id_birth > select{
+	width:80px;
+}
+#notice_div{
+	position:relative; top:203px; width:418px; text-align:center; color:rgb(241, 84, 155);
+}
+#content_id_accept{
+	position:relative; top:213px; left:108px;
+	width:190px; height:35px; font:16px Tahoma, Arial; font-weight:bold;
+	background-color: rgb(241, 84, 155); color:white; cursor:pointer; text-align:center; padding-top:10px;
+}
+#content_body_pwd{
+	visibility:hidden; position:absolute; top:74px; width:100%; border-bottom: 1px dotted grey; height:180px;
+}
+#pwd_img{
+		position:absolute; padding-left:40px;height:67px; border-bottom:1px dotted grey; width:382px;
+	
+}
+#body_pwd_id{
+		position:absolute; top:90px; left:43px;  font:13px Tahoma, Arial; color:black;
+}
+#body_pwd_email{
+		position:absolute; top:124px; left:43px;  font:13px Tahoma, Arial; color:black;
+	
+}
+#body_pwd_notice{
+			position:absolute; top:150px; left:18px;  font:11px Tahoma, Arial; color: rgb(241, 84, 155);
+	
+}
+#content_pwd_accept{
+	position:relative; top:210px; left:108px;
+	width:190px; height:35px; font:16px Tahoma, Arial; font-weight:bold;
+	background-color: rgb(241, 84, 155); color:white; cursor:pointer; text-align:center; padding-top:10px;
+}

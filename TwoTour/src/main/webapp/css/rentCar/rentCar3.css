@@ -1,0 +1,855 @@
+@charset "UTF-8";
+
+#hanarent #renta_wrap {
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+element.style {
+}
+rentcarSSL.css:3
+#hanarent #renta_wrap {
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+body, div, ul, ul li, p, ol, ol li, li, dl, dl dt, dl dd, h1, h2, h3, h4, h5, h6, form, fieldset, button {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+}
+body, div, ul, ul li, p, ol, ol li, li, dl, dl dt, dl dd, h1, h2, h3, h4, h5, h6, form, fieldset, button, pre, code, legend, textarea, p, blockquote, th, td, input, select {
+  
+    font-family: 'Nanum Gothic' , 'Malgun Gothic' , 'Dotum' , 'Apple SD Gothic Neo', Helvetica, Sans-serif;
+}
+#hanarent #renta_wrap #centent {
+    zoom: 1;
+    width: 1064px;
+    margin: auto;
+    padding: 40px 0;
+}
+#hanarent .h2_title {
+    width: 100%;
+    padding: 0 0 20px 0;
+    font-size: 32px;
+    line-height: 32px;
+}
+#reservation_content {
+    float: left;
+    width: 794px;
+}
+.my_choicecar {
+    zoom: 1;
+    margin-bottom: 15px;
+    border-top: 1px solid #000000 !important;
+    border: 1px solid #D7D7D7;
+    background-color: #FFF;
+}
+.my_choicecar .thumb_car {
+    float: left;
+    width: 269px;
+    margin-top: 15px;
+    
+}
+img, fieldset {
+    border: 0;
+}
+img {
+    vertical-align: top;
+}
+.my_choicecar .reser_car {
+    float: left;
+    width: 522px;
+    border-left: 1px solid #D7D7D7;
+}
+.my_choicecar .reser_car .brand {
+    position: relative;
+    padding: 20px;
+}
+.my_choicecar .reser_car .brand .brand_name {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+}
+strong, b {
+    font-weight: bold;
+}
+.my_choicecar .reser_car .brand .grade {
+    font-size: 14px;
+    font-weight: bold;
+    color: #7954a6;
+}
+.my_choicecar .reser_car .brand .btn_change {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 7px 40px 7px 30px;
+    border: 1px solid #D5D5D5;
+    font-size: 13px;
+    font-weight: bold;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 85px -316px;
+    color: #666;
+}
+input, button {
+    cursor: pointer;
+}
+.my_choicecar .reser_car .rent_price {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #FBFBFB;
+}
+.my_choicecar .reser_car .rent_price .option_list {
+    float: left;
+    width: 130px;
+}
+ul, li, ol li, ul li, li ul li {
+    list-style: none;
+    padding: 0 0 0 0;
+    line-height: 100%;
+}
+.my_choicecar .reser_car .rent_price .option_list li {
+    margin-bottom: 8px;
+    padding-left: 5px;
+    font-size: 12px;
+    background: url(//image1.hanatour.com/_images/rentercar/dtp_01.gif) no-repeat 0 4px;
+    color: #777;
+}
+.my_choicecar .reser_car .rent_price .total_price {
+    float: right;
+    text-align: right;
+}
+.my_choicecar .reser_car .rent_price .total_price .txt {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+    vertical-align: top;
+    font-size:15px;
+}
+.my_choicecar .reser_car .rent_price .total_price .t_price {
+    display: inline-block;
+    float: left;
+    margin: -6px 10px 0 5px;
+    font-size: 32px;
+    line-height: 32px;
+    color: #f33d88;
+}
+.my_choicecar .reser_car .rent_price .total_price .tax {
+    float: left;
+    font-size: 12px;
+    color: #777;
+}
+.my_choicecar .reser_car .rent_price .total_price .tax b {
+    color: #333;
+}
+.reservation_carinfo {
+    padding: 30px;
+    border: 1px solid #D6D6D6;
+    background-color: #FFF;
+}
+.reservation_carinfo h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.reservation_carinfo h4 .desc {
+    font-size: 11px;
+    color: #777;
+}
+.reservation_carinfo .info_section {
+    margin-bottom: 30px;
+}
+.reservation_carinfo .table_t1 table {
+    border-top: 1px solid #71768A;
+    border-left: 1px solid #D1D1D1;
+}
+caption, legend, hr {
+    display: none;
+}
+colgroup {
+    display: table-column-group;
+}
+col {
+    display: table-column;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.reservation_carinfo .table_t1 table th {
+    background-color: #F4F4F6;
+}
+.reservation_carinfo .table_t1 table th, .reservation_carinfo .table_t1 table td {
+    padding: 15px 0;
+    border-bottom: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+    font-size: 13px;
+    text-align: center;
+    color: #666;
+}
+.reservation_carinfo .table_t1 table th .ico.passenger {
+    background-position: -250px -418px;
+}
+.reservation_carinfo .table_t1 table th .ico {
+    display: inline-block;
+    padding-left: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat;
+    zoom: 1;
+}
+.reservation_carinfo .table_t1 table th .ico.bagage {
+    background-position: -250px -300px;
+}
+.reservation_carinfo .table_t1 table th .ico {
+    display: inline-block;
+    padding-left: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat;
+}
+.ico {
+    zoom: 1;
+}
+.reservation_carinfo .table_t1 table th .ico.aircon {
+    background-position: -250px -241px;
+}
+.reservation_carinfo .table_t1 table th .ico {
+    display: inline-block;
+    padding-left: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat;
+}
+.reservation_carinfo .table_t1 table th .ico.gearbox {
+    background-position: -250px -112px;
+}
+.reservation_carinfo .table_t1 table th .ico {
+    display: inline-block;
+    padding-left: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat;
+}
+.reservation_carinfo .table_t1 table th .ico.oil {
+    background-position: -250px -175px;
+}
+.reservation_carinfo .table_t1 table th .ico {
+    display: inline-block;
+    padding-left: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.reservation_carinfo .info_section {
+    margin-bottom: 30px;
+}
+.reservation_carinfo .table_t2 table {
+    border-top: 1px solid #D1D1D1;
+    border-left: 1px solid #D1D1D1;
+}
+.reservation_carinfo .table_t2 table th {
+    padding: 15px;
+    font-size: 12px;
+    background-color: #F4F4F6;
+    color: #777;
+}
+.reservation_carinfo .table_t2 th, .reservation_carinfo .table_t2 td {
+    border-bottom: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+}
+.reservation_carinfo .table_t2 table th .tit {
+    display: inline-block;
+    width: 68px;
+    font-size: 13px;
+    color: #2e95c8;
+}
+.reservation_carinfo .table_t2 table th .date {
+    font-size: 14px;
+    color: #333;
+}
+.reservation_carinfo .table_t2 td .rt_place {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+.reservation_carinfo .table_t2 td .rent_locationtype {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.reservation_carinfo .table_t2 td .rent_place .tit {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 65px;
+    font-size: 13px;
+}
+.reservation_carinfo .table_t2 td .rent_place li span {
+    display: block;
+    float: left;
+    min-height: 30px;
+    width: 250px;
+    font-size: 12px;
+    color: #666;
+}
+.tterms {
+    height: 400px;
+    position: relative;
+}
+.tterms .on .tts_tab {
+    z-index: 2;
+}
+a, a:link {
+    text-decoration: none;
+    color: #808080;
+    cursor: pointer;
+}
+a:visited {
+    color: #444;
+    text-decoration: none;
+}
+.tterms .on .tte_box {
+    display: block !important;
+}
+.tte_box {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.tte_cont {
+    height: 274px;
+    width: 700px;
+    border: 1px #bfbfbf solid;
+    background: #fff;
+    padding: 15px 15px 15px 15px;
+    line-height: 160%;
+}
+.tte_box .agree_contents {
+    font-size: 12px;
+    color: rgb(68, 68, 68);
+    font-family: 나눔고딕, NanumGothic, NG, 돋움, Dotum, 맑은고딕, "Malgun Gothic", 굴림, Gulim, Helvetica, sans-serif;
+}
+.reservation_carinfo .board_t1 {
+        overflow-y: auto;
+    font-size: 11px;
+    font-family: 돋움, Dotum, 굴림, Gulim, Arial, AppleGothic, 애플고딕, sans-serif;
+    color: rgb(119, 119, 119);
+    padding: 30px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
+    border-image: initial;
+}
+.sel_agree {
+    text-align: right;
+    padding: 8px 0;
+}
+.sel_agree .r_agree {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+.sel_agree label {
+    color: #646464;
+    font-size: 11px;
+    margin-right: 15px;
+}
+label {
+    cursor: default;
+}
+.tterms .tts_tab span {
+    background: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #424242;
+    border: 1px #bfbfbf solid;
+    letter-spacing: -1px;
+}
+.tts_tab span {
+    display: block;
+    width: 182px;
+    height: 23px;
+    padding-top: 11px;
+}
+.tts_tab {
+    display: block;
+    float: left;
+    width: 183px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    background: #f2f2f2;
+    font-size: 12px;
+    color: #aaaaaa;
+    position: relative;
+    cursor: pointer;
+    letter-spacing: -1px;
+}
+.reservation_carinfo .board_t1 ul li {
+    margin-bottom: 10px;
+}
+.reservation_carinfo .rent_agree_section {
+    overflow: hidden;
+}
+.reservation_carinfo .rent_agree_section .agree_info {
+    float: left;
+    width: 243px;
+}
+#hanarent .m_right5 {
+    margin-right: 5px;
+}
+.reservation_carinfo .agree_box {
+    margin-top: 10px;
+    text-align: right;
+}
+input[type=checkbox] { display:none; }
+
+input[type=checkbox] + label { 
+
+display: inline-block; 
+
+cursor: pointer; 
+
+line-height: 15px;  
+line-width: 15px;  
+padding-left: 22px; 
+
+background: url("/TwoTour/image/check2.png") left/15px no-repeat; 
+
+}
+
+input[type=checkbox]:checked + label { background-image: url("/TwoTour/image/check.png"); }
+#renta_wrap .rent_check {
+    display: inline-block;
+    height: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: normal !important;
+    color: #666 !important;
+    line-height: 16px;   
+    vertical-align: top;
+    cursor: pointer;
+}
+.reservation_carinfo .all_agree_section {
+    margin-bottom: 30px;
+    padding: 15px 0;
+    background-color: #F4F4F6;
+    text-align: center;
+}
+.reservation_carinfo .table_t3 table {
+    border-top: 1px solid #71768A;
+    border-bottom: 1px solid #71768A;
+}
+table {
+    display: table;
+    border-color: grey;
+}
+.reservation_carinfo .table_t3 table th {
+    background-color: #F4F4F6;
+}
+.reservation_carinfo .table_t3 table th, .reservation_carinfo .table_t3 table td {
+    padding: 15px;
+    border-bottom: 1px solid #D1D1D1;
+    font-size: 13px;
+    text-align: left;
+}
+.reservation_carinfo .imt {
+    font-weight: normal !important;
+    color: #e5658d;
+}
+#hanarent .sel_input01 {
+    border: 1px solid #9D9D9D;
+    height: 24px;
+    padding: 3px 5px 2px;
+}
+.f_left {
+    float: left !important;
+}
+#hanarent .sel_input01 input {
+    width: 100%;
+    height: 19px;
+    border: 0 none;
+    font-size: 13px;
+    line-height: 23px;
+}
+.sb {
+    margin-right: 1px;
+}
+.selbox100 {
+    width: 100px !important;
+    margin: 0;
+    text-align: left;
+}
+.selectbox {
+    position: relative;
+    zoom: 1;
+    color: #646464;
+}
+.has_sb {
+    position: absolute;
+   
+}
+.selectbox .display {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    height: 24px;
+    padding: 5px 0 0 0;
+    border: 1px #9d9d9d solid;
+    font-size: 13px;
+    font-family: 'Nanum Gothic' , 'Malgun Gothic' , 'Dotum' , 'Apple SD Gothic Neo', Helvetica, Sans-serif;
+    background-color: #FFF;
+    background-image: none;
+    cursor: default;
+    color: #666;
+    text-indent: 5px;
+    text-decoration: none;
+    line-height: 20px;
+}
+.selectbox .display .arrow_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 31px;
+}
+.selectbox .display .arrow_btn .arrow {
+    display: block;
+    width: 30px;
+    height: 31px;
+    background: url(//image1.hanatour.com/_images/main/icon_search.png) 11px -169px no-repeat;
+    outline: none;
+    cursor: pointer;
+}
+.selectbox .display .arrow_btn * {
+    padding: 0;
+}
+.arrow {   
+    float: left;    
+}
+.selectbox.items {
+    max-height: 200px !important;
+}
+.selectbox.items {
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 9999999999;
+    padding-bottom: 3px;
+    border: 1px #bfbfbf solid;
+}
+.selectbox.items li.first {
+    margin-top: 3px;
+}
+.selectbox.items li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.selectbox.items li>.item {
+    cursor: default;
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    color: #646464;
+    border: none !important;
+}
+.selectbox.items li.selected>.item {
+    border-bottom: 1px dotted #999;
+    border-top: 1px dotted #999;
+}
+.selectbox.items li>.item>.text {
+    padding: 6px 0;
+    font-size: 13px;
+    text-indent: 5px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.reservation_carinfo .notice_tip {
+    padding: 15px;
+    font-size: 11px;
+    background-color: #FBFBFB;
+    color: #777;
+}
+.reservation_carinfo .notice_tip ul li {
+    margin-bottom: 10px;
+    font-size: 11px;
+    
+}
+.reservation_carinfo .table_t4 table {
+    border-top: 1px solid #71768A;
+    border-left: 1px solid #D1D1D1;
+}
+.reservation_carinfo .table_t4 table th {
+    font-weight: bold;
+    background-color: #F4F4F6;
+    color: #444;
+}
+.reservation_carinfo .table_t4 table td.bg {
+    font-weight: bold;
+    background-color: #FCFAF7;
+    color: #444;
+}
+.reservation_carinfo .table_t4 table td {
+    background-color: #FFF;
+    color: #666;
+}
+.reservation_carinfo .table_t4 table td .caution_notice {
+    font-size: 11px;
+    color: #db7c8b;
+    text-align: left;
+}
+.reservation_carinfo .table_t4 table th, .reservation_carinfo .table_t4 table td {
+    padding: 15px;
+    border-bottom: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+    font-size: 13px;
+    text-align: center;
+}
+#reservation_desc {
+    z-index: 10;
+    float: right;
+    position:relative;
+    width: 254px;
+}
+.jbFixed{
+	position: fixed;
+	
+}
+#reservation_desc h3 {
+    padding: 10px 40px 10px 50px;
+    font-size: 14px;
+    background: #555a66 url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat -227px 14px;
+    color: #FFF;
+}
+#reservation_desc .desc_section {
+    border: 1px solid #d5d5d5;
+    border-top: 0 none !important;
+    background-color: #FFF;
+}
+#reservation_desc .desc_section .rent_price {
+    padding-top: 20px;
+}
+#reservation_desc .desc_section .rent_price h4 {
+    width: 214px;
+    margin: 0 auto 10px;
+    color: #333;
+}
+#reservation_desc .desc_section .rent_price .option_price {
+    width: 214px;
+    margin: 0 auto 27px;
+    height:111px;
+}
+#reservation_desc .desc_section .rent_price .option_price li:first-child {
+    border-top: none;
+}
+#reservation_desc .desc_section .rent_price .option_price li {
+    overflow: hidden;
+    margin-top: 8px;
+    padding-top: 8px;
+    font-size: 13px;
+}
+#reservation_desc .desc_section .rent_price .option_price li .tit {
+    float: left;
+    color: #666;
+    letter-spacing: -1px;
+}
+#reservation_desc .desc_section .rent_price .option_price li strong {
+    float: right;
+    color: #555a66;
+}
+#reservation_desc .desc_section .rent_price .option_price li {
+    overflow: hidden;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #d5d5d5;
+    font-size: 13px;
+}
+#reservation_desc .desc_section .rent_price .sum_price {
+    width: 214px;
+    margin: 0 auto;
+}
+#reservation_desc .desc_section .rent_price .sum_price .total {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+#reservation_desc .desc_section .rent_price .sum_price .total .txt {
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+#reservation_desc .desc_section .rent_price .sum_price .total strong {
+    float: right;
+    margin-top: -5px;
+    font-size: 25px;
+    color: #f33d88;
+    line-height: 32px;
+}
+#reservation_desc .desc_section .rent_price .sum_price .total strong span {
+    font-size: 25px;
+}
+#reservation_desc .desc_section .rent_price .sum_price .exchange {
+    margin-bottom: 20px;
+    font-size: 11px;
+    text-align: right;
+    color: #777;
+}
+#reservation_desc .desc_section .rent_price .sum_price .exchange b {
+    font-weight: bold;
+    color: #333;
+}
+#reservation_desc .desc_section .rent_price .option_info {
+    width: 183px;
+    padding: 20px 14px;
+    margin: 0 auto 20px;
+    border-top: 1px solid #f33d88;
+    background-color: #fbfbfb;
+}
+#reservation_desc .desc_section .rent_price .option_info li {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -1px;
+}
+#reservation_desc .desc_section .rent_price .option_info li {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: -1px;
+}
+#reservation_desc .desc_section .rent_price .option_info li .tit {
+    display: inline-block;
+    width: 97px;
+}
+#reservation_desc .desc_section .btn_reservation {
+    display: block;
+    width: 130px;
+    margin: 0 auto 20px;
+    padding: 13px 0;
+    background-color: #C83D67;
+    text-align: center;
+    color: #FFF;
+}
+#reservation_desc .desc_section .btn_reservation span {
+    padding-right: 10px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 52px -89px;
+}
+
+#hanarent .reservation_carinfo .warning_txt {
+    padding-top: 5px;
+    font-size: 11px;
+    clear: both;
+    color: #E45B85;
+}
+#hanarent .reservation_carinfo .warning_txt2 {
+    padding-top: 5px;
+    font-size: 11px;
+    clear: both;
+    color: #E45B85;
+}
+#hanarent .reservation_carinfo .warning_txt3 {
+    padding-top: 5px;
+    font-size: 11px;
+    clear: both;
+    color: #E45B85;
+}
+#hanarent .reservation_carinfo .warning_txt4 {
+    padding-top: 5px;
+    font-size: 11px;
+    clear: both;
+    color: #E45B85;
+}
+#hanarent .reservation_carinfo .warning_txt5 {
+    padding-top: 5px;
+    font-size: 11px;
+    clear: both;
+    color: #E45B85;
+}
+.rentcar_layer {
+
+    position: absolute;
+    z-index: 6000;
+    background-color: #FFF;
+}
+.rentcar_layer .h_title {
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color: #4A505D;
+    color: #FFF;
+}
+.rentcar_layer .layer_cont {
+    border: 2px solid #4A505D;
+    background-color: #FFF;
+}
+.rentcar_layer .layer_cont .bg_ico.confirm {
+    background-position: -200px 0;
+}
+.rentcar_layer .layer_cont .bg_ico {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 25px auto 0;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_layer.png) no-repeat;
+}
+.rentcar_layer .layer_cont .layer_ment {
+    display: block;
+    height: 75px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.rentcar_layer .layer_cont .notice_section {
+    padding: 15px 0 20px;
+    background-color: #F2F2F2;
+}
+.rentcar_layer .layer_cont .notice_section .txt_notice {
+    margin: 0 0 20px 20px;
+    padding-left: 40px;
+    font-size: 11px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_layer.png) no-repeat -399px -220px;
+    color: #666;
+}
+.rentcar_layer .layer_cont .notice_section .btn_area {
+    text-align: center;
+}
+.rentcar_layer .layer_cont .notice_section .btn_area .btn_conform {
+    display: inline-block;
+    width: 120px;
+    margin: 0 5px;
+    padding: 11px 0;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #C83D67;
+    color: #FFF;
+}
+input, button {
+    border: 0 none;
+    background: none;
+    cursor: pointer;
+}
+.rentcar_layer .layer_cont .notice_section .btn_area .btn_cancel {
+    display: inline-block;
+    width: 118px;
+    margin: 0 5px;
+    padding: 10px 0;
+    font-size: 13px;
+    border: 1px solid #D5D5D5;
+    font-weight: bold;
+    background-color: #FFF;
+    color: #666;
+}
+#mask_loader {
+    position: absolute;
+    left: -500px;
+    top: 0;
+    z-index: 902;
+    background-color: #000;
+   
+}
+

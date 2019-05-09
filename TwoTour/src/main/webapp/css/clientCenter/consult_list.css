@@ -1,0 +1,77 @@
+@charset "UTF-8";
+#consult_listT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588;
+	width: 1064px;
+}
+
+#consult_listT td{
+	border: 1px solid #c6c6c6;
+}
+.consult_list_col td{
+	background-color: #f2f2f2;
+	font: bold 15px Tahoma, Arial ;
+	text-align: center;
+	height: 40px;
+}
+#consult_listT>tr>td{
+	font: 15px Tahoma, Arial ;
+}
+#consult_list_index > td > span{
+	/* border: 1px solid blue; */
+	width: 100px;
+	height: 30px;
+	font: bold 20px Tahoma, Arial ;
+}
+#consult_list_index .consult_writeForm_select{
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	color: #000000;
+	border: 1px solid #f63d8b;
+	border-radius: 3px;
+}
+#consult_list_index .consult_writeForm_select>option{
+	font: 15px Tahoma, Arial;
+}
+#consult_list_searchBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+
+
+
+
+#consult_list_bottom_div{
+	/* border:1px solid red; */
+}
+#consult_list_temp{
+	/* border:1px solid blue; */
+	position:absolute;
+	width:200px;
+	margin: 0 42%;
+	font: 16px Tahoma, Arial;
+}
+
+#consult_list_temp>button{
+	margin-top: 5px;
+	margin-left: 10px;
+	background-color: transparent;/*배경색 : 투명*/
+	baockground-repeat: no-repeat;
+	background-position: 0px 0px;
+	border: none;
+	cursor: pointer;
+}

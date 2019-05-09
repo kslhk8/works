@@ -1,0 +1,725 @@
+@charset "UTF-8";
+#hotel_wrap{
+	position:absolute;top:180px;left:3px;width:1100px;height:1200px;}
+
+#hotel_search_box{
+	position:absolute;border:1.5px solid #6d7588;width:200px;height:330px;margin-top:0;}
+
+#hotel_search_box .title,
+#hotel_search_sub_form .title{
+	height:32px;color:#fff;background-color:#6d7588;font-size:14px;width:187px;
+	margin:0;line-height:34px;padding-left:10px;}
+
+#hotel_search_box .type1{
+	color:#252525;font-size:13px;margin-top:55px;}
+
+#hotel_search_box .type2{
+	color:#252525;font-size:13px;margin-top:20px;}
+
+#hotel_search_box .type_box,
+#hotel_search_sub_box .type_box{
+	height:28px;border:1px solid #a2a2a2;margin-left:10px;margin-top:5px;border-radius:2px;
+	font-size:12px;padding-left:8px;cursor:pointer;}
+
+#hotel_search_box #type2_box1,
+#hotel_search_box #type2_box2{
+	background:url('/TwoTour/image/calendar.png') no-repeat right center;}
+
+
+#hotel_search_box .search_button{
+	width:90px;height:32px;margin-left:50px;margin-top:7px;color:#fff;background-color:#e85581;
+	border:none;font-weight:600;font-size:14px;letter-spacing:-2px;cursor:pointer;border-radius:2px;}
+	
+	
+/* ---------------------------------------------------------------------------------*/
+	
+	
+/* 결과내 재검색 */	
+#hotel_search_menu_div{
+	position:absolute;top:450px;width:200px;height:500px;}
+
+#hotel_search_sub_box{
+	position:absolute;top:350px;border:1.5px solid #d5d5d5;width:200px;height:100px;}
+
+#title2_search_box{
+	width:160px;position:relative;
+	background:url('/TwoTour/hotel/search_grey.PNG') no-repeat right center;}
+
+.hotel_search_menu_li{
+	line-height:30px;width:189px;
+	font-size:12px;color:#252525;font-weight:600;cursor:pointer;
+	padding-left:10px;
+	background:url('/TwoTour/image/small_up.PNG') no-repeat 160px top;background-color:#eeeeee;
+	border:2px solid #d5d5d5;border-top:none;}  
+
+.hotel_search_menu_li2{
+	line-height:30px;width:189px;
+	font-size:12px;color:#252525;font-weight:600;cursor:pointer;
+	padding-left:10px;
+	background:url('/TwoTour/image/small_down.PNG') no-repeat 160px 5px;background-color:#eeeeee;
+	border:2px solid #d5d5d5;border-top:none;} 
+
+ul.hotel_search_sub_ul{
+	padding:5px 10px 10px 10px;border:2px solid #d5d5d5;border-top:none;height:110px;display:block;
+	background-color:white;margin-left:-10px;border:1.5px solid white;cursor:normal;}
+	
+ul.hotel_search_sub_ul2{
+	padding:5px 10px 10px 10px;border:2px solid #d5d5d5;border-top:none;height:110px;display:none;
+	background-color:white;margin-left:-10px;border:1.5px solid white;cursor:normal;}
+	
+ul.hotel_search_sub_ul > li{
+	font-weight:400;font-size:13px;margin-top:7px;font-family:Times New Roman;}
+ul.hotel_search_sub_ul2 > li{
+	font-weight:400;font-size:12px;margin-top:7px;}
+
+#hotel_search_menu_div .hotel_search_menu > li.hotel_search_menu_li.open_menu{
+	background:url('/TwoTour/image/small_down.PNG') no-repeat 160px 5px;
+	background-color:#eeeeee;}
+#hotel_search_menu_div .hotel_search_menu > li.hotel_search_menu_li.open_menu > ul {
+	display:none;} 
+	
+#hotel_search_menu_div .hotel_search_menu > li.hotel_search_menu_li2.open_menu2{
+	background:url('/TwoTour/image/small_up.PNG') no-repeat 160px 3px;
+	background-color:#eeeeee;}
+#hotel_search_menu_div .hotel_search_menu > li.hotel_search_menu_li2.open_menu2 > ul {
+	display:block;} 
+
+
+	
+/* ---------------------------------------------------------------------------------*/
+
+#hotel_search_box p{
+	font-weight:600;margin-left:10px;}
+	
+	
+/* ---------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 오른쪽메뉴 */
+#hotel_right_wrap{
+	position:absolute;
+	width:850px;
+	height:1500px;
+	left:220px;		
+}
+
+div#search_result_wrap01{
+	position:relative;
+	width:850px;
+	height:auto;
+	padding-top:10px;
+	border-bottom:2px solid #6d7588;
+	overflow:hidden;
+}
+
+div#search_result_wrap01 > strong{
+	font-size:20px;
+	color:#353535;
+	font-weight:bold;
+	float:left;
+	line-height:30px;
+	margin-right:10px;
+	letter-spacing:-1px;
+}
+
+div#search_result_wrap01 > p {
+	font-size:13px;
+	font-weight:600;
+	margin-top:8px;
+}
+
+span#result_cnt{
+	color:#e85581;	
+	font-size:25px;
+}
+
+#hotel_right_wrap > #option_list{
+	height:35px;
+	position:relative;
+	margin-top:10px;
+	z-index:100;
+}
+
+#hotel_right_wrap > #option_list > .option_class{
+	positin:absolute;
+	height:25px;
+	width:90px;
+	border:1px solid green;
+	float:right;
+	line-height:25px;
+	font-size:13px;
+	font-weight:500;
+	border:2px solid #6d7588;
+	background:url('/TwoTour/image/small_arrow_down.PNG') no-repeat 65px center;	
+	cursor:pointer;
+}
+
+#option_list > .default{
+	positin:absolute;
+	height:25px;
+	width:90px;
+	border:1px solid green;
+	float:right;
+	line-height:25px;
+	font-size:13px;
+	font-weight:500;
+	border:2px solid #6d7588;
+	cursor:pointer;
+	border-radius:2px 0 0  2px;
+}
+
+#option_list > #recommend{
+	background-color:#6d7588; 
+	color:white;
+}
+
+#option_list > .option_class > span,
+#option_list > .default > span{
+	margin-left:23px;
+}
+
+
+
+#hotel_right_wrap > #hotels{
+	position:relative;
+	width:850px;
+	height:1200px;
+}
+
+
+#hotel_right_wrap > #hotels > ul > .hotel_list_class{
+	border:1px solid #a2a2a2;
+	width:850px;
+	height:200px;
+	margin-top:20px;
+}
+
+#hotel_right_wrap #hotels .hotel_li{
+	position:absolute;
+	border-right:1px solid #a2a2a2;
+	height:200px;
+	width:650px;
+}
+
+div.hotel_pic{
+	width:240px;
+	height:173px;
+	margin-top:13px;
+	margin-left:13px;
+	float:left;
+}
+
+#hotel_ul #paging_li{
+	position:relative;
+	width:370px;
+	height:40px;
+	margin-top:20px;
+	left:210px;
+	padding-left:100px;
+}
+
+.hotelpaging{
+	background-color:#6d7588;
+	line-height:50px;
+ 	width:50px;
+	height:50px;  
+	margin-left:10px;
+	border:1px solid #dfdfdf;
+	cursor:pointer;
+	border:none;
+	
+}
+.hotelpaging > p{
+	margin-left:15px;
+	color:#6d7588;
+	font-weight:600;
+	font-size:20px;
+}
+
+
+#hotel_ul > li > div > .hotel_info{
+	position:relative;
+	width:360px;
+	height:173px;
+	margin-left:270px;
+	margin-top:13px;
+}
+
+#hotel_ul > li > div > div > .korean_name{
+	position:relative;
+	font-size:18px;
+	color:#353535;
+	font-weight:bold;
+	height:44px;
+	overflow:hidden;
+	letter-spacing:-1px;
+	
+}
+#hotel_ul > li > div > div > .korean_name > img{
+	margin-left:5px;
+}
+
+#hotel_ul > li > div > div > h4.eng_name{
+	font-size:19px;
+	font-weight:normal;
+	overflow:hidden;
+	height:22px;
+}
+
+#hotel_ul > li > div > div > .location{
+	font-size:14px;
+	font-weight:normal;
+	color:#4d4d4d;
+	margin-top:3px;
+	height:32px;
+	overflow:hidden;
+	indent:10px;
+}
+
+.hotel_accommodations{
+	position:absolute;width:300px;height:40px;
+	margin-top:5px;margin-left:10px;
+	border-bottom:2px dotted #c6c6c6;
+
+}
+.hotel_accommodations > ul > li {
+	margin-left:5px;
+	float:left;
+	width:32px;
+	height:32px;
+	cursor:pointer;
+}
+
+.hotel_accommodations > ul > li.icon_wifi{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_wifi.png") 
+	no-repeat 0 0;
+}
+
+.hotel_accommodations > ul > li.icon_pool{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_pool.png")
+	no-repeat 0 0;
+}
+
+.hotel_accommodations > ul > li.icon_kidsclub{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_kidsclub.png") 
+	no-repeat 0 0;
+}
+
+.hotel_accommodations > ul > li.icon_spa{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_spa.png") 
+	no-repeat 0 0;
+}
+
+.hotel_accommodations > ul > li.icon_shuttlebus{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_shuttlebus.png") 
+	no-repeat 0 0;
+}
+
+.hotel_accommodations > ul > li.icon_biz{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_biz.png") 
+	no-repeat 0 0;
+}
+
+.hotel_accommodations > ul > li.icon_park{
+	background:
+	url("/TwoTour/image/hotel2/accommodations/icon_park.png") 
+	no-repeat 0 0;
+}
+
+
+.hotel_city{
+	position:absolute;
+	width:300px;height:10px;
+	font-weight:600;
+	color:#4d4d4d;
+	margin-top:60px;
+	margin-left:10px;
+	font-size:13px;
+}
+
+div.price_info{
+	position:absolute;
+	top:10px;
+	left:660px;
+	height:180px;
+	width:170px;
+}
+
+
+.price_info_p{
+    color: #424242;
+    font-size: 16px;
+    font-weight:bold;
+    font-family:Times New Roman;
+    margin-top:30px;
+    margin-left:30px;
+}
+	
+.price_info_p2{ /* 가격 */
+	color:#e85581;
+	font-size:28px;
+	font-weight:600;
+	margin-top:25px;
+	margin-left:12px;
+}
+
+.tax_include{
+	color:#666;
+	font-size:12px;
+	margin-top:20px;
+	margin-left:30px;
+}
+
+.search_room{
+	width:110px;height:32px;
+	color:#fff;background-color:#e85581;
+	border:none;font-weight:600;
+	font-size:14px;
+	cursor:pointer;border-radius:2px;
+	margin-top:35px;
+	margin-left:30px;
+}
+
+.tag_discount{
+    position: absolute;
+    left: 228px;
+    top: 150px;
+    width: 52px;
+    height: 26px;
+    padding: 6px 0 0 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    font-family:Times New Roman;
+    background:url('/TwoTour/image/tag_discount.png') no-repeat;	
+}
+
+
+.tag_twotour{
+	position: absolute;
+	top:-4px;
+	left:-7px;
+    width: 52px;
+    height: 26px;
+    padding: 7px 0 0 10px;
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 600;
+    font-family:Times New Roman;
+    background:url('/TwoTour/image/tag_hotdeal.png') no-repeat;	
+}
+
+.hotel_notice {
+    border-top: 1px solid #6d7588;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    margin-top: 30px;
+    height:220px;
+}
+.hotel_notice div {
+	position:absolute;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 0 0 44px;
+    color: #252525;
+	width:806px;
+	background-color:#eeeeee;
+}
+
+.hotel_notice div strong {
+    height: 44px;
+    line-height: 44px;
+    padding: -10px 0 0 10px;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 600;
+ 
+}
+
+.hotel_notice div strong img{
+	margin-top:15px;
+	margin-right:10px;
+}
+
+.hotel_notice ul{
+    margin: 55px 0 15px 20px;
+    font-family: Times New Roman;
+}
+
+.hotel_notice li{
+	list-style:circle;
+	padding-bottom:4px;
+    margin-bottom: 5px;
+    line-height: 15px;
+    font-size:12px;
+    margin-left:15px;
+}
+
+.hotel_notice .hit{
+	color:#e85581
+}
+
+#option_list ul.option_ul{
+ 	display:none; 
+	background-color:#fff;
+	border:1px solid #6d7588;
+	height:48px;
+	z-index:100;
+}
+
+#option_list ul.option_ul li{
+	height:24px;
+	line-height:24px;
+	padding-left:8px;
+	font-size:14px;
+}
+
+#option_list div.option_class.open ul{
+	display:block;
+	z-index:100;
+}
+
+#hotel_ul .nodata{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:200px;
+	margin-top:20px;
+	color:#252525;
+}
+
+/* -------------------- */
+
+body .city{
+	font-size:14px;
+	font-family:Times New Roman;
+	margin-top:7px;
+	color:black;
+}
+
+#searchRoomWrap{
+	position:absolute;
+	background-color:#eeeeee;
+	top:200px;height:600px;
+	width:2000px;
+	left:-300px;
+	font-weight:normal;
+}
+
+#hotel_heading{
+	position:absolute;
+	top:20px;
+	left:300px;
+	width:1000px;
+	height:130px;
+	background-color:white;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,.3); 
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.3); 
+    -o-box-shadow: 0px 0px 15px rgba(0,0,0,.3); 
+}
+#hotel_heading h1{
+	color:#252525;
+	font-family:Times New Roman;
+	margin-top:30px;
+	margin-left:30px;
+	font-size:27px;
+    font-weight: bold;
+    float: left; 
+    line-height: 30px;
+    margin-right: 10px;
+    letter-spacing: -1px;
+}
+
+
+#hotel_heading h3{
+	position:absolute;
+	font-size:15px;
+	top:70px;
+	left:30px;
+	color:#252525;
+}
+#hotel_heading h4{
+	position:absolute;
+	font-size:15px;
+	top:100px;
+	left:30px;
+}
+#hotel_icons{
+	position:absolute;
+	left:780px;
+	top:30px;
+}
+
+#hotel_img{
+	position:absolute;
+	top:180px;
+	left:300px;
+	width:600px;
+	height:400px;
+}
+
+#hotel_room_info{
+	position:absolute;
+	background-color:white;
+	top:180px;
+	left:930px;
+	width:365px;
+	height:400px;
+}
+
+#charge_label{
+	position:absolute;
+	top:50px;
+	left:-10px;
+	color:white;
+	font-weight:600;
+	font-size:14px;
+	line-height:28px;
+	background: url('/TwoTour/image/charge_label.gif') no-repeat;
+	width:170px;
+	height:30px;
+	font-family:Times New Roman;
+}
+
+
+#searchRoomWrap #price_info{
+	position:absolute;
+	top:200px;
+	left:1100px;
+	
+}
+
+#hotel_acc{
+	position:absolute;
+	top:500px;
+	left:650px;
+	width:300px;
+	height:180px;
+}
+
+.attraction{
+	position:absolute;
+	top:600px;
+	left:660px;
+	width:300px;
+	height:100px;
+}
+
+#getArea{
+	position:absolute;
+	top:680px;
+	left:650px;
+	width:300px;
+	height:50px;
+}
+#getArea .search_room{
+ 	height:40px;
+}
+#basket_hotel{
+	background-color:white;
+	color:#ff5e8f;
+	border:1px solid #ff5e8f;
+}
+
+
+#hotel_info_detail{
+	position:absolute;
+	top:900px;
+	width:1000px;
+	height:500px;
+}
+
+
+#hotel_info_detail .box {
+    border-top: 1px solid #6d7588;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    width: 440px;
+    margin: 36px 0 0 0;
+    height:400px;
+    min-height: 240px;
+    position:absolute;
+    left:30px;
+}
+
+#hotel_info_detail .box2 {
+    border-top: 1px solid #6d7588;
+    border-left: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    width: 440px;
+    margin: 36px 0 0 0;
+    height:400px;
+    min-height: 240px;
+    position:absolute;
+    left:500px;
+    
+}
+
+#hotel_info_detail .box .subject,
+#hotel_info_detail .box2 .subject {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #252525;
+    font-size: 15px;
+    padding: 0 0 0 24px;
+    background-color: #f2f2f2;
+}
+#hotel_info_detail .box p ,
+#hotel_info_detail .box2 p {
+    color: #424242;
+    font-size: 13px;
+    margin: 15px 24px;
+    line-height: 20px;
+    font-family: Times New Roman;
+}
+
+#choose_date{
+	position:absolute;
+	left:30px;
+	top:800px;
+	width:900px;
+	height:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+
+#consult_viewT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #c6c6c6; 
+	width: 100%;
+	
+}
+#consult_viewT td{
+	border: 1px solid #c6c6c6;
+	height: 60px;
+	padding-left: 20px;
+	vertical-align: center;
+} 
+td.consult_viewT_col{
+	font: bold 15px Tahoma, Arial;
+	background-color: #f2f2f2;
+	width: 180px;
+}
+
+#consult_viewT intput {
+	border: none;
+}
+
+#consult_viewT input[name="name"]{
+	border: none;
+	border-color: transparent;
+	height: 30px;
+	width: 80px;
+	font: 15px Tahoma, Arial;
+	text-align: right;
+}
+/* #consult_viewT input[name="travler"]{
+	height: 30px;
+	width: 100px;
+	font: 15px Tahoma, Arial;
+} */
+#consult_viewT input[name="email1"], #consult_viewT input[name="consult_viewT_tel"]
+, #consult_viewT input[name="email1"], #consult_viewT input[name="email2"]
+, #consult_viewT input[name="reservation_num"]{
+	height: 30px;
+	width: 300px;
+	font: 15px Tahoma, Arial;
+}
+input.consult_viewT_type{
+	height: 30px;
+	width: 150px;
+	font: 15px Tahoma, Arial;
+}
+#consult_viewT input[name="subject"]{
+	height: 30px;
+	width: 98%;
+	font: 15px Tahoma, Arial;
+}
+
+
+#consult_viewT textarea[name="content"]{
+	height: 350px;
+	width: 98%;
+	vertical-align: top;
+	font: 15px Tahoma, Arial;
+	margin: 5px;
+}
+#consult_viewT_count{
+	font: 12px Tahoma, Arial;
+	text-align: right;
+	margin-right: 5px;
+	margin: 3px;
+}
+#consult_viewT_count > input{
+	text-align: right;
+	border: none;
+	border-color: transparent;
+}
+.directDisp{
+	font: 15px Tahoma, Arial;
+}
+#consult_viewT_btDiv{
+	width:200px;
+	margin: 0 42%;
+}
+#consult_viewT_goBackBt{
+	background-color: #ffffff; 
+    border: #e85581 0.8px solid;
+    color: #e85581;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+#consult_viewT_replyBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+	

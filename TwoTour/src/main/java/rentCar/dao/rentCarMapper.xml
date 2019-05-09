@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="rentCarSQL">
+ 	<select id="rentCarList" parameterType="java.util.Map" resultType="rentCar">
+ 		<![CDATA[
+			select * from 
+					(select rownum rn, tt.*from
+					(select * from rentcarinform where city=#{rentlocation} and rented='No' order by price asc, seq desc)tt)
+					where rn>=#{startNum} and rn<=#{endNum} 
+			]]>
+ 	</select>	
+ 	<select id="getTotalA" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and rented='No'
+	</select>
+	<select id="rentCarReservation" parameterType="int" resultType="rentCar">
+		select * from rentcarinform where seq=#{seq}
+	</select>
+	<select id="rentCarRadioChecked" parameterType="java.util.Map" resultType="rentCar">		
+			select * from rentcarinform where city=#{rentlocation} and rented='No'
+			<if test="eurocar.equals('ok') and small.equals('ok') and auto.equals('ok') and five.equals('ok')">
+			and location='유로카' and car_type='소형차' and transmission_type='자동' and occupancy=5
+			</if>
+			<if test="eurocar.equals('ok') and small.equals('ok') and auto.equals('ok') and four.equals('ok')">
+			and location='유로카' and car_type='소형차' and transmission_type='자동' and occupancy=4
+			</if>
+			<if test="eurocar.equals('ok') and small.equals('ok') and manual.equals('ok') and five.equals('ok')">
+			and location='유로카' and car_type='소형차' and transmission_type='수동' and occupancy=5
+			</if>
+			<if test="eurocar.equals('ok') and small.equals('ok') and manual.equals('ok') and four.equals('ok')">
+			and location='유로카' and car_type='소형차' and transmission_type='수동' and occupancy=4
+			</if>
+			<if test="eurocar.equals('ok') and medium.equals('ok') and auto.equals('ok') and five.equals('ok')">
+			and location='유로카' and car_type='중형차' and transmission_type='자동' and occupancy=5
+			</if> 
+			<if test="eurocar.equals('ok') and medium.equals('ok') and auto.equals('ok') and four.equals('ok')">
+			and location='유로카' and car_type='중형차' and transmission_type='자동' and occupancy=4
+			</if>  	  	  							
+			<if test="eurocar.equals('ok') and medium.equals('ok') and manual.equals('ok') and five.equals('ok')">
+			and location='유로카' and car_type='중형차' and transmission_type='수동' and occupancy=5
+			</if>
+			<if test="eurocar.equals('ok') and medium.equals('ok') and manual.equals('ok') and four.equals('ok')">
+			and location='유로카' and car_type='중형차' and transmission_type='수동' and occupancy=4
+			</if>  			
+			<if test="herlz.equals('ok') and small.equals('ok') and auto.equals('ok') and five.equals('ok')">
+			and location='허츠' and car_type='소형차' and transmission_type='자동' and occupancy=5
+			</if>
+			<if test="herlz.equals('ok') and small.equals('ok') and auto.equals('ok') and four.equals('ok')">
+			and location='허츠' and car_type='소형차' and transmission_type='자동' and occupancy=4
+			</if>
+			<if test="herlz.equals('ok') and small.equals('ok') and manual.equals('ok') and five.equals('ok')">
+			and location='허츠' and car_type='소형차' and transmission_type='수동' and occupancy=5
+			</if>
+			<if test="herlz.equals('ok') and small.equals('ok') and manual.equals('ok') and four.equals('ok')">
+			and location='허츠' and car_type='소형차' and transmission_type='수동' and occupancy=4
+			</if>
+			<if test="herlz.equals('ok') and medium.equals('ok') and auto.equals('ok') and five.equals('ok')">
+			and location='허츠' and car_type='중형차' and transmission_type='자동' and occupancy=5
+			</if> 
+			<if test="herlz.equals('ok') and medium.equals('ok') and auto.equals('ok') and four.equals('ok')">
+			and location='허츠' and car_type='중형차' and transmission_type='자동' and occupancy=4
+			</if>  	  	  							
+			<if test="herlz.equals('ok') and medium.equals('ok') and manual.equals('ok') and five.equals('ok')">
+			and location='허츠' and car_type='중형차' and transmission_type='수동' and occupancy=5
+			</if>
+			<if test="herlz.equals('ok') and medium.equals('ok') and manual.equals('ok') and four.equals('ok')">
+			and location='허츠' and car_type='중형차' and transmission_type='수동' and occupancy=4
+			</if>  	
+			<if test="eurocar.equals('ok')">
+			and location='유로카' 
+			</if>  
+			<if test="herlz.equals('ok')">
+			and location='허츠' 
+			</if> 
+			<if test="small.equals('ok')">
+			and car_type='소형차' 
+			</if> 
+			<if test="medium.equals('ok')">
+			and car_type='중형차' 
+			</if> 
+			<if test="auto.equals('ok')">
+			and transmission_type='자동' 
+			</if> 
+			<if test="manual.equals('ok')">
+			and transmission_type='수동' 
+			</if> 
+			<if test="five.equals('ok')">
+			and occupancy=5
+			</if> 
+			<if test="four.equals('ok')">
+			and occupancy=4 
+			</if> 
+			<if test="herlz.equals('ok') and small.equals('ok')">
+			and location='유로카' and car_type='소형차'
+			</if>  
+			order by seq asc
+			
+ 	</select>
+ 	<select id="rentCarRadioTotal" parameterType="String" resultType="rentCar">
+		select * from rentcarinform where city=#{rentlocation}
+	</select>
+	<select id="eurocarTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and location='유로카'
+	</select>
+	<select id="herlzTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and location='허츠'
+	</select>
+	<select id="mediumTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and car_type='중형차'
+	</select>
+	<select id="smallTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and car_type='소형차'
+	</select>
+	<select id="autoTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and transmission_type='자동'
+	</select>
+	<select id="manualTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and transmission_type='수동'
+	</select>
+	<select id="fiveTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and occupancy=5
+	</select>
+	<select id="fourTotal" parameterType="String" resultType="int">
+			select count(*) from rentcarinform where city=#{rentlocation} and occupancy=4
+	</select>
+	
+	<update id="updateRentCar" parameterType="Integer">
+ 		update rentcarinform set rented= 'yes' where seq=#{seq}
+ 	</update>
+ 	
+ 	<update id="returnRentCar" parameterType="Integer">
+ 		update rentcarinform set rented='No' where seq=#{rent_code}
+ 	</update>
+	
+ </mapper>

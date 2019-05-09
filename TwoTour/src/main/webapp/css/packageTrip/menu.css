@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 하나투어 전체 메뉴보기*/
+.ir { display: block; position:absolute; top:-9999px; left:-9999px; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left;}
+
+/* 전체메뉴 보기 */
+.menu_whole {position: absolute; z-index: 70; padding-bottom: 3px; left:10px; height: 30px; width: 100%; min-width: 1064px; background-color: #FFF;}
+.menu_whole .menu_section {position: relative; width: 1064px; height: 30px; margin: 0 auto; background-color: #FFF;}
+.menu_whole .menu_view {float: left; z-index:100; width: 149px; height: 30px; margin-right: 28px; border-bottom: 1px solid #DEE0E1; border-left: 1px solid #DEE0E1; border-right: 1px solid #DEE0E1; background-color: #FFF; font-size: 13px; text-align: left}
+
+/* 패키지 상단 메뉴 */
+.menu_whole .info_service {zoom: 1; float: left; width: 885px}
+.menu_whole .info_service:after {content: ""; display: block; clear: both; visibility: hidden; width:0; height: 0}
+.menu_whole .info_service li {float: left; }
+.menu_whole .info_service li.last_child {float: right; padding-right: 8px; border-right: 1px solid #e1e1e1;}
+.menu_whole .info_service li a {display: block; height: 30px; padding: 13px 15px 0; font-weight: 600; font-size: 13px; background-color: #FFF; color: #4d4d4d; text-align: center; line-height: 18px; letter-spacing: 0 !important;}
+.menu_whole .info_service li a:hover {color: #F63D8B; text-decoration: none;}
+.menu_whole .info_service li .nav_art {position: relative}
+.menu_whole .info_service li .ico_vote {display: block; position: absolute; left: 29px; top: -8px; width: 29px; height: 30px; background: url('//image1.hanatour.com/_images/hana_free/icon_snb.png') no-repeat 0 -555px; text-indent: -9999px}
+.menu_whole .info_service li.last_departure {float: right; padding: 0 28px; border-right: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; background-color:#f8f8f8}
+
+/* info_service dep_seoul */
+.menu_whole .info_service.dep_seoul .txt_dep {width:83px; height:22px; margin:11px 0 0 0; background:url('//image1.hanatour.com/_images/hana/hanapack/icon_snb.png') no-repeat -129px 0; text-indent:-9999px}
+.menu_whole .info_service.dep_seoul li.last_departure a {padding:13px 14px 0 0; background:#f8f8f8 url('//image1.hanatour.com/_images/hana/common/gnb/icon_set.png') no-repeat -437px -107px}
+.menu_whole .info_service.dep_seoul li.last_departure a:hover {background:url('//image1.hanatour.com/_images/hana/hanapack/icon.png') no-repeat 57px 17px}
+
+/* Snb Navagation */
+#snb_navigation {zoom: 1; display: none; position: absolute; left: 0; top: 43px; width: 1062px; border: 1px solid #D5D5D5; border-right: 1px solid #8F949C; background-color: #f6f6f6;}
+#snb_navigation.on {display: block}
+#snb_navigation:after {content: ""; display: block; clear: both; visibility: hidden; width: 0; height: 0}
+
+#snb_navigation .h2_hgroup {float: left; width: 149px; text-align: center; line-height: 20px}
+#snb_navigation .h2_hgroup .title {margin-bottom: 45px}
+#snb_navigation .h2_hgroup .at_tab {display: block; float: left; width: 138px; padding: 9px 12px 4px 0;font-weight: normal; background: #b9d0e4 url('//image1.hanatour.com/_images/hana_free/ico_arrow_01.png') no-repeat 105px 18px; line-height: 24px; color: #FFF}
+#snb_navigation .h2_hgroup .at_tab.on {font-weight: bold; background-color: #2c77bc;}
+
+#snb_navigation.snb_nav_list.off {display: none}
+
+#snb_navigation .snb_nav_list {float: right; width: 913px;}
+#snb_navigation .snb_nav_list table {background-color: #FFF}
+#snb_navigation .snb_nav_list table a {text-align: left}
+#snb_navigation .snb_nav_list table td {min-height: 254px; padding: 18px 20px;border-left: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5;vertical-align: top}
+#snb_navigation .snb_nav_list table td.two_block {height:127px;min-height:127px}
+#snb_navigation .snb_nav_list table td.bt_line {border-top: 1px solid #d5d5d5;}
+#snb_navigation .snb_nav_list table td.bt_none {border-bottom: 0;}
+#snb_navigation .snb_nav_list table td.bl_none {border-left: 0;}
+#snb_navigation .snb_nav_list table td .h3_title a {height: auto; margin-bottom: 10px; padding: 0; font-weight: normal; font-size: 14px; color: #333}
+#snb_navigation .snb_nav_list table td .h3_title a:hover {color: #F63D8B; text-decoration: none;}
+#snb_navigation .snb_nav_list table td .h3_title a.new b {padding-right:17px; background: url('//image1.hanatour.com/_images/main/GNB_new_icon.gif') no-repeat right center;}
+#snb_navigation .snb_nav_list table td ul li {float: none}
+#snb_navigation .snb_nav_list table td ul li a {height: auto; width: auto; padding: 2px 0; font-weight: normal; font-size: 13px; color: #666}
+#snb_navigation .snb_nav_list table td ul li a:hover {color: #F63D8B; text-decoration: none;}
+
+#snb_navigation.sub_hanapack {width:1062px; border-left:none}
+#snb_navigation.sub_hanapack .snb_nav_list{float:left; width:1062px}

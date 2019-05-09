@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#airplane_scheduleTT{
+	border-collapse: collapse;
+	/* border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588; */
+
+}
+
+#airplane_scheduleTT td{
+	/* border: 1px solid #c6c6c6; */
+	/* border-bottom: 1px solid #6d7588; */
+}
+tr.airplane_scheduleTT_th{
+	/* background-color: #f2f2f2; */
+	font: bold 15px Tahoma, Arial ;
+	text-align: center;
+	height: 40px;
+}
+#airplane_scheduleTT>tr>td{
+	font: 15px Tahoma, Arial ;
+	
+}
+
+.freeResult_divSet{
+	border: 1px green solid;
+	position: relavtive;
+	height: 100%;
+}
+.freeResult_forTd1{
+	
+	border: 1px red solid;
+	position: relative;
+	display: inline-block;
+	width: 50px;
+}
+.freeResult_forTd2{
+	
+	border: 1px red solid;
+	position: relative;
+	display: inline-block;
+	width: 205px;
+}
+.freeResult_forTd3, .freeResult_forTd4, .freeResult_forTd5 {
+	border: 1px blue solid;
+	position: relative;
+	display: inline-block;
+	width: 95px;
+	text-align: center;
+	font-family: 'Nanum Gothic' , 'Malgun Gothic' , 'Dotum' , 'Apple SD Gothic Neo', Helvetica, Sans-serif;
+}
+.freeResult_forTd6{
+	border: 1px red solid;
+	position: relative;
+	display: inline-block;
+	width: 260px;
+	text-align: center;
+	font-family: 'Nanum Gothic' , 'Malgun Gothic' , 'Dotum' , 'Apple SD Gothic Neo', Helvetica, Sans-serif;
+}

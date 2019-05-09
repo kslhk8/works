@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="clientCenterSQL">
+<!-- 중분류에 따라 faq 개수 -->
+	<select id="getTotalBySummary" parameterType="java.lang.String" resultType="int">
+		select count(*) from FAQ where summaryname=#{summaryname}
+	</select>
+<!-- FAQ 소분류 -->
+	<select id="getSummary" parameterType="java.lang.String" resultType="java.lang.String">
+		select type from SUMMARY where summaryname=#{summary}
+	</select>
+	
+<!-- FAQ 입력 -->
+	<insert id='insertFAQ' parameterType='java.util.Map'>
+		insert into FAQ values(
+			seq_faq.nextval
+			, #{summaryname}
+			, #{type}
+			, #{subject}
+			, #{content}
+		)
+	</insert>
+<!-- FAQ List(모두) -->
+	<select id="getFaqListA" parameterType='java.lang.Object' resultType='faqDTO'>
+		select * from FAQ where summaryname=#{summaryname}
+		order by seq_faq desc
+	</select>
+<!-- FAQ List(특정) -->
+	<select id="getFaqList" parameterType='java.util.Map' resultType='faqDTO'>
+		select * from FAQ where summaryname=#{summaryname} and type=#{type}
+		order by seq_faq desc
+	</select>
+	
+	
+	
+	
+	
+<!-- Notice 입력 -->
+	<insert id="writeNotice" parameterType='noticeDTO'>
+		insert into NOTICE(
+				seq_notice
+				, writer
+				, subject
+				, content
+		) values(
+				seq_notice.nextval
+				, #{writer}
+				, #{subject}
+				, #{content}
+		) 
+	</insert>
+<!-- totalA -->
+	<select id="getNoticeTotalA" resultType="int">
+		select count(*) from NOTICE
+	</select>  
+<!-- Notice List -->
+	<select id="getNoticeList" parameterType="java.util.Map" resultType="noticeDTO"> 
+		select * from (
+		  select rownum rn, tt.* from(
+		    select seq_notice, subject, logtime, hit 
+		    from NOTICE order by seq_notice desc
+		  )tt
+		)where rn &gt; =#{startNum} and rn &lt;=#{endNum}
+	</select> 
+<!-- 조회수 -->
+	<update id="updateHit" parameterType="int">
+		update NOTICE set hit=hit+1 where seq_notice=#{seq_notice}
+	</update>	
+<!-- view One -->
+	<select id='getNoticeOne' parameterType='int' resultType='noticeDTO'>
+		select * from NOTICE where seq_notice=#{seq_notice}
+	</select>
+<!-- Total Notice -->
+	<select id="getTotalNotice"	resultType='int'>
+		select count(*) from NOTICE
+	</select>
+<!-- Notice Current Seq -->
+	<select id="getBiggestNoticeSeq" resultType='int'>
+		select last_number from USER_SEQUENCES where sequence_name='SEQ_NOTICE'
+	</select>
+	
+	
+	
+	
+	
+	
+<!-- 중분류 얻기  -->
+	<select id='getConsult_type2' parameterType='java.lang.String' resultType='java.lang.String'>
+		select types from CONSULT_TYPE_M where consult_type1=#{consult_type1}
+	</select>
+<!-- 소분류 얻기 -->
+	<select id='getConsult_type3' parameterType='java.lang.String' resultType='java.lang.String'>
+		select types from CONSULT_TYPE_S where consult_type2=#{consult_type2}
+	</select>
+<!-- Consult -->	
+	<insert id="writeConsult" parameterType="consultDTO">
+		insert into CONSULT (
+			seq_consult
+			, consult_type1
+			, consult_type2
+			, consult_type3
+			, id
+			, reservation_num
+			, subject
+			, content
+			, ref
+		
+		)values(
+			seq_consult.nextval
+			, #{consult_type1}
+			, #{consult_type2}
+			, #{consult_type3}
+			, #{id}
+			, #{reservation_num}
+			, #{subject}
+			, #{content}	
+			, seq_consult.currval
+		)
+	</insert>
+<!-- 총글수 -->
+	<select id="getConsultTotalA" resultType="int">
+		select count(*) from CONSULT
+	</select>  
+<!-- Consult List얻기 -->
+	<select id="getConsultListA" parameterType="java.util.Map" resultType="consultDTO">
+ 		select * from (
+			select rownum rn, tt.* from(
+				select * 
+				from CONSULT 
+	        	order by ref desc, step asc
+			)tt
+		)where rn &gt;=#{startNum} and rn &lt;=#{endNum}
+	</select>
+<!-- consult View -->
+	<select id='getOneConsultView' parameterType='int' resultType='consultDTO'>
+		select * from CONSULT where seq_consult=#{seq_consult}
+	</select>
+<!-- consult 답글 -->
+	<update id="replyConsult1" parameterType='java.util.Map'>
+		update CONSULT set step=step+1 where ref=#{ref} and step>#{step}
+	</update>	
+	<insert id="replyConsult2" parameterType='java.util.Map'>
+		insert into CONSULT values(
+			seq_consult.nextval
+			,#{consult_type1}
+			,#{consult_type2}
+			,#{consult_type3}
+			,#{id}
+			,#{reservation_num}
+			,#{subject}
+			,#{content}		
+			,#{ref}
+			,#{lev}
+			,#{step}
+			,#{pseq}
+			,0
+			,0
+			,sysdate)
+	</insert>	
+	<update id="replyConsult3" parameterType='int'>
+		update CONSULT set reply=reply+1 where seq_consult=#{pseq}
+	</update>
+<!-- 검색 총글수 -->
+	<select id="getSearchConsultTotalA" parameterType='java.util.Map' resultType='int'>
+		select count(*) from CONSULT 
+		where consult_type1 like #{consult_type1}||'%'
+			and consult_type2 like #{consult_type2}||'%'
+			and consult_type3 like #{consult_type3}||'%'
+	</select>
+<!-- 검색 결과 --><!-- startnum사용해서!! -->
+	<select id='searchConsult' parameterType='java.util.Map' resultType='consultDTO'>
+		select * from CONSULT 
+		where consult_type1 like #{consult_type1}||'%'
+			and consult_type2 like #{consult_type2}||'%'
+			and consult_type3 like #{consult_type3}||'%'
+			order by ref desc, step asc
+	</select>
+	
+	
+	
+	
+	
+	
+<!-- 중분류 얻기  -->
+	<select id='getClientBoard_type2' parameterType='java.lang.String' resultType='java.lang.String'>
+		select types from clientboard_type_M where clientboard_type1=#{clientboard_type1}
+	</select>
+<!-- 소분류 얻기 -->
+	<select id='getClientBoard_type3' parameterType='java.lang.String' resultType='java.lang.String'>
+		select types from clientboard_type_S where clientboard_type2=#{clientboard_type2}
+	</select>	
+<!-- 총글수:고객게시판 -->	
+	<select id="getClientBoardTotalA" resultType='int'>
+		select count(*) from CLIENTBOARD
+	</select>
+<!-- 목록 -->
+	<select id="getClientBoardList" parameterType='java.util.Map' resultType='clientboardDTO'>
+	 	select * from (
+			select rownum rn, tt.* from(
+				select * 
+				from CLIENTBOARD 
+	        	order by ref desc, step asc
+			)tt
+		)where rn &gt;=#{startNum} and rn &lt;=#{endNum}
+	</select>	
+<!-- 글쓰기 -->
+	<insert id="writeClientBoard" parameterType='java.util.Map'>
+		insert into CLIENTBOARD(
+			seq_cb
+			, clientboard_type1
+			, clientboard_type2
+			, clientboard_type3
+			, id
+			, subject
+			, content
+			, ref
+		)values(
+			seq_cb.nextval
+			, #{clientboard_type1}
+			, #{clientboard_type2}
+			, #{clientboard_type3}
+			, #{id}
+			, #{subject}
+			, #{content}	
+			, seq_cb.currval
+		)
+	
+	</insert>
+<!-- 글보기 -->
+	<select id="getOneClientBoardView" parameterType='int' resultType='clientboardDTO'>
+		select * from CLIENTBOARD where seq_cb=#{seq_cb}
+	</select>	
+	
+	
+	
+<!-- consult 답글 -->
+	<update id="replyClientBoard1" parameterType='java.util.Map'>
+		update CLIENTBOARD set step=step+1 where ref=#{ref} and step>#{step}
+	</update>	
+	<insert id="replyClientBoard2" parameterType='java.util.Map'>
+		insert into CLIENTBOARD values(
+			seq_cb.nextval
+			, #{clientboard_type1}
+			, #{clientboard_type2}
+			, #{clientboard_type3}
+			,#{id}
+			,#{subject}
+			,#{content}		
+			,#{ref}
+			,#{lev}
+			,#{step}
+			,#{pseq}
+			,0
+			,0
+			,sysdate)
+	</insert>	
+	<update id="replyClientBoard3" parameterType='int'>
+		update CLIENTBOARD set reply=reply+1 where seq_cb=#{pseq}
+	</update>	
+<!-- 검색총글수 -->
+	<select id="getSearchCBTotalA" parameterType='java.util.Map' resultType='int'>
+		select count(*) from CLIENTBOARD
+		<where>
+			<if test="type!=null and type=='subject'">
+				and subject like #{keyword}||'%'
+			</if>
+			<if test="type!=null and type=='id'">
+				and id like #{keyword}||'%'
+			</if>
+		</where>
+	</select>
+<!-- 검색된목록 -->
+	<select id="searchClientBoard" parameterType='java.util.Map' resultType='clientboardDTO'>
+		select * from CLIENTBOARD
+		<where>
+			<if test="type!=null and type=='subject'">
+				and subject like #{keyword}||'%'
+			</if>
+			<if test="type!=null and type=='id'">
+				and id like #{keyword}||'%'
+			</if>
+		</where>
+	</select>	
+<!-- 조회수 업뎃 -->
+	<update id="updateHitClientBoard" parameterType='int'>
+		update CLIENTBOARD set hit=hit+1 where seq_cb=#{seq_cb}
+	</update>
+</mapper>

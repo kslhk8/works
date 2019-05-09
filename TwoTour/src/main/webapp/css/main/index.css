@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.index_right_div{
+	color:black; position:absolute; top:160px; right:0; border:1px solid rgb(207,210,211); height:550px; background-color:rgb(251,251,251); width:120px;
+}
+
+.index_right_div_fixed{ position:fixed; color:black; top:160px; right:0; border:1px solid rgb(207,210,211); height:550px; background-color:rgb(251,251,251); width:120px;}

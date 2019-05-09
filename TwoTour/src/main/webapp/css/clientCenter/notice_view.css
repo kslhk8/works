@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+#notice_viewT{
+	border-collapse: collapse; 
+	border-style: hidden;
+	border-top: 0.5px solid #c6c6c6;
+	border-bottom: 0.5px solid #c6c6c6;
+	cell-spacing: '0';
+	width: 1064px;
+}
+
+#notice_viewT td{
+	border: 1px solid #c6c6c6;
+} 
+
+.notice_view_col{
+	height: 47px;
+	font: bold 20px Tahoma, Arial ;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+
+.notice_view_value{
+	font: 15px Tahoma, Arial;
+	margin-left: 3px;
+}
+#notice_viewT textarea[name='content']{
+	height: 500px;
+	width: 98%;
+	font: 15px Tahoma, Arial;
+	border: none;
+	border-color: transparent;
+	outline: none;
+	margin-left: 2px;
+	margin-top: 2px;
+	vertical-align: top;
+}

@@ -1,0 +1,79 @@
+@charset "utf-8";
+#faq_writeFormT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #c6c6c6; 
+	width: 100%;
+}
+
+
+#faq_writeFormT td{
+	border: 1px solid #c6c6c6;
+	padding-left: 20px;
+} 
+td.faq_writeForm_col{
+	font: bold 15px Tahoma, Arial;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	vertical-align: center;
+	background-color: #f2f2f2;
+}
+#faq_writeFormT select[name="summaryname"]{
+	width: 200px;
+	height: 26px;
+	padding-left: 10px;
+	vertical-align: center;
+	color: #000000;
+	border: 1px solid #f63d8b;
+	border-radius: 3px;
+}
+#faq_writeFormT select[name="type"]{
+	width: 200px;
+	height: 26px;
+	padding-left: 10px;
+	color: #000000;
+	vertical-align: center;
+	border: 1px solid #f63d8b;
+	border-radius: 3px;
+}
+#faq_writeFormT input[name="subject"]{
+	height: 26px;
+	width: 98%;
+	font: 15px Tahoma, Arial;
+	vertical-align: center;
+}
+#faq_writeFormT textarea[name="content"]{
+	height: 350px;
+	width: 98%;
+	vertical-align: top;
+	font: 15px Tahoma, Arial;
+}
+
+#faq_writeForm_bt_div{
+	/* border:2px dashed magenta; */
+	width: 100%;
+}
+
+#faq_writeBt{
+	margin-left: 220px;
+	background-image: url(/TwoTour/image/clientCenter/writeBt.jpg);
+	background-color: transparent;/*배경색 : 투명*/
+	baockground-repeat: no-repeat;
+	background-position: 0px 0px;
+	border: none;
+	cursor: pointer;
+	height: 30px; 
+	width: 80px;
+}
+#faq_resetBt{
+	margin-top: 0px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	border: none;
+	cursor: pointer;
+
+}
+

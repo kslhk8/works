@@ -1,0 +1,1105 @@
+@charset "UTF-8";
+
+#rentCar2_Div1{
+	float: left;
+    width: 254px;
+    color: #f6f5f5;
+    height:1440px;
+    
+}
+#rentCar2_Div2{
+	position: relative;
+    float: right;
+    width: 794px;
+    height:auto;
+	
+}
+.search_option{
+	position: relative;
+    padding: 30px 20px;
+    background-color: #555A66;
+    height:460px;
+	
+}
+#googlemap{
+	position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 385px;
+	
+	
+}
+.choice_rent{
+	position: static;
+    z-index: 5001;
+    margin-bottom: 8px;
+    border: 1px solid #D7D7D7;
+	
+	
+}
+#search_div1{
+	
+	height:332px;
+}
+#search_div1 ul li{
+	zoom: 1;
+    padding-bottom: 11px;
+	 list-style:none outside none;
+}
+.f_left {
+    float: left !important;
+}
+#search_div1 .title_name{
+	height: 17px;
+       margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #f6f5f5;
+}
+#search_div1 .sel_input{
+	float: left;
+    position: relative;
+    height: 30px;
+	    border: 1px solid #9d9d9d;
+    background-color: #FFF;
+}
+#search_div1 .sel_input input{
+	width: 100%;
+    height: 26px;
+    border: 0 none;
+    font-size: 13px;
+    line-height: 24px;
+    color: #666;
+    letter-spacing: -1px;
+    cursor:pointer;
+}
+#search_div1 .sel_input .sel_calendar_PickUp{
+	display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(//image1.hanatour.com/_images/main/icon_search.png) no-repeat 0px -89px;
+	cursor:pointer;
+}
+#search_div1 .sel_input .sel_calendar_Return{
+	display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url(//image1.hanatour.com/_images/main/icon_search.png) no-repeat 0px -89px;
+	cursor:pointer;
+}
+.selbox1{
+	float: left; line-height: 31px; width:100px; height: 32px; margin-right:10px; background-color: #FFF;
+}
+.selbox1 >select{
+	width:100%;
+	height: 32px;
+}
+.selbox2{
+	float: left; line-height: 31px; width:100px; height: 32px; margin-right:10px; background-color: #FFF;
+}
+.selbox2 >select{
+	width:100%;
+	height: 32px;
+}
+.selbox3{
+	float: left; line-height: 31px; width:100px; height: 32px; margin-right:10px; background-color: #FFF;
+}
+.selbox3 >select{
+	width:100%;
+	height: 32px;
+}
+.selbox4{
+	float: left; line-height: 31px; width:100px; height: 32px; margin-right:10px; background-color: #FFF;
+}
+.selbox4 >select{
+	width:100%;
+	height: 32px;
+}
+.sel_option{
+	    margin-bottom: 5px;
+	    
+}
+#rentOption{
+	list-style: none;
+    padding: 0 0 0 0;
+    line-height: 100%;
+}
+.sel_option ul li >input{
+	display: none;
+    left: -9999px;
+    width: 0px;
+    height: 15px;
+    -webkit-appearance: none;
+    opacity: 0;
+	
+}
+.sel_option ul li >label{
+	display: inline-block;
+    height: 15px;
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #F6F5F6;
+    vertical-align: top;
+    cursor: pointer;
+	
+}
+input[type=checkbox] { display:none; }
+
+input[type=checkbox] + label { 
+
+display: inline-block; 
+
+cursor: pointer; 
+
+line-height: 15px;  
+line-width: 15px;  
+padding-left: 22px; 
+
+background: url("/TwoTour/image/check2.png") left/15px no-repeat; 
+
+}
+input[type=checkbox]:checked + label { background-image: url("/TwoTour/image/check.png"); }
+.sel_option .title_name{
+	height: 17px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #F6F5F6;
+}
+#btnSearch{
+    display: block;
+    width: 120px;
+    height: 35px;
+    margin: 0 auto;
+    background: #3893BA url(//image1.hanatour.com/_images/rentercar);
+    text-align: center;
+    color: #FFF;
+	border: 0 none;
+    cursor: pointer;
+	
+}
+#btnSearch:hover{
+	background: rgb(85,174,212) url(//image1.hanatour.com/_images/rentercar);
+	
+}
+.select_facility h3 button{
+	display: block;
+    zoom: 1;
+    height: 39px;
+    width: 254px;
+    padding: 11px 10px 12px 24px;
+    border-bottom: 1px solid #FFF;
+    background-color: #8F94A4;
+	
+}
+.h3_title{
+	float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background: url('/TwoTour/image/set.png') no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+.select_facility .icon{
+	display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 6px -139px;
+	cursor: pointer;
+} 
+.ir{
+	display: block;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+	
+}
+.select_facility .option_list{
+	    padding: 15px 20px 15px 20px;
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    background-color: white;
+    height:auto;
+    overflow:hidden;
+    width:212px;
+    
+	
+}
+.option_list li{
+	margin-bottom: 15px;
+	list-style:none outside none;
+	width:212px;
+	height:15px;
+}
+.chk_chekbox{
+	display: none;
+    left: -9999px;
+    width: 0px;
+    height: 15px;
+    -webkit-appearance: none;
+ 	    margin-right: 3px;
+    opacity: 0;
+	
+}
+.option_list .rent_check{
+	font-weight: normal;
+    font-size: 13px;
+    color: #666;
+	 display: inline-block;
+    height: 15px;
+    padding-left: 25px;
+    line-height: 16px;
+    vertical-align: top;
+    cursor: pointer;
+}
+input[type=radio] { display:none; }
+
+input[type=radio] + label { 
+
+display: inline-block; 
+
+cursor: pointer; 
+
+line-height: 15px;  
+line-width: 15px;  
+padding-left: 22px; 
+
+background: url("/TwoTour/image/check2.png") left/15px no-repeat; 
+
+}
+input[type=radio]:checked + label { background-image: url("/TwoTour/image/check.png"); }
+
+.h3_title2{
+	float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background: url('/TwoTour/image/set2.png') no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+.h3_title3{
+	float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background: url('/TwoTour/image/set3.png') no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+.h3_title4{
+	float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background: url('/TwoTour/image/set4.png') no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+.h3_title5{
+	float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background: url('/TwoTour/image/set5.png') no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+.h3_title6{
+	float: left;
+    padding-left: 25px;
+    font-size: 14px;
+    background: url('/TwoTour/image/set6.png') no-repeat;
+    color: #FFF;
+    cursor: pointer;
+}
+.choice_rent{
+	    position: static;
+    z-index: 5001;
+    margin-bottom: 8px;
+    height:172px;
+    border: 1px solid #D7D7D7;
+}
+.choice_rent .impers_res_car {
+    position: relative;
+    z-index: 60;
+    padding: 30px 20px;
+    border-bottom: 1px solid #D7D7D7;
+    font-size: 26px;
+    background-color: #FFF;
+    height:18px;
+}
+.choice_rent .impers_res_car .total, .choice_rent .impers_res_car .res_imp {
+    color: #2E95C8;
+}
+strong, b {
+    font-weight: bold;
+}
+.choice_rent .impers_res_car .txt {
+    float: right;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #666;
+}
+.choice_rent .impers_res_car .txt strong {
+    color: #f33d88;
+}
+.choice_rent .sort_group {
+    zoom: 1;
+    z-index: 60;
+    position: relative;
+    font-size: 12px;
+    color: #666;
+    height:93px;
+}
+.choice_rent .sort_group .compare_car {
+    float: left;
+    width: 211px;
+    border-right: 1px solid #D7D7D7;
+    height:51px;
+    padding: 18px 20px;
+}
+.choice_rent .sort_group .txt_tit {
+    display: block;
+    margin-bottom: 8px;
+}
+.choice_rent .sort_group .btn_sel{
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 13px;
+    background-color: #6D7588;
+    color: #FFF;
+       
+    cursor: pointer;
+}
+.choice_rent .sort_group .type_car {
+    float: left;
+    width: 336px;
+    border-right: 1px solid #D7D7D7;
+    padding: 18px 20px;
+}
+.choice_rent .sort_group .btn_sel, .choice_rent .sort_group .btn_sortinfo {
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 13px;
+    background-color: #6D7588;
+    color: #FFF;
+}
+.choice_rent .sort_group .sort_car {
+    float: left;
+    width: 122px;
+    padding: 18px 20px;
+}
+.choice_rent .sort_group .sort_car >select {
+    height:35px;
+}
+#rentcarList{
+	    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+	height:auto;
+	overflow: hidden;
+}
+.result_list {
+    border: 1px solid #D7D7D7;
+    border-bottom: 0 none;
+    background-color: #FFF;
+        list-style: none;
+    padding: 0 0 0 0;
+    line-height: 100%;
+    height:auto;
+	overflow: hidden;
+}
+.result_list .list_info {
+    zoom: 1;
+    padding: 15px 10px;
+    border-bottom: 1px solid #D7D7D7;
+    list-style: none;
+    line-height: 100%;
+    height:auto;
+	overflow: hidden;
+}
+.result_list .list_info .rent_thumb {
+    float: left;
+    position: relative;
+    width: 279px;
+    height: 179px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+}
+.result_list .list_info .rent_thumb .rent_ci {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.result_list .list_info .rent_desc {
+    float: left;
+    width: 324px;
+    margin-right: 16px;
+}
+.result_list .list_info .chk_choice {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 9;
+    height: 20px;
+    width: 324px;
+}
+.rent_check{
+	    display: inline-block;
+    height: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    
+    line-height: 16px;
+    color: #333;
+    vertical-align: top;
+    cursor: pointer;
+	
+	
+}
+.result_list .list_info .chk_choice .car_label {
+    display: block;
+    margin-left: 10px;
+    padding-left: 23px;
+    font-size: 13px;
+    color: #7954a6;
+}
+table {
+    border-collapse: collapse;
+    empty-cells: show;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.result_list .list_info .rent_desc .desc_list .bg {
+    background-color: #f8f8f8;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.result_list .list_info .rent_desc .desc_list th {
+    padding-left: 20px;
+    color: #333;
+
+}
+.result_list .list_info .rent_desc .desc_list th, .result_list .list_info .rent_desc .desc_list td {
+    padding: 8px 0;
+    font-size: 12px;
+}
+.result_list .list_info .rent_desc .desc_list td {
+    color: #777;
+}
+.result_list .list_info .rent_desc .opt_alert {
+    height:auto;
+    zoom: 1;
+    padding: 10px 0;
+    height:60px;
+}
+.result_list .list_info .rent_desc .opt_alert .imply {
+    float: left;
+    position: relative;
+    z-index: 10;
+    min-width: 130px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    height:14px;
+}
+.result_list .list_info .rent_desc .opt_alert .imply.im_01 {
+    z-index: 14;
+}
+.result_list .list_info .rent_desc .opt_alert .imply .txt {
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+    height:14px;
+}
+.result_list .list_info .rent_desc .opt_alert .imply.im_02 {
+    z-index: 13;
+}
+.result_list .list_info .rent_desc .opt_alert .imply.im_03 {
+    z-index: 11;
+}
+.result_list .list_info .rent_price {
+    float: left;
+    width: 130px;
+    height:auto;
+}
+.result_list .list_info .rent_price .tit_price {
+    display: block;
+    margin-bottom: 14px;
+    color: #333;
+    font-size:13px;
+    height:14px;
+}
+.result_list .list_info .rent_price .rent_total {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #f33d88;
+}
+.result_list .list_info .rent_price .tax {
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: #777;
+    
+}
+.result_list .list_info .rent_price .tax b {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    height:14px;
+}
+.btn_reservation {
+    display: block;
+    width: 130px;
+    padding: 13px 0;
+    background-color: #C83D67;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+}
+.result_list .list_info .rent_price .btn_reservation span {
+    margin-left: 15px;
+    padding-right: 20px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 60px -90px;
+    text-align: center;
+    color: #FFF;
+}
+.page-number {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin: 25px 0 88px;
+    text-align: center;
+}
+.page-number .pagination {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.page-number .pagination .direction.prev {
+    background-position: -30px -366px;
+    margin-right: 2px;
+        display: inline-block;
+    width: 26px;
+    height: 25px;
+    background: url('/TwoTour/image/prev.png') no-repeat 0 -5px;
+}
+.page-number .pagination .caption, .page-number .pagination .direction span {
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.pagination .select a {
+    height: 23px;
+    width: 25px;
+    padding: 0;
+    border-top: 1px solid #5390BC;
+    border-left: 1px solid #5390BC;
+    border-right: 1px solid #4A80A6;
+    border-bottom: 1px solid #4A80A6;
+    background-color: #5EA5D3;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 22px;
+    display: inline-block;
+    margin: 0 2px;
+}
+.page-number .pagination .direction.next {
+    background-position: -60px -366px;
+    margin-left: 2px;
+    display: inline-block;
+    width: 26px;
+    height: 25px;
+    background: url('/TwoTour/image/next.png') no-repeat 0 -5px;
+}
+.layer_event {
+    position: absolute;
+    z-index: 10000;
+    left: -5px;
+    top: 180px;
+    width: 800px;
+    background-color: #FFF;
+}
+.layer_event .h_title {
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color: #4A505D;
+    color: #FFF;
+}
+.layer_event .compare_table {
+    padding: 25px;
+    border: 2px solid #4A505D;
+}
+.layer_event .compare_table table {
+    border-top: 1px solid #C1C1C1;
+    border-right: 1px solid #C1C1C1;
+}
+table {
+    border-collapse: collapse;
+    empty-cells: show;
+}
+caption, legend, hr {
+    display: none;
+}
+colgroup {
+    display: table-column-group;
+}
+col {
+    display: table-column;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.layer_event .compare_table.sort_list td.bg {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+.layer_event .compare_table table td.bg {
+    background-color: #F8F8F8;
+    
+}
+.layer_event .compare_table.sort_list td {
+    padding: 10px;
+    
+    vertical-align: top;
+    
+    letter-spacing: -1px;
+}
+.layer_event .compare_table table td {
+    border-bottom: 1px solid #C1C1C1;
+    border-left: 1px solid #C1C1C1;
+   
+}
+.layer_event .compare_table.sort_list td .type {
+    font-size: 14px;
+    color: #333;
+}
+strong, b {
+    font-weight: bold;
+}
+.layer_event .compare_table .car_type.economy {
+    background-position: -250px 0;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.compact {
+    background-position: -250px -50px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.midsize {
+    background-position: -250px -100px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.executive {
+    background-position: -250px -150px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.convertible {
+    background-position: -250px -200px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.suv {
+    background-position: -250px -250px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.sadan {
+    background-position: -250px -300px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.wagon {
+    background-position: -250px -350px;
+}
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.coupe {
+    background-position: -250px -400px;
+}
+
+.layer_event .compare_table .car_type {
+    display: block;
+    width: 110px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(//image1.hanatour.com/_images/rentercar/img_ill_set.gif) no-repeat;
+}
+.layer_event .compare_table .car_type.hatchback {
+    background-position: -250px -450px;
+}
+.layer_event .compare_table .car_type.van {
+    background-position: -250px -500px;
+}
+.layer_event .compare_table .car_type.pickup {
+    background-position: -250px -550px;
+}
+.layer_event .btn_close {
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 0 -266px;
+}
+input, button {
+    border: 0 none;
+    cursor: pointer;
+}
+.desc_txt{
+	color:grey;
+	font-size:13px;
+	
+}
+#popVehicle {
+    position: absolute;
+    z-index: 1200;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.layer_event .compare_table table th:first-child {
+    border-left: 1px solid #C1C1C1;
+}
+.layer_event .compare_table table th {
+    border-bottom: 1px solid #D5D5D5;
+        border-left: 1px solid #E4E4E4;
+    background-color: #d5d5d5;
+    color: #333;
+}
+.layer_event .compare_table table th, .layer_event .compare_table table td {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.layer_event .compare_table table td .rent_price {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #f33d88;
+}
+.layer_event .compare_table table td .tax b {
+    color: #333;
+}
+.layer_event .compare_table .btn_reservation {
+    display: inline-block;
+    width: 130px;
+    padding: 13px 0;
+    background-color: #C83D67;
+    text-align: center;
+    color: #FFF;
+}
+.layer_event .compare_table .btn_reservation span {
+    padding-right: 15px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 57px -90px;
+}
+.layer_event .compare_table table td .tax {
+    margin-bottom: 15px;
+}
+#popVehicle {
+    position: absolute;
+    z-index: 1200;
+}
+.layer_event {
+    width: 800px;
+    background-color: #FFF;
+}
+.layer_event .h_title {
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color: #4A505D;
+    color: #FFF;
+}
+.layer_event .compare_table {
+    padding: 25px;
+    border: 2px solid #4A505D;
+}
+.layer_event .compare_table table {
+    border-top: 1px solid #C1C1C1;
+    border-right: 1px solid #C1C1C1;
+}
+.layer_event .compare_table table th:first-child {
+    border-left: 1px solid #C1C1C1;
+}
+.layer_event .compare_table table th {
+    border-bottom: 1px solid #D5D5D5;
+    background-color: #d5d5d5;
+    color: #333;
+}
+.layer_event .compare_table table th, .layer_event .compare_table table td {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.layer_event .compare_table table td.bg {
+    background-color: #F8F8F8;
+    color: #333;
+}
+.layer_event .compare_table table td {
+    border-bottom: 1px solid #C1C1C1;
+    border-left: 1px solid #C1C1C1;
+   
+}
+.layer_event .compare_table table td .rent_thumb {
+    position: relative;
+    width: 200px;
+    height: 126px;
+    margin: 0 auto;
+}
+.layer_event .compare_table table td .rent_thumb .rent_ci {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.layer_event .btn_close {
+    display: block;
+    position: absolute;
+    right: 22px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+    background: url(//image1.hanatour.com/_images/rentercar/icon_set.png) no-repeat 0 -266px;
+}
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 20px;
+}
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+    color: #222222;
+}
+.ui-corner-all {
+    border-radius: 4px;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+    width: 50%;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+    float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+    border-left-width: 0;
+}
+.ui-helper-clearfix {
+    display: block;
+}
+.ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #cccccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+    color: #222222;
+    font-weight: bold;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+    width: 95%;
+    margin: 0 auto .4em;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+#loginForm_inform_wrap{
+	position:absolute; top:500px; left:10px; visibility:hidden; border:1px solid red;
+}
+#loginForm_inform_box{
+	position:relative; width:600px; height:55px; display:inline-block; left:238.2px;
+	bottom:130px;
+}
+#loginForm_inform_box1{
+	position:absolute; height:47px; display:inline-block; width:565px;
+	 background-color: #4a505d; cursor:pointer; padding-top:8px; padding-left:35px;
+	color:white; font:17px Tahoma, Arial;   left:0px;
+}
+#loginForm_inform_box1 > #member{
+	margin-right:480px; width:50px;
+}
+#loginForm_inform_box1 > #close_login{
+	cursor:pointer;
+}
+
+
+#loginForm_inform_member{
+	font:20px Tahoma, Arial; bottom:140px; background-color:white; 
+	position:relative; width:596px; height:300px; display:inline-block; left:240px;
+}
+
+
+#login_text_wrap{
+	position:absolute; width:596px; height:45px;
+}
+#login_text{
+	position:absolute; width:300px; height:32px; display:inline-block;
+	left:30px; padding-top:22px;  font:17px Tahoma, Arial; font-weight:bold; padding-right:48px; 
+}
+
+
+#loginForm_id_content{
+	position:absolute; width:300px; height:41px; display:inline-block; left:50px; top:60px;
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#loginForm_id_content > input[type=text]{
+	width:180px; height:33px; border: 1px solid rgb(220,220,220); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#login_idDiv{
+	color:rgb(241, 94, 175); font-size:9pt;
+		position:absolute; clear:"both";
+}
+
+#loginForm_pwd_content{
+	position:absolute; width:300px; height:40px; display:inline-block; left:50px;  top:120px;
+	padding-top:12px; font:10px Tahoma, Arial; 
+}
+#loginForm_pwd_content > input[type=password]{
+	width:180px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#login_pwdDiv{
+	color:rgb(241, 94, 175); font-size:9pt;
+			position:absolute; clear: "both"; text-align:left; width:500px;
+}
+
+#loginForm_accept_login{
+	position:absolute; width:100%; height:123px; top:194px;
+	 
+}
+#accpet_login{
+	position:absolute; width:190px; height:35px; left:52px; font:16px Tahoma, Arial; font-weight:bold;
+	background-color: rgb(241, 84, 155); color:white; cursor:pointer; text-align:center; padding-top:10px;
+}
+#login{
+	cursor:pointer;
+}
+#loginForm_function_table{
+	position:absolute; width:100%; height:23px; top:260px;
+}
+#function_table{
+	position:absolute; width:100%; height:39px; background-color:rgb(238,238,238); padding-top:3px;
+}
+
+#function_table > ul > #search_id{
+	display:inline-block; height:28px; cursor:pointer; width:127px; 
+	list-style:none; font:11px Tahoma, Arial; 
+	cursor:pointer; color:grey; padding-top:5.5px; text-align:right; padding-left:130px;
+	
+ }
+ 
+ #function_table > ul > #search_pwd{
+	display:inline-block; height:28px; cursor:pointer; width:76px; 
+	list-style:none; font:11px Tahoma, Arial; 
+	cursor:pointer; color:grey; padding-top:5.5px; text-align:right;
+	
+ }
+ 
+  #function_table > ul > #go_writeForm{
+	display:inline-block; height:28px; cursor:pointer; width:50px;
+	list-style:none; font:11px Tahoma, Arial; 
+	cursor:pointer; color:grey; padding-top:5.5px; text-align:right;
+	
+ }
+ #border_line{
+	top:20px; width:0.5px; height:220px; border: 0.2px solid rgb(220,220,220); left:288px; position:absolute;
+}
+ 
+#no_member_wrap{
+	position:absolute; top:55px; left:550px; font:11px Tahoma, Arial; color:black;	
+}
+#no_member_wrap > strong{
+	margin-bottom:5px; color:black;
+}
+#no_member_wrap > label{
+	cursor:pointer;position:absolute;height:28px;padding-top:11px; top:62px; width:248px; border: 1px solid #ff5e8f; text-align:center; color:#ff5e8f;  font:13px Tahoma,Arial;
+}

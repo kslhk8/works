@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* <link rel='stylesheet' type="text/css" href='/TwoTour/css/productFree/preAirInform.css'> */
+#preAirInformT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #6d7588;
+	width: 1064px;
+}
+
+#preAirInformT td, th{
+	border: 1px solid #c6c6c6;
+}
+#preAirInformT th{
+	background-color: #f2f2f2;
+	font: bold 15px Tahoma, Arial ;
+	text-align: center;
+	height: 40px;
+}
+#preAirInformT td {
+	font: 15px Tahoma, Arial ;
+	text-align: center;
+	height: 30px;
+}
+/* #consult_list_index > td > span{
+	border: 1px solid blue;
+	width: 100px;
+	height: 30px;
+	font: 20px Tahoma, Arial ;
+} */
+
+.temp_wrap {
+	/* border: 1px green solid; */
+	position: relavtive;
+	height: 100%;
+}
+.preAirInform_forTd1 {
+	/* border: 1px red solid; */
+	position: relative;
+	display: inline-block;
+	width: 30px;
+}
+.preAirInform_forTd1 img{
+	width: 30px;
+	height: 20px;
+}
+.preAirInform_forTd2 {
+	/* border: 1px black solid; */
+	position: relative;
+	display: inline-block;
+	width: 80px;
+}
+#preAirInform_bt_div{
+	/* border: 1px solid black; */
+	position: relative;
+	float: left;
+	width: 200px;
+	margin: 0 42%;
+}
+#preAirInform_temp{
+	
+}
+#preAirInform_backBt{
+	background-color: #ffffff; 
+    border: #e85581 0.8px solid;
+    color: #e85581;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+
+#preAirInform_buyingBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}

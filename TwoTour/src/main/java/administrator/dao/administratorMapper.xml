@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="administratorSQL">
+ 	<!-- 패키지등록 -->
+ 	<insert id="insertPackageSubmit" parameterType="trip">
+ 		insert into tripinform(seq,package_code,package_name,grade,day,week,content,imageName,imageName1,imageName2,depart_city,arrive_city,depart_date,adult_price,pseq) values(#{seq},#{package_code},#{package_name},#{grade},#{day},#{week},#{content},#{imageName},#{imageName1},#{imageName2},#{depart_city},#{arrive_city},#{depart_date},#{adult_price},0)
+ 	</insert>
+ 	
+ 	<!-- 패키지상세등록 -->
+ 	<select id="getPackageParent" resultType="trip">
+ 		select * from tripinform where pseq=0
+ 	</select>
+ 	<insert id="insertPackageDetailSubmit" parameterType="trip">
+ 		insert into tripinform(seq,package_code,package_name,grade,imageName,day,nights,depart_code,arrive_code,depart_date,arrive_date,hotel_name,adult_price,teen_price,baby_price,pseq,total_member,airplane_name,depart_apTime,arrive_apTime,fuel_fee,singleroom_fee) values(trip_seq.nextval,#{package_code},#{package_name},#{grade},#{airplane_name}||'.png',#{day},#{nights},#{depart_code},#{arrive_code},#{depart_date},#{arrive_date},#{hotel_name},#{adult_price},#{teen_price},#{baby_price},#{pseq},#{total_member},#{airplane_name},#{depart_apTime},#{arrive_apTime},#{fuel_fee},#{singleroom_fee})
+ 	</insert>
+ 	
+ 	<!-- 항공등록 -->
+ 	<insert id="insertAirplaneSubmit" parameterType="airplaneDTO">
+ 		insert into airplaneinform_temp values(#{airplane_name},#{airplane_code},#{imagename},#{depart_city},#{depart_date},#{depart_time},#{depart_day},#{arrive_city},#{arrive_date},#{arrive_time},#{arrive_day},#{totalTime},370000,370000,370000)
+ 	</insert>
+ 	
+ 	<!-- 호텔등록 -->
+ 	<insert id="insertHotelSubmit" parameterType="hotel">
+ 		insert into hotelinform values(#{hotel_name},'TwoTourHotel',#{imageName},#{city},#{call},#{homepage},#{floor},#{totalMem},#{location},#{checkIn},#{checkOut},#{content},'380000','5')
+ 	</insert>
+ 	
+ 	<!-- 모든패키지관리 -->
+ 	<select id="allPackageList" resultType="trip">
+ 		select * from tripinform where pseq!=0
+ 	</select>
+ 	
+ 	<!-- 지난패키지관리 -->
+ 	<select id="pastPackageList" parameterType="java.util.Map" resultType="trip">
+ 	<![CDATA[
+ 		select * from tripinform where pseq!=0 and (
+	 		(to_number(substr(depart_date,1,4)) = #{year} and 
+	 			(to_number(substr(depart_date,5,2))=#{month} and to_number(substr(depart_date,7,2)) < #{date})
+	 			or
+	 			(to_number(substr(depart_date,5,2)) < #{month})
+	 		)
+	 		or
+	 		(to_number(substr(depart_date,1,4)) < #{year})
+	 		)
+	 ]]>
+ 	</select>
+ 	
+ 	<!-- 지나지않는패키지관리 -->
+ 	<select id="notPastPackageList" parameterType="java.util.Map" resultType="trip">
+ 	<![CDATA[
+ 		select * from tripinform where pseq!=0 and (
+	 		(to_number(substr(depart_date,1,4)) = #{year} and 
+	 			(to_number(substr(depart_date,5,2))=#{month} and to_number(substr(depart_date,7,2)) >= #{date})
+	 			or
+	 			(to_number(substr(depart_date,5,2)) > #{month})
+	 		)
+	 		or
+	 		(to_number(substr(depart_date,1,4)) > #{year})
+	 		)
+	 ]]>
+ 	</select>
+ 	
+ 	
+ 	<!-- 최근본상품 -->
+  	<select id="getRecentViewProductList" resultType="recentViewProduct">
+ 		select * from 최근본상품
+ 	</select> 
+ 	
+ 	<delete id="deleteRecentViewProduct" parameterType="int">
+ 		delete 최근본상품 where seq=#{seq}
+ 	</delete>
+ 	
+ 	
+  	
+ 	<!-- 예약목록보기 -->
+ 	<select id="getReservationList" resultType="reservationInform">
+ 		select * from reservationinform where status='예약완료'
+ 	</select>
+ 	
+ 	<update id="deleteReservationProduct" parameterType="string">
+ 		update reservationinform set status='예약취소' where reservation_number=#{reservation_number}
+ 	</update> 
+ 	
+ 	
+ 	<!-- 결제목록 -->
+ 	<select id="getPaymentList" resultType="payInform">
+ 		select * from payInform where status='결제완료'
+ 	</select>
+ 	
+ 	<select id="getWholeList" resultType="payInform">
+ 		select * from payInform
+ 	</select>
+ 	
+ 	<select id="getCancelPaymentList" resultType="payInform">
+ 		select * from payInform where status='결제취소'
+ 	</select>
+ 	
+ </mapper>

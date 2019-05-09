@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="hotelSQL">
+	
+	<select id="getHotel" parameterType="java.util.Map" resultType="hotel">
+
+		select * from
+		(select rownum rn, hotels.* from
+		(select * from hotelinform where city like '%'||#{city}||'%' 
+		
+		<!-- 가격 옵션1 -->
+		<if test="checkPrice == null or checkPrice == 0 or checkPrice == 1">
+			<if test="price1 != null">AND price  between '0' and '100,000'</if>
+			<if test="price2 != null">AND price  between '100,000' and '150,000'</if>
+			<if test="price3 != null">AND price  between '150,000' and '200,000'</if>
+			<if test="price4 != null">AND price  between '200,000' and '250,000'</if>
+			<if test="price5 != null">AND price  between '250,000' and '900,000'</if>
+		</if>
+		
+	
+		<!--가격 옵션2  -->
+		<if test="checkPrice >= 2">
+			and (price  between '0' and '1,900,000' 		
+			<if test="price1 != null">OR price  between '0' and '100,000'</if>
+			<if test="price2 != null">OR price  between '100,000' and '150,000'</if>
+			<if test="price3 != null">OR price  between '150,000' and '200,000'</if>
+			<if test="price4 != null">OR price  between '200,000' and '250,000'</if>
+			<if test="price5 != null">OR price  between '250,000' and '900,000'</if>
+			)		
+		</if>
+		
+		<!-- 등급 옵션1 -->
+		<if test="checkRank == null or checkRank == 0 or checkRank == 1">
+			and (city like '%'||#{city}||'%'
+			<if test="star1 != null">    AND rank = 1</if>
+			<if test="star2 != null">    AND rank = 2</if>
+			<if test="star3 != null">    AND rank = 3</if>
+			<if test="star4 != null">    AND rank = 4</if>
+			<if test="star5 != null">    AND rank = 5</if>
+			)
+		</if>
+		
+		<!-- 등급 옵션2 -->
+		<if test="checkRank >= 2">
+			and (price  between '0' and '1,900,000'		
+			<if test="star1 != null">  OR rank = 1</if>
+			<if test="star2 != null">  OR rank = 2</if>
+			<if test="star3 != null">  OR rank = 3</if>
+			<if test="star4 != null">  OR rank = 4</if>
+			<if test="star5 != null">  OR rank = 5</if>
+			)		
+		</if>
+			
+		<!-- 정렬 순서 -->
+		<if test="option == null"> order by price </if>
+		<if test="option == 'price_asc'">  order by price </if>
+		<if test="option == 'price_desc'"> order by price desc</if>
+		<if test="option == 'rank_asc'">   order by rank </if>
+		<if test="option == 'rank_desc'">  order by rank desc</if>
+
+		) hotels) 
+		where rn between #{startNum} and #{endNum}
+	</select>
+	
+	
+	<select id="getHotelTotalA" parameterType="java.util.Map" resultType="int">
+		select count(*) from 
+		(select * from hotelinform where city like '%'||#{city}||'%' 
+		
+		<!-- 가격 옵션1 -->
+		<if test="checkPrice == null or checkPrice == 0 or checkPrice == 1">
+			<if test="price1 != null">AND price  between '0' and '100,000'</if>
+			<if test="price2 != null">AND price  between '100,000' and '150,000'</if>
+			<if test="price3 != null">AND price  between '150,000' and '200,000'</if>
+			<if test="price4 != null">AND price  between '200,000' and '250,000'</if>
+			<if test="price5 != null">AND price  between '250,000' and '900,000'</if>
+		</if>
+		
+	
+		<!--가격 옵션2  -->
+		<if test="checkPrice >= 2">
+			and (price  between '0' and '1,900,000' 		
+			<if test="price1 != null">OR price  between '0' and '100,000'</if>
+			<if test="price2 != null">OR price  between '100,000' and '150,000'</if>
+			<if test="price3 != null">OR price  between '150,000' and '200,000'</if>
+			<if test="price4 != null">OR price  between '200,000' and '250,000'</if>
+			<if test="price5 != null">OR price  between '250,000' and '900,000'</if>
+			)		
+		</if>
+		
+		<!-- 등급 옵션1 -->
+		<if test="checkRank == null or checkRank == 0 or checkRank == 1">
+			and (city like '%'||#{city}||'%'
+			<if test="star1 != null">    AND rank = 1</if>
+			<if test="star2 != null">    AND rank = 2</if>
+			<if test="star3 != null">    AND rank = 3</if>
+			<if test="star4 != null">    AND rank = 4</if>
+			<if test="star5 != null">    AND rank = 5</if>
+			)
+		</if>
+		
+		<!-- 등급 옵션2 -->
+		<if test="checkRank >= 2">
+			and (price  between '0' and '1,900,000'		
+			<if test="star1 != null">  OR rank = 1</if>
+			<if test="star2 != null">  OR rank = 2</if>
+			<if test="star3 != null">  OR rank = 3</if>
+			<if test="star4 != null">  OR rank = 4</if>
+			<if test="star5 != null">  OR rank = 5</if>
+			)		
+		</if>
+			
+		<!-- 정렬 순서 -->
+		<if test="option == null"> order by price </if>
+		<if test="option == 'price_asc'">  order by price </if>
+		<if test="option == 'price_desc'"> order by price desc</if>
+		<if test="option == 'rank_asc'">   order by rank </if>
+		<if test="option == 'rank_desc'">  order by rank desc</if>
+
+		) 
+		
+	</select>
+	
+	
+	<select id="getHotelInform" parameterType="String" resultType="hotel">
+		select * from hotelinform where hotel_name= #{hotel_name}
+	</select>
+	
+	
+ </mapper>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="travelerInformSQL">
+ 	<insert id="insertTraveler" parameterType="travelerInform">
+ 		insert into travelerInform values(#{name},#{first_name},#{last_name},#{year},#{month},#{day},#{gender},#{email},#{email1},#{phone},#{phone1},#{passport_num},#{passport_year},#{passport_month},#{passport_day},#{ages},#{num})
+ 	</insert>
+ 	<select id="getTravelerInform" parameterType="String" resultType="travelerInform">
+ 		select * from travelerInform where num=#{reservation_number} order by ages
+ 	</select>
+ 	
+ 		<update id="modifyTraveler" parameterType="travelerInform">
+ 		update travelerInform set name=#{name},
+ 								  first_name=#{first_name},
+ 								  last_name=#{last_name},
+ 								  year=#{year},
+ 								  month=#{month},
+ 								  day=#{day},
+ 								  gender=#{gender},
+ 								  email=#{email},
+ 								  email1=#{email1},
+ 								  phone=#{phone},
+ 								  phone1=#{phone1},
+ 								  passport_num=#{passport_num},
+ 								  passport_year=#{passport_year},
+ 								  passport_month=#{passport_month},
+ 								  passport_day=#{passport_day},
+ 								  ages=#{ages},
+ 								  num=#{num}
+ 		where passport_num=#{passport_origin}
+ 	</update>
+ 	<update id="updateToPayNum" parameterType="String">
+ 		update travelerInform set num=(select max(pay_number) from payInform ) where num=#{reservation_number}
+ 	</update>
+ 	
+ 	<select id="getReservedMember" parameterType="String" resultType="String">
+ 		select count(*) from travelerinform where num=#{pay_number}
+ 	</select>
+ </mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="reservationInformSQL">
+	<insert id="insertReservaionInform" parameterType="reservationInform">
+		insert into reservationInform values(
+										#{reservation_name},seq_reservation.nextval,#{reservation_email},#{reservation_email1},#{hotel_name},#{airplane_name},
+										#{package_name},#{location},#{total_price},#{arrive_time},#{depart_time},#{airplane_code},#{package_code},#{hotel_code},#{rentcar_code},#{total_member},sysdate,'예약완료',tell_seq.nextval)
+	</insert>
+	
+	<select id="getReservationInform" parameterType="String" resultType="reservationInform">
+	 select * from reservationInform where name=#{name}
+	</select>
+	<select id="getReservationNumber" parameterType="String" resultType="String">
+		select reservation_number from reservationInform where reservation_name=#{reservation_name} and tell=(select max(tell) from reservationInform)
+	</select>
+	<select id="getReservationInformList" parameterType="String" resultType="reservationInform">
+		select * from reservationInform where reservation_name=#{id} and status='예약완료' and package_code is not null
+	</select>
+	
+	<select id="getReservationCancelList" parameterType="String" resultType="reservationInform">
+      select * from reservationInform where reservation_name=#{id} and status='예약취소'
+   </select>
+   
+   <select id="getNoReservationCancle" parameterType="String" resultType="reservationInform">
+    select * from reservationInform where reservation_number=#{reservation_number} and status='예약취소'
+   </select>
+   
+      <select id="getReservationByNumber" parameterType="String" resultType="reservationInform">
+      select * from reservationInform where reservation_number=#{num} and status='예약완료'
+   </select>
+   
+   <update id="updateTotalMember" parameterType="java.util.Map">
+   	  update reservationInform set total_member=#{total_member},
+   	 							   total_price=#{total_price}
+   				  where reservation_number=#{reservation_number}
+   </update>
+    <update id="cancelReservation" parameterType="String">
+   	  update reservationInform set status='예약취소' where reservation_number=#{reservation_number}
+   </update>
+
+   <delete id="removePayed" parameterType="String">
+  	 delete reservationInform where reservation_number=#{reservation_number}
+   </delete>
+   
+   <select id="getNoResevationInform" parameterType="java.util.Map" resultType="reservationInform">
+   	select * from reservationInform where reservation_name=#{reservation_name} and reservation_number=#{reservation_number} and reservation_email=#{reservation_email} and reservation_email1=#{reservation_email1}
+   </select>
+   
+ </mapper>

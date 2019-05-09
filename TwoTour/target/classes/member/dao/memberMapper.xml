@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="memberSQL">
+	<!-- 회원가입 -->
+ 	<insert id="insertMember" parameterType="member">
+ 	insert into memberinform values(#{name}
+ 							,#{id}
+ 							,#{pwd}
+ 							,#{gender}
+ 							,#{foreigner}
+ 							,#{email}
+ 							,#{email1}
+ 							,#{year}
+ 							,#{month}
+ 							,#{day}
+ 							,0,0)
+ 	</insert>
+	<!-- 로그인 -->
+	<select id="checkLogin" resultType="member" parameterType="java.util.Map">
+	select * from memberinform where id=#{id} and pwd=#{pwd}
+	</select>
+	
+	<!-- 수정 -->
+	<update id="updateArticle" parameterType="member">
+	update member set name=#{name}
+							, pwd=#{pwd}
+							, gender=#{gender}
+							, email1=#{email1}
+							, email2=#{email2}
+							, tel1=#{tel1}
+							, tel2=#{tel2}
+							, tel3=#{tel3}
+							, zipcode=#{zipcode}
+							, addr1=#{addr1}
+							, addr2=#{addr2}
+							,logtime=sysdate where id=#{id}
+	</update>
+	
+	<!--멤버받기 -->
+	<select id="getMember" parameterType="String" resultType="member">
+	select * from memberinform where id=#{id}
+	</select>
+	
+	<update id="updateBasicInfo" parameterType="java.util.Map">
+		update memberinform set <if test="pwd != null">pwd=#{pwd}, </if>email=#{email}, email1=#{email1} where id=#{id}
+  
+	</update> 
+	<select id="getId" parameterType="java.util.Map" resultType="String">
+	select id from memberinform where name=#{name} and email=#{email} and email1=#{email1} and year=#{year} and month=#{month} and day=#{day}
+	</select>
+	
+	<!-- 비밀번호 찾기 -->
+   <select id="checkIdEmail" parameterType="java.util.Map" resultType="member">
+      select * from memberinform where id=#{id} and email=#{email} and email1=#{email1}
+   </select>
+   
+   <!-- 임시비밀번호 변경 -->
+   <update parameterType="member" id="update_pwd"> 
+   		update memberinform set pwd=#{pwd} where id=#{id} 
+   </update>
+   
+   <delete id="deleteMember" parameterType="String">
+   	delete memberinform where id=#{id}
+   </delete>
+   
+   <update id="addPoint" parameterType="java.util.Map">
+      update memberinform set point=point+#{point} where id=#{id}
+   </update> 
+   <update id="reducePoint" parameterType="java.util.Map">
+      update memberinform set point=point-#{point} where id=#{id}
+   </update>
+ </mapper>

@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+#consult_writeForm_inform{
+	/* border: 1px solid red; */
+	height: 48px;
+	font: 15px Tahoma, Arial ;
+}
+#consult_writeForm_inf_box{
+	position: relative;
+	border: 1px solid #d5d5d5;
+	height: 130px;
+	
+}
+#consult_writeForm_inf_box1{
+	/* border: yellow dashed 1px; */
+	position: relative;
+	display: inline-block;
+	/* top:-2px; */
+}
+#consult_writeForm_inf_box1>img{
+	height: 120px;
+}
+#consult_writeForm_inform_ul{
+	/* border: 1px solid pink; */
+	postioin: absolute;
+	display: inline-block;
+	left: 200px;
+	margin-bottom: 10px;
+}
+#consult_writeForm_inform_ul > li{
+	font: 13px Tahoma, Arial;
+	padding: 5px;
+	list-style: none;
+}
+#consult_writeForm_P{
+	/* border: 1px red solid; */
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: right;
+	vertical-align: bottom;
+}
+#consult_writeForm_P > span{
+	font: 12px Tahoma, Arial;
+}
+
+
+
+#consult_writeFormT{
+	border-collapse: collapse;
+	border-style: hidden;
+	border-top: 1px solid #6d7588;
+	border-bottom: 1px solid #c6c6c6; 
+	width: 100%;
+	
+}
+#consult_writeFormT td{
+	border: 1px solid #c6c6c6;
+	height: 60px;
+	padding-left: 20px;
+	vertical-align: center;
+} 
+td.consult_writeForm_col{
+	font: bold 15px Tahoma, Arial;
+	background-color: #f2f2f2;
+	width: 180px;
+}
+
+select.consult_writeForm_select{
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	color: #000000;
+	border: 1px solid #f63d8b;
+	border-radius: 3px;
+}
+select.consult_writeForm_select>option{
+	font: 15px Tahoma, Arial;
+}
+#consult_writeFormT input[name="name"]{
+	border: none;
+	border-color: transparent;
+	/* outline: none; */
+	height: 30px;
+	width: 300px;
+	font: 15px Tahoma, Arial;
+}
+
+#consult_writeFormT input[name="reservation_num"]
+, #consult_writeFormT input[name="email1"]
+, #consult_writeFormT input[name='consult_writeForm_tel']{
+	height: 30px;
+	width: 300px;
+	font: 15px Tahoma, Arial;
+}
+
+#consult_writeFormT input[name="subject"]{
+	height: 30px;
+	width: 98%;
+	font: 15px Tahoma, Arial;
+}
+#consult_writeFormT textarea[name="content"]{
+	height: 350px;
+	width: 98%;
+	vertical-align: top;
+	font: 15px Tahoma, Arial;
+	margin: 5px;
+}
+#consult_writeForm_count{
+	font: 12px Tahoma, Arial;
+	text-align: right;
+	margin-right: 5px;
+	margin: 3px;
+}
+#consult_writeForm_count > input{
+	text-align: right;
+	border: none;
+	border-color: transparent;
+}
+#consult_writeForm_bt_div{
+	/* border: 1px solid blue; */
+	/* position: relative; */ /*이것도 필요없었다니.. */
+}
+#consult_writeForm_temp{
+	/* border: 1px solid orange; */
+	/* position: absolute; */
+	width:200px;
+	/* display: inline-block; 이것도 없어도 되는거였어 ㅠㅠ width가 중요했어 ㅠㅠ */
+	/* float: none; 없어도 되는 거였어!!*/
+	margin: 0 42%;
+}
+#consult_writeForm_temp>button{
+	margin-top: 5px;
+	margin-left: 10px;
+	background-color: transparent;/*배경색 : 투명*/
+	baockground-repeat: no-repeat;
+	background-position: 0px 0px;
+	border: none;
+	cursor: pointer;
+}

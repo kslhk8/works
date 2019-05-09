@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+#notice_writeFormT{
+	border-collapse: collapse; 
+	border-style: hidden;
+	border-top: 0.5px solid #c6c6c6;
+	border-bottom: 0.5px solid #c6c6c6;
+	cell-spacing: '0';
+	width: 1064px;
+}
+
+#notice_writeFormT td{
+	border: 1px solid #c6c6c6;
+} 
+
+.notice_write_col{
+	height: 47px;
+	font: bold 20px Tahoma, Arial ;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+#notice_writeFormT input[name='subject']{
+	width: 97%;
+	height: 24px;
+	/* border: none;
+	border-color: transparent;
+	outline: none; */
+	margin-left: 5px;
+	font: 15px Tahoma, Arial ;
+}
+#notice_writeFormT input[name='writer']{
+	width: 97%;
+	height: 24px;
+	border: none;
+	border-color: transparent;
+	outline: none;
+	margin-left: 5px;
+	font: 15px Tahoma, Arial;
+}
+#notice_writeFormT textarea[name='content']{
+	height: 350px;
+	width: 98%;
+	font: 15px Tahoma, Arial;
+	/* border: none;
+	border-color: transparent;
+	outline: none; */
+	margin-left: 2px;
+	margin-top: 2px;
+	vertical-align: top;
+}
+#notice_writeForm_BtZone{
+	/* 손봐야 합니다~~~~ */		
+	border: 1px red solid;
+	display: inline-block;
+	margin:0 80%;
+}
+
+
+
+
+
+#notic_writeForm_listBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+#notic_writeForm_resetBt{
+	background-color: #ffffff; 
+    border: #e85581 0.8px solid;
+    color: #e85581;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+#notic_writeForm_writeBt{
+	background-color: #e85581; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+}
+

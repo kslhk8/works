@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+#loginForm_background_div{ 
+	position:absolute; top:150px; height:655px; width:100%;
+	background-image:URL('/TwoTour/image/login_background.jpg');
+	background-repeat:no-repeat; background-size:100% 100%;
+}
+
+#loginForm_text_wrap{ position:relative; width:100%; height:200px; text-align:center; right:60px;
+							display:inline-block; padding:40px 50px; font-size:20px; }
+#border_line{
+	top:20px; width:0.5px; height:220px; border: 0.2px solid rgb(220,220,220); left:288px; position:absolute;
+}
+#text_1{
+	font:33px Tahoma, Arial; color:white;
+}
+#text_2{
+	font:14px Tahoma, Arial; font-weight:bold; color:white;
+}
+#text_3{
+	font:12px Tahoma, Arial; color:white;
+}
+
+#loginForm_inform_box{
+	position:relative; width:600px; height:85px; display:inline-block; left:238.2px;
+	bottom:130px;
+}
+#loginForm_inform_box1{
+	position:absolute; height:50px; display:inline-block; width:300px; text-align: center;
+	 background-color: #4a505d; cursor:pointer; padding-top:25px; padding-right:5px;
+	color:white; font:17px Tahoma, Arial;   left:0px;
+}
+#loginForm_inform_box2{
+	position:absolute; height:50px; display:inline-block; width:280px;
+	background-color: rgb(235,235,235); padding-right:30px;  right:1px; cursor:pointer; text-align:center;
+	 color:black; font:17px Tahoma, Arial;  padding-top:25px; 
+}
+#loginForm_inform_box1 > label{
+	cursor:pointer;	
+}
+#loginForm_inform_box2 > label{
+	cursor:pointer;
+}
+
+#loginForm_inform_member{
+	font:20px Tahoma, Arial; bottom:140px; background-color:white; 
+	position:relative; width:596px; height:300px; display:inline-block; left:240px;
+}
+
+
+#login_text_wrap{
+	position:absolute; width:596px; height:45px;
+}
+#login_text{
+	position:absolute; width:300px; height:32px; display:inline-block;
+	left:30px; padding-top:22px;  font:17px Tahoma, Arial; font-weight:bold; padding-right:48px; 
+}
+
+
+#loginForm_id_content{
+	position:absolute; width:300px; height:41px; display:inline-block; left:50px; top:60px;
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#loginForm_id_content > input[type=text]{
+	width:180px; height:33px; border: 1px solid rgb(220,220,220); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#login_idDiv{
+	color:rgb(241, 94, 175); font-size:9pt;
+		position:absolute; clear:"both";
+}
+
+#loginForm_pwd_content{
+	position:absolute; width:300px; height:40px; display:inline-block; left:50px;  top:120px;
+	padding-top:12px; font:10px Tahoma, Arial; 
+}
+#loginForm_pwd_content > input[type=password]{
+	width:180px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#login_pwdDiv{
+	color:rgb(241, 94, 175); font-size:9pt;
+			position:absolute; clear: "both"; text-align:left; width:500px;
+}
+
+#loginForm_accept_login{
+	position:absolute; width:100%; height:123px; top:194px;
+	 
+}
+#accpet_login{
+	position:absolute; width:190px; height:35px; left:52px; font:16px Tahoma, Arial; font-weight:bold;
+	background-color: rgb(241, 84, 155); color:white; cursor:pointer; text-align:center; padding-top:10px;
+}
+#admin_login{
+	position:absolute; width:190px;left:52px; font:10px Tahoma, Arial; font-weight:bold;
+	text-align:left; padding-top:10px; top:36px; color:black;
+}
+#login{
+	cursor:pointer;
+}
+#loginForm_function_table{
+	position:absolute; width:100%; height:23px; top:260px;
+}
+#function_table{
+	position:absolute; width:100%; height:39px; background-color:rgb(238,238,238); padding-top:3px;
+}
+
+#function_table > ul > #search_id{
+	display:inline-block; height:28px; cursor:pointer; width:127px; 
+	list-style:none; font:11px Tahoma, Arial; 
+	cursor:pointer; color:grey; padding-top:5.5px; text-align:right; padding-left:130px;
+	
+ }
+ 
+ #function_table > ul > #search_pwd{
+	display:inline-block; height:28px; cursor:pointer; width:76px; 
+	list-style:none; font:11px Tahoma, Arial; 
+	cursor:pointer; color:grey; padding-top:5.5px; text-align:right;
+	
+ }
+ 
+  #function_table > ul > #go_writeForm{
+	display:inline-block; height:28px; cursor:pointer; width:50px;
+	list-style:none; font:11px Tahoma, Arial; 
+	cursor:pointer; color:grey; padding-top:5.5px; text-align:right;
+	
+ }
+ 
+ #loginForm_inform_noMember{
+	font:20px Tahoma, Arial; bottom:439px; background-color:white; position:absolute; visibility:hidden;
+	position:relative; width:596px; height:300px; display:inline-block; left:240px;
+}
+
+#noLogin_text_wrap{
+	position:absolute; width:596px; height:45px;
+}
+#noLogin_text{
+	position:absolute; width:200px; height:32px; display:inline-block;
+	left:30px; padding-top:12px;  font:16px Tahoma, Arial; font-weight:bold; padding-right:48px; 
+}
+#noLogin_radio{
+	position:absolute; width:430px; height:32px; display:inline-block;
+	left:170px; padding-top:15px;  font:13px Tahoma, Arial; padding-right:48px; 
+}
+
+#noLogin_name_content{
+	position:absolute; width:300px; height:41px; display:inline-block; left:50px; top:40px;
+	padding-top:12px; font:10px Tahoma, Arial;
+}
+#noLogin_name_content > input[type=text]{
+	width:180px; height:33px; border: 1px solid rgb(220,220,220); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#noLogin_nameDiv{
+	color:rgb(241, 94, 175); font-size:9pt;
+		position:absolute; clear:"both";
+}
+
+#noLogin_reservation_content{
+	position:absolute; width:300px; height:40px; display:inline-block; left:50px;  top:90px;
+	padding-top:12px; font:10px Tahoma, Arial; 
+}
+#noLogin_reservation_content > input[type=text]{
+	width:180px; height:33px; border: 1px solid rgb(230,230,230); 
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+#noLogin_reservationDiv{
+	color:rgb(241, 94, 175); font-size:9pt;
+			position:absolute; clear: "both"; text-align:left; width:500px;
+}
+#noLogin_contact_content{
+	position:absolute; width:300px; height:40px; display:inline-block; left:50px;  top:140px;
+	padding-top:12px; font:10px Tahoma, Arial; 
+}
+#contact_select{
+	position:absolute; width:70px; height:33px; display:inline-block;
+	font:13px Tahoma, Arial;
+}
+
+#contact_select > select{
+	 width:70px; height:36px; border: 1px solid rgb(230,230,230);   font:13px Tahoma, Arial; 
+	color:grey;  display:inline-block;
+}
+#contact_content{
+	position:absolute; left:40px; width:90px; height:33px;
+	font:13px Tahoma, Arial; padding-left:10px;
+}
+
+#contact_content > input[type=text]{
+	width:99px; height:33px;
+	font:13px Tahoma, Arial; padding-left:10px; border: 1px solid rgb(230,230,230); 
+}
+
+#noLogin_accept_show{
+	position:absolute; width:100%; height:123px; top:208px;
+	 
+}
+#accpet_show{
+	position:absolute; width:190px; height:35px; left:52px; font:16px Tahoma, Arial; font-weight:bold;
+	background-color: rgb(241, 84, 155); color:white; cursor:pointer; text-align:center; padding-top:10px;
+}
+#reservation_show{
+	cursor:pointer;
+}
+#noLogin_notice_table{
+	position:absolute; width:260px; heigt:110px; left:287px; font:11px Tahoma, Arial;
+	background-color:rgb(240,240,240); top:53px;  padding:10px;
+}
+
+#noLogin_notice_box{
+	position:absolute; width:277px; heigt:110px; left:277px; 
+	top:133px;  padding:10px; font:10px Tahoma, Arial;
+}
+#notice_box1{
+	font:12px Tahoma, Arial; font-weight:bold;
+}
+#notice_box2{
+	padding-top:3px;
+}
+#notice_box3{
+	padding-top:5px;
+}

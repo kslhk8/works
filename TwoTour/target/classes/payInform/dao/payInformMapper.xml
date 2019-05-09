@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="payInformSQL">
+	<insert id="insertPayInform" parameterType="payInform">
+		insert into payInform values(
+										#{pay_name},seq_pay.nextval,#{pay_email},#{pay_email1},#{hotel_name},#{airplane_name},
+										#{package_name},#{location},#{total_price},#{arrive_time},#{depart_time},#{airplane_code},#{package_code},#{hotel_code},#{rentcar_code},#{total_member},sysdate,'결제완료',tell_seq.nextval)
+	</insert>
+	<select id="getPayNumber" parameterType="String" resultType="String">
+		select pay_number from payInform where pay_name=#{pay_name} and tell=(select max(tell) from payInform)
+	</select>
+	
+	<insert id="modifyPayCompleteInsert" parameterType="reservationInform" >
+   		insert into payInform values(
+                              #{reservation_name},
+                              seq_pay.nextval,
+                              #{reservation_email},
+                              #{reservation_email1},
+                              '',
+                              '',
+                              #{package_name},
+                              '',
+                              #{total_price},
+                              #{arrive_time},
+                              #{depart_time},
+                              '',
+                              #{package_code},
+                              '',
+                              '',
+                              #{total_member},sysdate,'결제완료',tell_seq.nextval)
+                              
+   </insert>
+ 
+   
+
+   <select id="getPayInformList" parameterType="String" resultType="payInform">
+      select * from payInform where pay_name=#{id} and status='결제완료' and package_code is not null order by pay_number
+   </select>
+   <select id="getRentPayInformList" parameterType="String" resultType="payInform">
+         select * from payInform where pay_name=#{id} and status='결제완료' and rentcar_code is not null order by pay_number
+   </select>
+   
+	<select id="getRentPayCancelList" parameterType="String" resultType="payInform">
+	         select * from payInform where pay_name=#{id} and status='결제취소' and rentcar_code is not null order by pay_number
+	</select>   
+   
+   <select id="getPayCancelList" parameterType="String" resultType="payInform">
+      select * from payInform where pay_name=#{id} and status='결제취소' and package_code is not null
+   </select>
+   
+   <select id="getNoPayInform" parameterType="java.util.Map" resultType="payInform">
+   		   	select * from payInform where pay_name=#{reservation_name} and pay_number=#{reservation_number} and pay_email=#{reservation_email} and pay_email1=#{reservation_email1}
+
+   </select>
+   
+   <select id="getPayByNumber" parameterType="String" resultType="payInform">
+   		select * from payInform where pay_number=#{pay_number} and status='결제완료'
+   </select>
+   
+   <select id="getPayCancel" parameterType="String" resultType="payInform">
+         select * from payInform where pay_number=#{pay_number} and status='결제취소'
+   
+   </select>
+   
+   <update id="cancelPaymentComplete" parameterType="String">
+   	  update payInform set status='결제취소' where pay_number=#{num}
+   </update>
+   <select id="getLastPayInform" resultType="payInform">
+   		select * from payInform where pay_number=(select max(pay_number) from payInform)
+   </select>
+   <select id="getTravelerInform" parameterType="String" resultType="payInform">
+   		      select * from payInform where pay_number=#{num}
+   </select>
+   <select id="getAirPayInformList" parameterType="String" resultType="payInform">
+   	         select * from payInform where pay_name=#{id} and status='결제완료' and airplane_code is not null order by pay_number
+   </select>
+     <select id="getAirPayCancelList" parameterType="String" resultType="payInform">
+   	         select * from payInform where pay_name=#{id} and status='결제취소' and airplane_code is not null order by pay_number
+   </select>
+   <insert id="insertHotelPayCompletel">
+      insert into payInform values(
+                          #{pay_name},
+                          seq_pay.nextval,
+                          '',
+                          '',
+                          #{hotel_name},
+                          '',
+                          '',
+                          #{location},
+                          #{total_price},
+                          #{arrive_time},
+                          #{depart_time},
+                          '',
+                          '',
+                          #{hotel_code},
+                          '',
+                          1,
+                          sysdate,
+                          '결제완료',
+                          tell_seq.nextval)
+   
+   </insert>
+   <select id="getPayInformListHotel" parameterType="String" resultType="payInform">
+      select * from payInform where pay_name=#{id} and status='결제완료' and hotel_code is not null
+      order by pay_number
+   </select>
+    <update id="cancelHotelPayment" parameterType="String">
+         update payInform set status='결제취소' where pay_number=#{pay_number}
+   </update>
+    <select id="getPayCancelListHotel" parameterType="String" resultType="payInform">
+      select * from payInform where pay_name=#{id} and status='결제취소' and hotel_code is not null
+      order by pay_number
+   </select>
+ </mapper>
