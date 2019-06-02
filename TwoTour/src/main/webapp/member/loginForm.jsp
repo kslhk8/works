@@ -190,7 +190,7 @@
 	<div id="loginForm_background_div">
  	  	<div id="loginForm_text_wrap">
 	   		<div id="text_1">로그인<br></div>
-	   		<div id="text_2">하나투어와 함께 즐겁고 행복한 여행 되세요.<br></div>	
+	   		<div id="text_2"> 함께 즐겁고 행복한 여행 되세요.<br></div>	
 	   		<div id="text_3">로그인을 하시면 더욱 다양한 하나투어 서비스를 이용하실 수 있습니다.</div>
    		</div>
    		
@@ -269,7 +269,7 @@
    				
    				<div id="noLogin_notice_box">
    					<div id="notice_box1">※ 비회원 예약 안내</div>
-   					<div id="notice_box2">·입력하신 정보가 하나투어에 등록된 예약정보와 일치할 경우,
+   					<div id="notice_box2">·입력하신 정보가 투투어에 등록된 예약정보와 일치할 경우,
  					비회원 예약 조회가 가능합니다.
  					</div>
  					<div id=notice_box3">·예약 데이터에 해당 고객의 연락처 또는 이메일 정보가 없는 경우, 유선을 통한 예약확인만 가능합니다.<br>
